@@ -1,0 +1,29 @@
+Part A: Pipeline 的切割
+
+我覺得我們一定要記錄一下 Lab7 碰到的問題。整體來說，我們遇到四個主要問題。第一個問題是 Pipeline 要怎麼切。NTT 的單次 Butterfly 運算在 cycle time 10ns 下有點勉強，所以我們後來選擇把它切開。雖然 latency 變長，但在 cycle time 下能過，這樣比較實際。未來我們的原則也一樣，除非助教對 latency 的要求特別嚴格，否則我們會優先採用可維護、好寫的寫法。這次 cycle time 唯一爆掉的例外是 online test，但即便如此，我覺得我們的 online test 做得很好。
+
+我們用 combinational 的方式把邏輯展開，並沒有選擇一種我們不擅長又難 debug 的架構。整體來說，我們的策略仍然是正確的。雖然過程辛苦，但若要改成別人的演算法，其實也會更麻煩。這是我們這次做得很好的地方。我覺得我們每次的運算都很容易切開，無論是 online test、lab 還是 lab6，都能單次只做一部分的運算。Lab7 也一樣，運算的切割很乾淨，方向沒有錯。
+
+剩下那些架構的差別，其實只是別人把步驟拆得更細，或是並行做更多步驟，例如一次做四個或七個步驟。能並行做就必須把邏輯釐得更清楚。如果演算法不同，那就是整個演算法都跟我們不一樣，每個 step 都不同而已。總之，我們用的演算法和暑假lab學的是完全一樣的。
+
+
+Part B: Clock Domain 的問題
+
+第二個要注意的點是 Clock Domain 的問題。JG 是個非常嚴格的工具，韋天神告訴我們，clock to module 接到 FIFO module output path 時，最後一定要接 combinational，這樣就能過。FIFO 我們是用學長的版本，重點在於判斷滿與否的部分。因為 FIFO 不是寫入端，所以寫入端要有自己的 gray code write pointer，並且要經過兩級 D flip-flop 同步之後，再接過來使用。
+
+這份 lab 實際上主要在教的就是這件事：當我在不同 clock domain 之間互相觀察時，只要我去 access 另一個 domain 的訊號，而我的 clock domain 不同，就必須使用 synchronize 過的訊號。這跟我們在 handshake 時遇到的問題呼應——一開始我們讓 devalid 訊號去 access as ready 訊號，結果出現 timing violation。這是合理的，因為 devalid 不能直接 access as ready，除非經過更多級 synchronizer。但這樣寫仍然不安全，最好直接改 design。這部分我有放在腳交檔 version1 裡。
+
+
+Part C: Handshake 的問題
+
+再來是 handshake 的問題。我們在 JG 上也遇到相關的錯誤，出現在 CDC phase 的第一步。後來我把 Clock1 module 的 output 多擋一層，用 combinational 選擇，而不是 sequential 直接輸出，暫時解決了問題。
+
+
+Part D: Acknowledgement 的問題
+
+最後我們碰到 acknowledgement 的問題，主要是 AWQ_WO_SREQ 相關的錯誤。後來的解法是把 DBZ 拿掉，也就是把 handshake 裡判斷 DBZ 的部分移除。這樣做之後就正常了。我推測是因為 DBZ 的控制在 Clock2 module 裡不夠安全，但具體原因不太清楚。即使我改成 combinational 寫法，也沒有改善。直到我同時拿掉 FIFO 裡的 DBZ 判斷，以及 handshake 裡與 DBZ 有關的部分，讓 DBZ 不再影響 destination acknowledgement 和 source request，問題才完全解決。
+
+
+Part E: Convergence 的問題
+
+最後是 convergence 的問題。我們必須把 input 和 output 都多擋幾層 register。在 Clock2 module 接收 input 的地方(in_valid和in_data)，我擋了三層 register，所以真正在用的訊號是(in_valid_qqq和in_data_qqq)，input value 也一樣擋了三層再去取用，問題就解決了。雖然我仍然不確定為什麼需要這樣做，但看起來是因為訊號需要時間穩定。

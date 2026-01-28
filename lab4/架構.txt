@@ -1,0 +1,25 @@
+Task 0 跟 Task 1 的輸入在邊吃 input 時都可以邊 padding，所以 padding 的 latency 不需要額外算進去。
+
+第一部分是 Convolution，我們打算在 72 個 Cycle 之內完成，一次處理兩組 Channel。前 36 個 Cycle 對兩組 Kernel 掃，後 36 個 Cycle 對另外一個 Image 掃，總共會需要 18 個乘法器，以及大概 6 到 8 組的 Sum3（三個 Element 的加法）。因為是 MAC，所以不用切 Pipeline。
+
+Step 2 是 Pooling，這邊打算開 8 組比較器，用 9 個 Cycle 完成，每個 Cycle 兩兩比較，8 組比較器對應兩個 Channel，所以可以在 9 個 Cycle 內掃完，得到 Pooling 後的結果。
+
+Step 3 是 Activation Function，計畫只開一組 Exponential。總共有 8 個 Element 要算 Hyperbolic Tangent 或 Switch。如果算 Switch，一次需要 3 個 Cycle（Exp → 加法 → 除法）；如果算 Tanh，則需要 4 個 Cycle（兩次 Exp → 加法減法 → 除法），整體大約 32 個 Cycle。
+
+Step 4 是 Fully Connected Layer，因為也是乘加，共用step 1已經開的乘法器跟加法器。大概 2 到 5 個 Cycle 可以完成(吧
+
+Step 5 是第二次 Activation Function，用的是 Leaky ReLU。我還在考慮是否能直接用 IEEE 浮點數的 sign bit 判斷是否小於 0，如果可以的話就直接用 sign bit 判斷，小於 0 就做一次乘法，乘法器也可以跟前面共用。這邊是 5 個 Element 的乘法。(5 cycle)
+
+Step 6 是 Fully Connected Layer 2，同樣共用前面乘法器與加法器，step 1可以做到有 9 個 Element的乘加，這邊只需要做可以填5個Element的乘加。(1-3個cycle可以算完)
+
+Step 7 是 Softmax，因為只有一組 Exponential 跟一組除法器，計畫前 3 個 Cycle 各自算 Exp(Z1)、Exp(Z2)、Exp(Z3)，第 4 個 Cycle 加總，接著第 5 到 7 個 Cycle 做除法，總共需要 7 個 Cycle。
+
+Task 1 的部分，一開始同樣需要做 Padding，邏輯和 Task 0 相同，採 Reflection 或 Replication Padding。
+
+step 1: Convolution 的部分也和 Task 0 一樣，不過 Task 1 是 4 個 Kernel 對單一 Image Channel，最後掃出來的結果可以存進同一個 Register Array，因此可以共用。
+
+step 2: Task 1 需要將所有 4 個 Channel 的結果各自加總，這部分我打算盡量共用前面的 Sum，如果無法共用，可能會再額外開一些 Sum3，但我有點擔心加法器數量太多會造成資源爆炸，這部分需要再確認。
+
+step 3: 是 select kernel to achieve max value。依照目前的理解，可以選四個，也可以選三個，也可以選兩個，也可以只選一個，如果四個都是負的，那就都不選，因為不選時結果就是 0，而 0 在這種情況下就是最大值。我的想法是用 16 個 Cycle 把 16 種可能性都計算起來，每次加完一種組合就和歷史上記錄的最大值做比較，如果結果比歷史最大值還大，且同時符合 cost 與 capacity 的規則，就更新為新的最佳選擇。如此 16 輪下來，就能找到歷史上最佳的選擇。
+
+除法器 1 組、Exponential 1 組、比較器 8 組。乘法器至少 18 個，可能還需要額外 2 到 4 個，所以先預估 22 個。加法器的部分會用到非常多，大概需要 10 到 11 個 Sum3 或 Sum4 的組合，或者獨立的加法器，總體數量會落在這個範圍。另外還要搭配 Register Array。只是我不太確定這樣的面積是否會超過限制QQ

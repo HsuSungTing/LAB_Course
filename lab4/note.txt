@@ -1,0 +1,15 @@
+Step1 的部分，我們在 Cycle0 到 Cycle35 是做 image0，另外還有 image1 對 kernel1-1 跟 kernel1-2 的 convolution，做完之後會加起來，所以乘法器會有兩組，各9個乘法器，image 在第0到35個 cycle 的時候，a 接0，b 接 image1，kernel 的部分則是接 kernel1-1 跟 kernel1-2，這樣乘完之後就會加起來，透過一個 sum3 輸出，這邊應該沒有問題。Cycle35 到 Cycle70 的部分，第一個 channel 的9個乘法器放 image0，第二個 channel 的9個乘法器放 image1，各自的倍乘數是 kernel2-1 跟 kernel2-2，乘完之後會先有各三組加法器，再經過 sum3，把9個 element 全部加在一起，再把兩個 channel 的結果加在一起輸出記錄，這邊的電路規模很大。
+
+Step2 是做 pooling，每次挑4個 element，總共有兩個 channel，各比8輪，每比一次就把目前比到最大的數值記錄下來作為後面的輸出，pooling 的範圍是第72到第80個 element。
+
+Step3 從第81個 Cycle 開始，我們會做 exponential 加法還有除法的排程，可以直接參考圖紙上的排程，我們的做法是先用 sequential logic 把前面兩個 exponential of x 跟 exponential of x 記錄下來，記錄下來之後再各自做加減，再做除，除完之後會被存起來，所以會有一個 Previous Positive Exponential 跟 Previous Negative Exponential，各自做加減之後再拿去除，這樣在 Cycle81 到 Cycle98 就會全部做完，這邊沒有共用。
+
+Step4 是 Fully Connected，我們的做法完全跟 Step1 共用，我們會有三個 Cycle，Channel1 的乘法器和加法器會做第0個位置跟第1個位置，在第100個 Cycle，Channel1 的加法器會做第2個位置跟第3個位置，在第101個 Cycle 會做第4個位置，記得 Bias 的部分因為每個位置有5個 element，所以 Bias 也要加回去。
+
+Step5 我們會直接用 Side Bay 判斷數值正負，如果是負的就乘0.01，所以乘法器會跟 Step1 共用，我們會直接拿它乘完的東西提取出來，因為一次要乘5個 element，一個 Channel 的乘法器有9個，所以一次只撈其中5個，在第102個 Cycle 裡面，Channel1 放 Step4 的 Fully Connected1 的 Image，倍乘數放 Channel1 的0.01 倍乘數，這邊只用 Channel1 就好，Channel2 全部填0。
+
+Step6（你原本口頭上雖然沒特別標，但我將其視為 FC2）總共兩個 Cycle，第103個 Cycle 做 Small Weight 的第0 Row 的第0 Column 跟第1 Column，第104個 Cycle 做第2個 Column，最後加起來，因為只會需要一組9個乘法器，所以只用 Channel1，Channel2 一樣填0。
+
+Step7 是 Exponential，一樣是三個 Cycle，完全跟 Step3 共用，在第108個 Cycle 會用 Step1 的9個 Element 的加法器直接相加，不用再拿兩個 Channel 相加的最後一個 Add，加完就撈出來，第109、110、111 會各自做除法，把要除的數字放進去之後提取出來。
+
+Padding 的部分特別要注意，因為第54個 element 是用 Sequential 的方式接，所以會等到下一個 Cycle 才更新，因此用 Replication Padding 的時候會各自有獨立出一個情況。

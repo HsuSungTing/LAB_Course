@@ -1,0 +1,20 @@
+3.DesignWare IP，尤其是 Lab4，我們當時使用的是新思的 DesignWare。
+
+a. 當時的 cycle time 大約是 50ns，在這個時間內，我們先用 DesignWare 的浮點乘法完成計算，再做浮點加法，甚至可以連加好幾個，不需要額外切分。(有DW_fp_div, DW_fp_exp的情況下，DW_fp_mul串聯n個DW_fp_add基本上都不用切)
+b. critical path 主要會出現在 DesignWare 的浮點乘法、浮點乘法模組的延遲（punishment）以及浮點 exponential module。
+c. Pipeline 必須切在浮點除法、以及浮點 exponential module 裡面。
+d. 浮點 exponential module 在很多情況下都會用到，所以要特別注意。單一的浮點乘法或 exponential module 的 delay 大約落在 40~50ns，接近 cycle time，所以需要切 pipeline。
+e. 其實切 pipeline 本身並不複雜，也和"切"的動作無關，重點是"存"，它在 RTL code 上的實作非常簡單、健康：
+	i.將 component 的 combinational logic 結果先存進一個 register
+
+	ii.下個 cycle 再拿 register 使用
+
+	iii.重點是不直接使用 combinational logic 的輸出
+
+f. 對於 SRAM 也一樣：
+
+	i.SRAM 的 dout 先存進 register 或 register array，再使用這些 register 的值
+
+	ii.SRAM 的 input 必須放進 sequential logic
+
+	iii.將訊號存進 sequential logic，再接到 SRAM，避免 unknown 信號或 unknown address 導致 memory error，這些邏輯都是非常健康的做法，基本上是一模一樣的流程。

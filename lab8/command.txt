@@ -1,0 +1,105 @@
+SSH: 
+ee30.si2.iee.nycu.edu.tw
+ee29.si2.iee.nycu.edu.tw
+
+password: eason1024
+
+tar xvf ~iclabTA01/Lab08_2025A.tar
+
+如果要換channel:
+chto ee28
+chto ee27
+
+開nWave:
+nWave &
+
+一定要記得去除中文註解!!
+
+一定會用到的指令:
+
+cd Lab08
+cd EXERCISE_wocg
+cd EXERCISE
+
+cd 01_RTL
+./01_run_vcs_rtl
+./01_run_vcs_rtl_CG 
+.rc不能刪除!!!
+
+cd 02_SYN
+./clk_dc_shell
+./01_run_dc_shell
+
+
+cd 03_GATE
+./01_run_vcs_gate
+./01_run_vcs_gate_CG
+pkill verdi
+pkill simv
+pkill dve
+pkill vcs
+make clean
+
+04_PTPX/   (PrimeTime power analysis): 
+./01_run_ptpx 
+./02_run_cg_ptpx
+
+
+cd 05_JG
+./01_run
+./02_run
+
+cd 09_SUBMIT
+./00_tar
+./01_submit 1st_demo/2nd_demo
+./02_check 1st_demo/2nd_demo
+
+
+
+my path: 
+/RAID2/COURSE/2025_Fall/iclab/iclab095/Midterm_Project_2025/Memory/ftclib_200901.2.1
+
+
+
+1.cd Midterm_Project_2025/Memory/ftclib_200901.2.1
+2.vim memaker.env 
+3.pwd
+4.source memaker.env
+5.>> cd EXE/
+6.>> memaker
+7.選擇single port、選擇Words(例如600->選1024，這樣會跑出10 bit address)
+8.Load電容選0.05uF，並輸入名稱
+9.把all打勾，並按下generate，generate後要可以在EXE的資料夾中看到
+10.lc_shell
+
+
+read_lib SRAM_128_16_WC.lib
+write_lib SRAM_128_16_WC -output SRAM_128_16_WC.db
+
+read_lib SRAM_64_16_WC.lib
+write_lib SRAM_64_16_WC -output SRAM_64_16_WC.db
+
+read_lib SRAM_16384_8_WC.lib
+write_lib SRAM_16384_8_WC -output SRAM_16384_8_WC.db
+
+read_lib MEM_4096_32_WC.lib
+write_lib MEM_4096_32_WC -output MEM_4096_32_WC.db
+
+
+for 02_SYN .setup
+需要時補上
+MEM_4096_32_WC.db 
+
+把.rc開回來:
+File → Restore → Configuration (.rc)
+
+42175
+
+ln -s ../00_TESTBED/PATTERN.vp
+
+
+
+
+tar -xvf ~iclabTA01/Lab07.tar
+
+ln -s ../00_TESTBED/PATTERN_TA.vp

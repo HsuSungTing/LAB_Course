@@ -1,0 +1,80 @@
+1.  在 rst_n 解除後，RPG.sv 中所有輸出訊號都必須被設為 0。
+2.  reset 為非同步、active-low，不得使用同步 reset 以避免無法成功重置。
+3.  重置信號只會在模擬開始時給一次，所有輸出必須立即清為 0。
+4.  rst_n 拉低時，所有訊號皆需歸零。
+5.  必須在設計開始時初始化 DRAM。
+6.  DRAM_R_latency、DRAM_W_latency、DRAM_B_latency 可調整，但 TA demo
+    時會使用 1~100。
+7.  Pattern 的輸入由 7 個 valid 訊號與 1 個 data 訊號組成。
+8.  只有在收到所有必要的 input_valid 後，才能將 out_valid 拉高。
+9.  玩家資料必須透過 AXI4-Lite 協定從 DRAM 讀取。
+10. Login 成功時 out_valid=1、complete=1、warn_msg=000。
+11. Login 失敗（屬性溢位）時 out_valid=1、complete=0、warn_msg=101。
+12. Level Up 成功時 out_valid=1、complete=1、warn_msg=000。
+13. Level Up 若 EXP 不足，complete=0、warn_msg=010。
+14. Level Up 若屬性超界需警告 warn_msg=101。
+15. Battle 成功時 out_valid=1、complete=1、warn_msg=000。
+16. Battle 若玩家 HP=0，需輸出 warn_msg=011。
+17. Battle 若屬性超界需輸出 warn_msg=101。
+18. Use Skill 成功時 complete=1、warn_msg=000。
+19. Use Skill 若 MP 不足需輸出 warn_msg=100。
+20. Check Inactive 成功時 complete=1、warn_msg=000。
+21. Check Inactive 超過 90 天需輸出 warn_msg=001。
+22. 七個 input-valid 訊號之間不會重疊，但設計不得假設可重疊。
+23. 下一個 valid 訊號會在前一個 valid 或 out_valid 拉低後 1~4 cycles
+    出現。
+24. out_valid 不得與任何 input_valid 重疊。
+25. AXI Lite 訊號與 valid 訊號之間的重疊不受 TA
+    檢查，但設計仍需正確運作。
+26. out_valid 必須只維持一個 cycle。
+27. 未收到所有 input_valid 前不得拉高 out_valid。
+28. TA 僅在 out_valid=1 的那個 cycle 檢查輸出。
+29. 操作成功時 complete=1、warn_msg=000。
+30. 操作失敗時 complete=0 並輸出對應 warn_msg。
+31. 下一個動作在 out_valid 拉低 1~4 cycles 後才會進來。
+32. TA 不會檢查 DRAM 內部資料內容是否正確（只檢查讀出後的輸出）。
+33. Usertype.sv 內 TA 定義之型別不可修改。
+34. 若需要可自行新增額外資料型別。
+35. 最上層模組名稱必須為 RPG，檔案名稱亦須為 RPG.sv。
+36. 設計必須在時脈正緣觸發。
+37. Pattern 在負緣觸發 input/output 行為。
+38. 最大 clock period 為 15 ns，不得超過。
+39. 每個操作延遲不得超過 1000 cycles。
+40. 所有輸出都必須在時脈上升緣同步輸出。
+41. out_valid 僅能為高一個週期（重申規範）。
+42. 禁止使用任何 DesignWare IP。
+43. 禁止使用 SRAM。
+44. 合成 (synthesis) 的 input delay 與 output delay 必須設為 clock*0.5。
+45. 所有輸出負載需設為 0.05。
+46. 合成結果中不得產生 latch。
+47. 合成時間不得超過 30 分鐘。
+48. 面積限制不得超過 200000。
+49. Gate-level simulation 不得產生 timing violation。
+50. 名稱中包含 error/fail/latch/congratulation 的變數一律禁止。
+51. 程式碼中禁止出現中文或任何非英文註解。
+52. 禁止在程式內使用 Design Compiler 的優化指令。
+53. 合成或模擬若出現任何 error，無論結果如何皆視為 Fail。
+54. 提交檔案內不得包含任何 $display / $monitor / $write。
+55. TA 提供 PATTERN 加密方式，若遭抄襲將不接受任何理由。
+56. DRAM 記憶體範圍必須為 @10000 至 @10BFF。
+57. 日期必須合法（不得為 02/29、04/31、05/00 等）。
+58. 二月固定為 28 天。
+59. DRAM 內玩家資料順序由 MSB 至 LSB 為 {HP, Month, Day, Attack,
+    Defense, Exp, MP}。
+60. 飽和運算加法超過 65535 必須 clamp 為 65535。
+61. 飽和運算減法小於 0 必須 clamp 為 0。
+62. Login 會將 DRAM 中的登入日期更新為輸入日期。
+63. Login 若為連續登入需增加 Exp=512、MP=1024。
+64. Level Up 必須依訓練類型計算 Δi。
+65. Mode 必須依照表格修改 Δi。
+66. Level Up 最終屬性 = 原屬性 + Δ_final。
+67. Battle 傷害計算需依表格 4 公式運作。
+68. Battle HP_temp 計算需依表格 5。
+69. Battle 勝敗判定與屬性更新需依表格 6。
+70. Battle 的怪物輸入順序需為：攻擊 → 防禦 → HP。
+71. Use Skill 需先計算可使用技能的最大數量。
+72. Use Skill 更新 MP_new = MP − Σ 消耗 MP。
+73. Check Inactive 必須正確計算日期差。
+74. 若同時觸發多個警告，需依優先權：Date > Exp > HP > MP > Saturation >
+    None。
+75. 僅能輸出最高優先序的警告訊息。

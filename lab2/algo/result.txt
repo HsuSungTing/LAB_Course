@@ -1,0 +1,299 @@
+=== Puzzle 1 ===
+Backtracking trytime: 0
+
+=== Puzzle 2 ===
+Backtracking trytime: 0
+
+=== Puzzle 3 ===
+Backtracking trytime: 0
+
+=== Puzzle 4 ===
+Backtracking trytime: 0
+
+=== Puzzle 5 ===
+Backtracking trytime: 0
+
+=== Puzzle 6 ===
+Backtracking trytime: 0
+
+=== Puzzle 7 ===
+Backtracking trytime: 0
+
+=== Puzzle 8 ===
+Backtracking trytime: 0
+
+=== Puzzle 9 ===
+Backtracking trytime: 0
+
+=== Puzzle 10 ===
+Backtracking trytime: 0
+
+=== Puzzle 11 ===
+Backtracking trytime: 0
+
+=== Puzzle 12 ===
+Backtracking trytime: 0
+
+=== Puzzle 13 ===
+Backtracking trytime: 322
+
+=== Puzzle 14 ===
+Backtracking trytime: 0
+
+=== Puzzle 15 ===
+Backtracking trytime: 0
+
+=== Puzzle 16 ===
+Backtracking trytime: 0
+
+=== Puzzle 17 ===
+Backtracking trytime: 0
+
+=== Puzzle 18 ===
+Backtracking trytime: 0
+
+=== Puzzle 19 ===
+Backtracking trytime: 0
+
+=== Puzzle 20 ===
+Backtracking trytime: 0
+
+=== Puzzle 21 ===
+Backtracking trytime: 0
+
+=== Puzzle 22 ===
+Backtracking trytime: 0
+
+=== Puzzle 23 ===
+Backtracking trytime: 0
+
+=== Puzzle 24 ===
+Backtracking trytime: 0
+
+=== Puzzle 25 ===
+Backtracking trytime: 0
+
+=== Puzzle 26 ===
+Backtracking trytime: 0
+
+=== Puzzle 27 ===
+Backtracking trytime: 0
+
+=== Puzzle 28 ===
+Backtracking trytime: 0
+
+=== Puzzle 29 ===
+Backtracking trytime: 0
+
+=== Puzzle 30 ===
+Backtracking trytime: 0
+
+=== Puzzle 31 ===
+Backtracking trytime: 0
+
+=== Puzzle 32 ===
+Backtracking trytime: 0
+
+=== Puzzle 33 ===
+Backtracking trytime: 0
+
+=== Puzzle 34 ===
+Backtracking trytime: 0
+
+=== Puzzle 35 ===
+Backtracking trytime: 0
+
+=== Puzzle 36 ===
+Backtracking trytime: 0
+
+=== Puzzle 37 ===
+Backtracking trytime: 0
+
+=== Puzzle 38 ===
+Backtracking trytime: 0
+
+=== Puzzle 39 ===
+Backtracking trytime: 0
+
+=== Puzzle 40 ===
+Backtracking trytime: 0
+
+=== Puzzle 41 ===
+Backtracking trytime: 0
+
+=== Puzzle 42 ===
+Backtracking trytime: 0
+
+=== Puzzle 43 ===
+Backtracking trytime: 0
+
+=== Puzzle 44 ===
+Backtracking trytime: 0
+
+=== Puzzle 45 ===
+Backtracking trytime: 0
+
+=== Puzzle 46 ===
+Backtracking trytime: 0
+
+=== Puzzle 47 ===
+Backtracking trytime: 0
+
+=== Puzzle 48 ===
+Backtracking trytime: 0
+
+=== Puzzle 49 ===
+Backtracking trytime: 0
+
+=== Puzzle 50 ===
+Backtracking trytime: 0
+
+=== Puzzle 51 ===
+Backtracking trytime: 0
+
+=== Puzzle 52 ===
+Backtracking trytime: 0
+
+=== Puzzle 53 ===
+Backtracking trytime: 0
+
+=== Puzzle 54 ===
+Backtracking trytime: 0
+
+=== Puzzle 55 ===
+Backtracking trytime: 0
+
+=== Puzzle 56 ===
+Backtracking trytime: 0
+
+=== Puzzle 57 ===
+Backtracking trytime: 0
+
+=== Puzzle 58 ===
+Backtracking trytime: 0
+
+=== Puzzle 59 ===
+Backtracking trytime: 0
+
+=== Puzzle 60 ===
+Backtracking trytime: 0
+
+=== Puzzle 61 ===
+Backtracking trytime: 0
+
+=== Puzzle 62 ===
+Backtracking trytime: 0
+
+=== Puzzle 63 ===
+Backtracking trytime: 0
+
+=== Puzzle 64 ===
+Backtracking trytime: 0
+
+=== Puzzle 65 ===
+Backtracking trytime: 0
+
+=== Puzzle 66 ===
+Backtracking trytime: 0
+
+=== Puzzle 67 ===
+Backtracking trytime: 0
+
+=== Puzzle 68 ===
+Backtracking trytime: 0
+
+=== Puzzle 69 ===
+Backtracking trytime: 0
+
+=== Puzzle 70 ===
+Backtracking trytime: 0
+
+=== Puzzle 71 ===
+Backtracking trytime: 0
+
+=== Puzzle 72 ===
+Backtracking trytime: 0
+
+=== Puzzle 73 ===
+Backtracking trytime: 0
+
+=== Puzzle 74 ===
+Backtracking trytime: 0
+
+=== Puzzle 75 ===
+Backtracking trytime: 0
+
+=== Puzzle 76 ===
+Backtracking trytime: 0
+
+=== Puzzle 77 ===
+Backtracking trytime: 0
+
+=== Puzzle 78 ===
+Backtracking trytime: 0
+
+=== Puzzle 79 ===
+Backtracking trytime: 0
+
+=== Puzzle 80 ===
+Backtracking trytime: 0
+
+=== Puzzle 81 ===
+Backtracking trytime: 0
+
+=== Puzzle 82 ===
+Backtracking trytime: 0
+
+=== Puzzle 83 ===
+Backtracking trytime: 0
+
+=== Puzzle 84 ===
+Backtracking trytime: 0
+
+=== Puzzle 85 ===
+Backtracking trytime: 0
+
+=== Puzzle 86 ===
+Backtracking trytime: 0
+
+=== Puzzle 87 ===
+Backtracking trytime: 0
+
+=== Puzzle 88 ===
+Backtracking trytime: 0
+
+=== Puzzle 89 ===
+Backtracking trytime: 0
+
+=== Puzzle 90 ===
+Backtracking trytime: 0
+
+=== Puzzle 91 ===
+Backtracking trytime: 0
+
+=== Puzzle 92 ===
+Backtracking trytime: 0
+
+=== Puzzle 93 ===
+Backtracking trytime: 0
+
+=== Puzzle 94 ===
+Backtracking trytime: 0
+
+=== Puzzle 95 ===
+Backtracking trytime: 0
+
+=== Puzzle 96 ===
+Backtracking trytime: 0
+
+=== Puzzle 97 ===
+Backtracking trytime: 0
+
+=== Puzzle 98 ===
+Backtracking trytime: 1514
+
+=== Puzzle 99 ===
+Backtracking trytime: 0
+
+=== Puzzle 100 ===
+Backtracking trytime: 0

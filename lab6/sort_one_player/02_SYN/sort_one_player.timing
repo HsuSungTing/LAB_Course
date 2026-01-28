@@ -1,0 +1,252 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : sort_one_player
+Version: T-2022.03
+Date   : Fri Oct 17 08:44:46 2025
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: in_suit_5[0]
+              (input port)
+  Endpoint: out_num_2[2]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sort_one_player    enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in_suit_5[0] (in)                        0.00       0.00 f
+  U2875/O (OR2P)                           0.29       0.29 f
+  U2862/O (INV3)                           0.21       0.50 r
+  U4029/O (ND2)                            0.10       0.59 f
+  U4181/O (AN3)                            0.27       0.86 f
+  U3859/O (ND3P)                           0.11       0.97 r
+  U3583/O (BUF6)                           0.20       1.17 r
+  U4916/O (NR2T)                           0.11       1.29 f
+  U4917/O (ND3HT)                          0.29       1.57 r
+  U4918/O (MOAI1H)                         0.11       1.68 f
+  U4919/O (INV2)                           0.10       1.78 r
+  U4200/O (OAI112H)                        0.23       2.01 f
+  U4199/O (INV2)                           0.39       2.41 r
+  U4949/O (AOI12H)                         0.14       2.55 f
+  U4950/O (OR2P)                           0.27       2.81 f
+  U4951/O (NR2P)                           0.11       2.92 r
+  U4952/O (ND3)                            0.14       3.06 f
+  U4953/O (ND2)                            0.17       3.23 r
+  U4954/O (BUF6)                           0.21       3.44 r
+  U4960/O (ND2)                            0.22       3.66 f
+  U4961/O (INV2)                           0.12       3.78 r
+  U4964/O (OR2T)                           0.21       3.99 r
+  U4977/O (NR2F)                           0.08       4.07 f
+  U2811/O (ND3)                            0.21       4.28 r
+  U4978/O (ND3HT)                          0.27       4.55 f
+  U4979/O (OR2T)                           0.25       4.80 f
+  U2801/O (INV2)                           0.08       4.88 r
+  U3374/O (NR2T)                           0.09       4.98 f
+  U4004/O (INV1S)                          0.15       5.12 r
+  U3363/O (ND3P)                           0.12       5.24 f
+  U2962/O (NR2P)                           0.20       5.44 r
+  U4998/O (ND3P)                           0.12       5.56 f
+  U3346/O (ND3P)                           0.15       5.71 r
+  U4188/O (OR2)                            0.41       6.12 r
+  U5207/O (INV1S)                          0.46       6.59 f
+  U5208/O (OR2)                            0.29       6.87 f
+  U5209/O (MOAI1S)                         0.31       7.18 r
+  U3010/O (ND3)                            0.16       7.35 f
+  U5210/O (OAI112HS)                       0.14       7.49 r
+  U5211/O (AOI22S)                         0.12       7.61 f
+  U5218/O (OAI112HS)                       0.25       7.87 r
+  U3000/O (AOI13HS)                        0.12       7.98 f
+  U3281/O (NR2P)                           0.17       8.16 r
+  U5511/O (ND3HT)                          0.22       8.37 f
+  U3875/O (INV1S)                          0.18       8.55 r
+  U6193/O (NR2P)                           0.11       8.66 f
+  U6194/O (ND3HT)                          0.21       8.87 r
+  U2736/O (INV3CK)                         0.17       9.03 f
+  U6195/O (NR2F)                           0.16       9.19 r
+  U6332/O (INV1S)                          0.10       9.29 f
+  U6333/O (OA13P)                          0.29       9.58 f
+  U3258/O (NR3HP)                          0.19       9.76 r
+  U6343/O (ND3P)                           0.23      10.00 f
+  out_num_2[2] (out)                       0.00      10.00 f
+  data arrival time                                  10.00
+
+  max_delay                               10.00      10.00
+  output external delay                    0.00      10.00
+  data required time                                 10.00
+  -----------------------------------------------------------
+  data required time                                 10.00
+  data arrival time                                 -10.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: in_num_7[2]
+              (input port)
+  Endpoint: out_num_5[2]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sort_one_player    enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  in_num_7[2] (in)                         0.00       0.00 r
+  U3066/O (INV6)                           0.03       0.03 f
+  U4459/O (ND2F)                           0.12       0.14 r
+  U4484/O (INV1S)                          0.15       0.29 f
+  U3060/O (ND2P)                           0.19       0.48 r
+  U4497/O (OAI22S)                         0.16       0.64 f
+  U4500/O (NR2P)                           0.19       0.83 r
+  U4502/O (OAI112HP)                       0.22       1.05 f
+  U2980/O (NR2)                            0.27       1.32 r
+  U5223/O (INV1S)                          0.19       1.50 f
+  U5224/O (NR2)                            0.18       1.68 r
+  U3053/O (ND3)                            0.16       1.84 f
+  U3668/O (ND2P)                           0.17       2.01 r
+  U3667/O (NR2T)                           0.15       2.16 f
+  U5233/O (OA12)                           0.30       2.46 f
+  U5234/O (OR2P)                           0.25       2.71 f
+  U4158/O (INV1S)                          0.13       2.83 r
+  U3163/O (ND3P)                           0.15       2.98 f
+  U3161/O (INV2)                           0.14       3.13 r
+  U5249/O (NR2F)                           0.12       3.25 f
+  U3419/O (INV2)                           0.19       3.44 r
+  U3660/O (NR2P)                           0.12       3.56 f
+  U4081/O (AOI12H)                         0.21       3.77 r
+  U5263/O (INV2)                           0.07       3.83 f
+  U2939/O (ND3S)                           0.13       3.96 r
+  U3385/O (ND3)                            0.17       4.13 f
+  U5267/O (AOI12H)                         0.23       4.35 r
+  U5268/O (OR2T)                           0.21       4.56 r
+  U2784/O (AO12)                           0.31       4.88 r
+  U3129/O (ND3)                            0.13       5.01 f
+  U2779/O (NR2)                            0.29       5.30 r
+  U5280/O (OAI12H)                         0.15       5.45 f
+  U2766/O (ND3)                            0.18       5.63 r
+  U5286/O (INV1S)                          0.11       5.74 f
+  U3997/O (NR2)                            0.21       5.95 r
+  U2992/O (OR2)                            0.46       6.41 r
+  U3315/O (OR2P)                           0.31       6.72 r
+  U4280/O (INV1S)                          0.21       6.94 f
+  U5550/O (NR2)                            0.35       7.28 r
+  U5750/O (INV1S)                          0.15       7.43 f
+  U5751/O (OAI12HS)                        0.11       7.55 r
+  U5752/O (AOI12HS)                        0.08       7.63 f
+  U4180/O (OA12)                           0.26       7.89 f
+  U4260/O (NR2)                            0.24       8.12 r
+  U5785/O (ND3HT)                          0.20       8.32 f
+  U5941/O (ND2P)                           0.20       8.52 r
+  U3273/O (INV1)                           0.07       8.59 f
+  U5942/O (AO12T)                          0.35       8.94 f
+  U5943/O (NR2T)                           0.14       9.08 r
+  U3881/O (BUF6)                           0.22       9.31 r
+  U2721/O (MOAI1)                          0.27       9.57 r
+  U2718/O (NR3)                            0.18       9.75 f
+  U6453/O (ND3P)                           0.24       9.99 r
+  out_num_5[2] (out)                       0.00       9.99 r
+  data arrival time                                   9.99
+
+  max_delay                               10.00      10.00
+  output external delay                    0.00      10.00
+  data required time                                 10.00
+  -----------------------------------------------------------
+  data required time                                 10.00
+  data arrival time                                  -9.99
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: in_suit_5[0]
+              (input port)
+  Endpoint: out_num_4[2]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sort_one_player    enG10K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  in_suit_5[0] (in)                        0.00       0.00 f
+  U2875/O (OR2P)                           0.29       0.29 f
+  U2862/O (INV3)                           0.21       0.50 r
+  U4029/O (ND2)                            0.10       0.59 f
+  U4181/O (AN3)                            0.27       0.86 f
+  U3859/O (ND3P)                           0.11       0.97 r
+  U3583/O (BUF6)                           0.20       1.17 r
+  U4916/O (NR2T)                           0.11       1.29 f
+  U4917/O (ND3HT)                          0.29       1.57 r
+  U4918/O (MOAI1H)                         0.11       1.68 f
+  U4919/O (INV2)                           0.10       1.78 r
+  U4200/O (OAI112H)                        0.23       2.01 f
+  U4199/O (INV2)                           0.39       2.41 r
+  U4949/O (AOI12H)                         0.14       2.55 f
+  U4950/O (OR2P)                           0.27       2.81 f
+  U4951/O (NR2P)                           0.11       2.92 r
+  U4952/O (ND3)                            0.14       3.06 f
+  U4953/O (ND2)                            0.17       3.23 r
+  U4954/O (BUF6)                           0.21       3.44 r
+  U4960/O (ND2)                            0.22       3.66 f
+  U4961/O (INV2)                           0.12       3.78 r
+  U4964/O (OR2T)                           0.21       3.99 r
+  U4977/O (NR2F)                           0.08       4.07 f
+  U4982/O (ND2T)                           0.21       4.28 r
+  U2810/O (NR2P)                           0.14       4.42 f
+  U2808/O (INV3)                           0.15       4.57 r
+  U2796/O (ND2T)                           0.19       4.77 f
+  U4986/O (NR2T)                           0.11       4.88 r
+  U4076/O (OR2P)                           0.27       5.15 r
+  U4988/O (ND3HT)                          0.33       5.48 f
+  U4060/O (OAI12HS)                        0.42       5.90 r
+  U5131/O (INV1S)                          0.19       6.08 f
+  U2959/O (MOAI1S)                         0.33       6.41 f
+  U5149/O (INV1S)                          0.13       6.55 r
+  U5150/O (ND3)                            0.13       6.68 f
+  U5152/O (ND2)                            0.36       7.04 r
+  U4221/O (INV1CK)                         0.25       7.28 f
+  U4128/O (MOAI1S)                         0.38       7.66 r
+  U5512/O (OAI12HS)                        0.16       7.82 f
+  U3289/O (ND3)                            0.18       8.00 r
+  U5547/O (AOI13HS)                        0.19       8.19 f
+  U5660/O (ND3P)                           0.18       8.37 r
+  U5994/O (INV2)                           0.08       8.45 f
+  U5995/O (NR2T)                           0.17       8.61 r
+  U5998/O (ND3HT)                          0.22       8.83 f
+  U6183/O (NR2F)                           0.28       9.12 r
+  U6281/O (OA12P)                          0.28       9.40 r
+  U6283/O (NR3HP)                          0.11       9.51 f
+  U3072/O (ND3)                            0.13       9.63 r
+  U2713/O (OR3)                            0.36       9.99 r
+  out_num_4[2] (out)                       0.00       9.99 r
+  data arrival time                                   9.99
+
+  max_delay                               10.00      10.00
+  output external delay                    0.00      10.00
+  data required time                                 10.00
+  -----------------------------------------------------------
+  data required time                                 10.00
+  data arrival time                                  -9.99
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

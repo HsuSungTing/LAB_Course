@@ -1,0 +1,8 @@
+給我以下電路的TB
+Image輸入81個cycle
+Kernel_ch1
+Kernel_ch2同時各自輸入18個cycle
+Weight_Bias輸入57個cycle
+task_number輸入0
+mode輸入2'b00 
+in_valid持續拉高81個cycle

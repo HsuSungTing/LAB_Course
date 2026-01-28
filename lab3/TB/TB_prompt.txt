@@ -1,0 +1,33 @@
+我的電路如下，請按照我的需求給我對應的TestBench 我會輸入10組測資，輸入只持續一個cycle(即in_valid=1 持續一個cycle) 然後我的第一組測資會輸入 pt_num=10以及in_x和in_y， 那其他組測資不會(就輸入in_x和in_y就好) 請給我對應的TestBench
+
+10組測資{in_x,in_y}
+1. {8, 8}
+2. {0, 0}, 
+3. {4, 0}, 
+4. {2, 2},
+5. {-9, 15}, 
+6. {4, 4}, 
+7. {-9, 7}, 
+8. {5, 2}, 
+9. {8, 8}, 
+10.{0, 4}, 
+11. {5, 2}, 
+12. {10, 5}, 
+13. {-7, -8}, 
+14. {0, 9}, 
+15. {-9, 9}, 
+16. {-9, 25},
+
+電路:module CONVEX (
+	// Input
+	rst_n,clk,in_valid,pt_num,in_x,in_y,
+	// Output
+	out_valid,out_x,out_y,drop_num
+);
+
+input				rst_n, clk, in_valid;
+input		[8:0]	pt_num;
+input		[9:0]	in_x, in_y;
+output reg			out_valid;
+output reg	[9:0]	out_x, out_y;
+output reg	[6:0]	drop_num;

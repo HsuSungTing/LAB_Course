@@ -1,0 +1,101 @@
+Lab11 強制規定總整理 (.txt 版本)
+
+1.  必須使用 TA 提供的八個 SRAM（MEM0~MEM7），且所有都必須被使用。
+2.  MEM0 必須存 images 0~15。
+3.  MEM1 必須存 images 16~31。
+4.  MEM2 必須存 images 32~47。
+5.  MEM3 必須存 images 48~63。
+6.  MEM4 必須存 images 64~79。
+7.  MEM5 必須存 images 80~95。
+8.  MEM6 必須存 images 96~111。
+9.  MEM7 必須存 images 112~127。
+10. 若記憶體連線寬度不匹配 → 記憶體不會被綜合 → 面積=0 → fail。
+11. 所有 128 張影像必須以 raster-scan 方式輸入。
+12. in_valid_data 高期間共 32768 cycles。
+13. in_valid_data 結束後進入 X。
+14. 第一筆 command 於 in_valid_data 結束後 2~4 negedge 出現。
+15. cmd 只會在 in_valid_cmd 為高的單一週期有效。
+16. busy 必須在執行期間保持為 1。
+17. 完成後 busy 必須拉低至少 1 cycle。
+18. busy 不可與 in_valid_data 重疊。
+19. busy 不可與 in_valid_cmd 重疊。
+20. 下一筆 command 會在 busy 拉低後 2~4 negedge 到來。
+21. reset 為 async active-low。
+22. 不可使用 synchronous reset。
+23. rst_n 僅在 simulation 開頭給一次。
+24. rst_n 必須維持 3 個週期。
+25. busy 在 reset 完成後必須被 reset 成 1。
+26. 所有 input 在 negedge 對齊。
+27. 所有 output 在 posedge 對齊。
+28. Top module 名稱必須是 GTE。
+29. RTL 檔名必須為 GTE.v。
+30. 03_GATE 與 06_POST 週期不得超過 20.0ns。
+31. 時鐘精度必須為 0.1。
+32. 每筆指令 latency ≤ 5000 cycles。
+33. 細胞面積 ≤ 5,000,000 μm²。
+34. Macro/Blackbox 面積 ≥ 2,100,000 μm²。
+35. GTE.area 必須顯示所有 memories 面積。
+36. input delay = 0.5*T。
+37. output delay = 0.5*T。
+38. output load = YA2GSD。
+39. clk/rst_n input delay 必須 = 0。
+40. 綜合時間不得超過 4 小時。
+41. syn.log 不可有 latch。
+42. syn.log 不可有 error。
+43. 最終 slack ≥ 0。
+44. timing report 必須 MET。
+45. Gate-level simulation 不可有 timing violation。
+46. 不可使用 notimingcheck 來忽略 timing。
+47. Gate-level simulation 不可出現 SRAM error。
+48. Core–IO boundary ≥ 100。
+49. 所有 hard macro 必須在 CORE 內部。
+50. Core ring 上/下 layer 必須為 odd，寬度=9。
+51. Core ring 左/右 layer 必須為 even，寬度=9。
+52. Core ring 四邊皆需 wire group。
+53. Core ring 四邊皆需 interleaving。
+54. Core ring 每邊至少 5 pairs。
+55. 水平 stripe layer 必須 odd，寬度≥2。
+56. 垂直 stripe layer 必須 even，寬度≥2。
+57. stripe 與 stripe/edge 間距 < 200。
+58. Core power pad 至少 4 pairs。
+59. Core power pad 必須接到 power ring。
+60. IO power pad 至少 4 pairs。
+61. Post-route setup slack ≥ 0。
+62. Post-route hold slack ≥ 0。
+63. fanout violation = 0。
+64. cap violation = 0。
+65. transition violation = 0。
+66. LVS violation = 0。
+67. DRC violation = 0。
+68. 必須加入 IO filler。
+69. 必須加入 core filler。
+70. 最終 chip area ≤ 10,000,000 μm²。
+71. Post-layout simulation 不可有 timing violation。
+72. 不可使用 notimingcheck。
+73. Post-layout 不可出現 SRAM error。
+74. Post-layout latency 必須與 gate-level latency 完全一致。
+75. 不可使用 DesignWare IP。
+76. 名稱不可包含 error。
+77. 名稱不可包含 congratulation。
+78. 名稱不可包含 latch。
+79. 名稱不可包含 fail。
+80. 名稱若包含上述字串即 fail。
+81. 不能使用中文註解。
+82. 不能使用其他語言註解。
+83. filelist.f 不可有註解。
+84. filelist.f 必須用相對路徑。
+85. 不可留下任何 $display。
+86. 不可留下任何 $monitor。
+87. 不可留下任何 $write。
+88. 不可包含不可綜合的程式碼。
+89. synopsys translate_off/on 不可亂用。
+90. 若因使用造成 error → fail。
+91. debug 訊息不可出現在提交檔案內。
+92. 所有 memory files 必須直接放在 04_MEM_iclabXXX 下。
+93. 04_MEM 內不可再有子資料夾。
+94. Memory.lef 必須是修改後版本。
+95. 必須提交 GTE_iclabXXX.v。
+96. 必須提交 filelist_iclabXXX.f。
+97. APR 必須提交指定 6 個檔案。
+98. 09_SUBMIT 檔案結構必須完全符合要求。
+99. 不符合檔名或路徑即 fail。

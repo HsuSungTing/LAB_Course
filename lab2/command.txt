@@ -1,0 +1,29 @@
+SSH: 
+ee30.si2.iee.nycu.edu.tw
+ee29.si2.iee.nycu.edu.tw
+
+password: eason1024
+
+如果要換channel:
+chto ee28
+chto ee27
+
+一定要記得去除中文註解!!
+
+一定會用到的指令:
+cd Lab02
+
+cd 01_RTL
+./01_run_vcs_rtl
+
+cd 02_SYN
+./01_run_dc_shell
+./08_check
+
+cd 03_GATE
+./01_run_vcs_gate
+
+cd 09_SUBMIT
+./00_tar 10.0
+./01_submit 1st_demo/2nd_demo
+./02_check 1st_demo/2nd_demo

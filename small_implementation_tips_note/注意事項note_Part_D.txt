@@ -1,0 +1,19 @@
+5. Latency 部分，主要是在 Online Test 和 Final Project 中反复去搶 Latency 或做一些並行運算。我們使用 GlobalCounter 來控制，當 GlobalCounter 數到某個值時，就執行對應運作，並透過波形觀察範圍，再把邏輯寫出來。這部分控制本來就很難，所以拿到的分數其實已經非常高且正常。
+
+a. Input 和 Output 若能稍微搶一下 Latency，效果會更好，但這部分是我們不擅長的不強求。
+
+b. 推 (Push) 的部分非常重要，我們在實作中已經寫成完整筆記。推的重點是在 減少 RegisteredArray 的 ColumnDecoder 與 RowDecoder。這是因為對越大的 RegisteredArray，這兩個 decoder 的核越大，Mux 層數也越多，面積不會只有隨著bit數線性增長。
+
+c. 推的策略：將每次的 Data 存入 RegisteredArray 時，只要有規律，不管方向如何 (RestoreScannedOrder 任意方向)，都固定從底部 (通常左下角) 開始推進去，直到填滿。這個方法在 Final Project 中反覆使用，屬於健康的模式。
+
+d. 這樣做的好處是：可以去除 RowDecoder 與 ColumnDecoder (使Mux 數量減少)，雖然 DFF前仍會有 Mux 選擇不同 State，但至少RowDecoder 與 ColumnDecoder不見了，面積會差很多，DFF的數量越多(16X16甚至32X32會更明顯)
+
+e. RegisteredArray 的 Mux 部分：對 Default 的有條件程式 (if-else block) 寫入同一個 RegisteredArray，前段一定會有 Mux，這是不可避免的。
+
+f. 減少不必要使用 RegisteredArray 的次數，也可以減少 Mux 的數量。像 clear 的動作雖然邏輯健康，但對 RegisteredArray 會增加面積。
+
+g. 實務經驗：只要 RegisteredArray 大於 8x8，使用推的方式面積會比直接用 Counter 選取小很多。在 Online Test 中，4x4 和 8x8 的差異不大，但在 Final Project 的 Level 4、Level 5 中，如果 RegisteredArray 達到 16x16、32x32 或 10x10、15x15，超過 8 之後差異就非常明顯。
+
+h. 使用推的方式效果最好，但要以健康方式使用，不需強迫，保持易維護和熟悉的寫法。對於有順序存取的 RegisteredArray，基本上都可以使用推的方式。
+
+i. Lab 11 的例子：在 12x12 的 RegisteredArray 中選出 10x10，依然使用推的方法，把資料推到固定位置，再做運算，這是更健康、更穩定的做法。

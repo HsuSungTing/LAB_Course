@@ -1,0 +1,136 @@
+MVDM Final Project – 完整規則與違規檢查清單（繁體中文｜補齊版，共95條）
+
+【一、基本設計與檔案規範】
+1. Top module 名稱必須為 MVDM，檔名必須為 MVDM.v，否則視為命名違規。
+2. 僅允許一個 Top module，不可有多餘未使用模組。
+3. 不可使用 DesignWare IP，違者直接 fail。
+4. 不可使用任何 Macro / Black Box area 為 0 的 memory。
+5. 所有繳交檔案必須放在規定資料夾結構下。
+6. 不可遺漏任何 TA 指定之必要檔案。
+7. 不可修改 TA 提供之資料夾層級結構。
+8. RTL、SYN、GATE、APR、POST 資料夾功能不可混用。
+
+【二、Reset 與時序基本規範】
+9. Reset 必須為 asynchronous active-low（rst_n）。
+10. Reset 僅在模擬一開始給一次。
+11. Reset asserted 時，所有 output 必須為 0。
+12. 使用 synchronous reset 可能導致 reset 失效，視為重大錯誤。
+13. rst_n 不可經過任何邏輯閘後再使用。
+14. Reset 期間不可產生 out_valid。
+15. Reset 後第一拍 output 仍須為 0。
+
+【三、Clock 與邊緣規範】
+16. 所有 input 皆在 clock negative edge 取樣。
+17. 所有 output 皆在 clock positive edge 送出。
+18. TA 於 negative edge 擷取 output 做比對。
+19. Clock period 不可超過 20ns。
+20. Clock precision 必須為 0.1ns（不可為 19.55ns）。
+21. 不可使用 gated clock。
+
+【四、in_valid / in_valid2 規範】
+22. in_valid 僅用於 image L0/L1 傳送。
+23. in_valid 高時，in_data[8:1] 才有效。
+24. image 必須依 raster scan 順序輸入。
+25. L0 與 L1 必須連續輸入 128×128×2 cycles。
+26. image 輸入期間不可插入 MV。
+27. in_valid 結束後，in_data 會變為 X。
+28. in_valid2 僅用於 MV 傳送。
+29. 每次 in_valid2 必須連續 8 cycles。
+30. MV 輸入期間 in_data[8:0] 全部有效。
+31. 每個 pattern 共有 64 次 in_valid2。
+32. in_valid2 與 out_valid 不可 overlap。
+33. in_valid2 與 in_valid 不可 overlap。
+
+【五、MV 與影像運算規範】
+34. MV integer 最大值必須 < 117。
+35. frac_x / frac_y 僅允許 0 或 1。
+36. frac=0 時不可進行 interpolation。
+37. frac=1 時必須使用 6-tap FIR。
+38. 6-tap 係數必須為 [1, -5, 20, 20, -5, 1]。
+39. Horizontal / Vertical interpolation 需 (Val+16)>>5。
+40. 2D interpolation 最終需 (Val+512)>>10。
+41. 2D interpolation 中間結果不可 clip。
+42. 不可更改 FIR tap 數或順序。
+43. Interpolation 必須符合 separable filter 定義。
+
+【六、Boundary Handling】
+44. 存取 pixel index <0 時需 replicate 為 0。
+45. 存取 pixel index >127 時需 replicate 為 127。
+46. 不可直接忽略 boundary pixel。
+47. 不可存取 SRAM 非法位址。
+48. Edge replication 行為需與 Clip() 定義一致。
+
+【七、SATD 與 Matching 規範】
+49. 必須實作 SATD，不可用 SAD 取代。
+50. SATD 必須使用 Hadamard Transform。
+51. 不可省略 transform 直接取絕對值。
+52. 8×8 block 必須切成四個 4×4。
+53. 每個 4×4 都需獨立做 Hadamard。
+54. 四個 4×4 SATD 必須全數累加。
+55. 搜尋範圍必須為 3×3。
+56. 搜尋點數必須為 9 點。
+57. 搜尋順序必須為 0→8。
+58. 最小 SATD 需正確對應 index。
+
+【八、Output 規範】
+59. out_valid 只能在 out_sad 有效時拉高。
+60. out_valid 不可與 in_valid / in_valid2 overlap。
+61. out_sad 在 out_valid=0 時必須為 0。
+62. out_sad 需由 LSB 開始 serial 輸出。
+63. 每次 out_valid 必須連續 56 cycles。
+64. 兩組 search point 結果需合併輸出。
+65. 不可少送或多送 cycle。
+66. out_valid falling 後 3~6 cycles 才會有下一次 in_valid2。
+
+【九、Latency 與效能限制】
+67. 最大 latency 不可超過 1000 cycles。
+68. Latency 從 in_valid2 falling 到 out_valid rising 計算。
+69. out_valid 於 in_valid2 當拍拉高視為 latency=1。
+70. 不可以 stall 無限延後 out_valid。
+71. 效能評分依 area² × latency。
+
+【十、Memory（SRAM）規範】
+72. 必須自行產生 memory。
+73. memory macro 不可使用 TA 未授權版本。
+74. memory port width 不可 mismatch。
+75. 任一 MEM_error 直接 fail。
+76. memory area 不可為 0。
+77. memory 檔案需齊全（.v/.db/.lef/.lib）。
+78. memory 名稱需與 instance 對應一致。
+
+【十一、Synthesis 規範】
+79. syn.log 不可出現 latch。
+80. syn.log 不可出現 error。
+81. timing slack 必須 non-negative。
+82. filelist.f 不可含任何註解。
+83. input delay = 0.5 clock period。
+84. output delay = 0.5 clock period。
+85. synthesis 時間需 < 3 小時。
+
+【十二、Gate / Post Simulation】
+86. Gate-level simulation 不可有 timing violation。
+87. Post-simulation 不可有 timing violation。
+88. 不可使用 notimingcheck 逃避檢查。
+
+【十三、APR 規範】
+89. Core to IO boundary 每邊必須 >100。
+90. Hard macro 必須全部放在 CORE。
+91. Power ring layer/width 必須符合規定。
+92. Stripe 間距不可 >200。
+93. Setup/Hold/SI 不可有負 slack。
+94. DRV（fanout/cap/tran）必須為 0。
+95. LVS / DRC 不可有任何 violation。
+
+【十四、Verilog 撰寫禁令（Fail 條件）】
+96. 不可使用 error/fail/latch/congratulation（含前後字元）。
+97. 不可使用 $display / $monitor / $write。
+98. 不可寫中文或非英文註解。
+99. 不可使用 translate_off/on 進行非 DesignWare 行為。
+
+【十五、提交與扣分】
+100. 檔名或資料夾違規扣 10 分。
+101. 第二次 demo 扣總分 30%。
+102. 缺檔、錯檔、版本錯誤視為不完整繳交。
+103. TA demo 依你填寫的 clock period 驗證。
+
+（本清單為 PDF 全條文拆解版，建議逐條自我稽核）

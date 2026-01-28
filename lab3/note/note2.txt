@@ -1,0 +1,9 @@
+好 OK 那目前我們的邏輯如下，就是當一開始前兩個點進來的時候是不需要排序的，所以我們就會直接把前兩個點放入 hull[] X 還有 hull[] Y 裡面，而需要 drop 的 drop[] array 會是空的，因此 drop length 會是 0，這時候高 output tag 我就會直接設成 1。如果有高 output tag 之後就代表 case 0 更新完成，接下來進到 output stage，就會把 drop length 設為 0，並且表示沒有東西需要 drop[]。
+
+case 1 當第三個點進來時就需要進入 reorder 比較，我們寫了一個 combination logic，它會直接幫我們把點 2 跟點 3 排好，如果需要交換就會交換，因此 case 1 可以自動完成第三個點進來時的 hull[] 排列，而 case 1 一樣也不會需要 drop[]，會直接進到 output，把高 output tag 設為 1。
+
+case 2 這部分是從第四個點到之後的所有點。這個 case 的重點是要走過 hull[] 當中的所有邊去做 check，透過 cross 來確定是否是內部的貢獻。內部貢獻的判斷方式是它跟 current 和 previous 形成的向量 cross 為 0，並且它的範圍要落在 current.x 和 previous.x 之間，以及 y 在 current.y 和 next.y 之間，這樣才能確定是內部貢獻。接著要檢查點是否在整個 hull[] 的內部，方法是做 128 次 cross，如果過程中出現一次 cross < 0，就代表該點在外部不是內部，這非常重要。如果 outside tag = 0，就代表它在內部，那這個點會直接被 drop[] 掉。接下來是左切點和右切點的判定，我們每次都會對 current、previous 和 next 做 cross，這個條件是 GPT 提供的，我們畫圖確認過後確定可以用來判定左切點和右切點，並且共線的情況也能判斷。只要找到 LT 和 RT，再進一步判別共線或不共線，就能做後續判斷。
+
+case 3 算是一個準備的 case，前面所有 combination logic 都檢查完後，要判斷是否需要進入更新 drop[] 與更新 hull[] 的階段。不需要的情況有三種：點在 hull[] 的內部、點在 hull[] 的線段上、點與某個 hull[] 點重合，這些情況就是 combination logic 1 和 2 已經判斷好的，直接 drop[] 掉這個點就好，不會進入 case 4，而是直接 goal output。
+
+case 4 的部分則是把需要保留的點放入 updated hull[]，把需要被 drop[] 的點放入 drop[]。由於 hull[] 本身是環狀結構，所以在放點的過程中可能會繞一圈，這部分需要注意。補充說明，case 4 的 drop[] array 和 updated hull[] 數量不會相同，所以必須在兩邊各自完成 if 條件，兩塊都完成之後才能跳出 case 4。記得 updated hull[] 全部更新完成後，要把它放回 hull[] x 和 hull[] y，這樣才算更新完成，而只有在 hull[] 更新完成且 drop[] 更新完成的情況下才會離開 case 4。否則若有任一邊沒完成，就要繼續留在 case 4 慢慢執行，最後才會輸出 drop[] 並清理必要的狀態。

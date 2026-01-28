@@ -1,0 +1,12 @@
+今天我有一份作業，需要自己產生一個名為 DRAM_data.dat 的檔案，這個檔案會作為 Pseudo-DRAM 在 Verilog 模組中讀取用的資料來源。我的目標是讓這個 Pseudo-DRAM 能夠儲存每一個玩家的資料。資料的儲存格式如下：從位址 0x1000 開始，每個玩家的資料佔 6 個 byte。前兩個 byte 分別儲存玩家的 exp 與 mp，接著的兩個 byte 儲存 atk 與 def，而最後兩個 byte 則分別儲存 hp 和 date。其中，date 本身會是 16 個 byte 的資料，前 8 個 byte 代表月份（month），後 8 個 byte 代表日期（day）。這些變數的數值範圍如下方所列。請幫我撰寫一個完整的 Python 程式，用來產生對應格式的 DRAM_data.dat 檔案,除了date的month會界在1~12,day會界在0~28之外，其餘變數都是16 bit的任意數字
+
+[MSB] {HP, Date (Month), Date (Day)}, Attack, Defense, Exp, MP} [LSB]，verilog pattern .v在讀取dram_data.dat的時候會96 bit一起讀(12 byte)，
+所以格式如下:
+@10000
+0A E1 60 22 //代表player 0的MP=16'hE10A Exp=16'h2260
+@10004
+05 B4 93 D5 //代表player 0的atk=16'hD593 def=16'hB405
+@10008
+1D 0B 4F 36 //代表player 0的HP=12'h364F, date的month=8'd11,date的day=8'd29
+@1000C
+@10010

@@ -1,0 +1,57 @@
+1. 設計主題：16-bit CPU with 16 registers（RISC 架構）。
+2. 必須支援指定的指令集（ADD / SUB / SLT / MULT / LOAD / STORE / BEQ / JUMP）。
+3. 每個 register 為 16 bits，從 r0~r15。
+4. 每條指令長度固定為 16 bits。
+5. Program counter（PC）每次指令應自動 +1。
+6. 指令位址必須從 0x00001000 開始。
+7. 每個指令位址遞增 2 bytes。
+8. Jump、Load、Store 的位址範圍必須在 0x1000~0x2FFF。
+9. 使用兩個 DRAM：一個 instruction，一個 data DRAM。
+10. 如採用 pipeline 架構，必須自行解決 data hazard。
+11. 輸入輸出信號定義必須符合表格要求（clk, rst_n, IO_stall）。
+12. clk 為正緣觸發，週期 ≤ 20ns。
+13. rst_n 為 asynchronous active-low reset。
+14. IO_stall 必須在每條指令完成後拉低一個週期（TA 會檢查）。
+15. 輸入訊號在 clk 負緣變化。
+16. Pattern 僅會在第一次測試前給一次 reset。
+17. reset 後所有 register 必須為 0。
+18. stall = low 時，register 值不得改變。
+19. TA 會在 stall low 時檢查 register 與 data memory 值。
+20. data DRAM 的內容會每 10 條指令檢查一次。
+21. AXI4 signal 命名格式為 <signal>_m_inf。
+22. 讀取 port（read only）地址寬度為 64 bits；寫入 port 為 32 bits。
+23. ARADDR[63:32] 對應 instruction DRAM。
+24. ARADDR[31:0] 與 AWADDR[31:0] 對應 data DRAM。
+25. Top module 名稱必須是 CPU，檔案名稱為 CPU.v。
+26. reset 後所有暫存器（registers）皆需清 0。
+27. 所有資料均為 signed format。
+28. clock period 不可超過 20ns。
+29. input/output delay 必須為 clock 週期的一半。
+30. IO_stall 連續 high：功能測試時不得超過 2000 cycles；效能測試不得超過 100000 cycles。
+31. Output loading 設為 0.05。
+32. wire load 為 top，target library 為 slow.db。
+33. synthesis 結果中不得含 latch。
+34. 必須自行修改 syn.tcl 連結正確的 memory.db。
+35. 使用 compile_ultra 進行合成。
+36. Gate-level simulation 若出現 timing violation（未使用 notimingchecks）→ fail。
+37. 所有模擬/合成都不得出現 ERROR。
+38. 設計必須包含 SRAM，否則 0 分。
+39. 總面積（area）不得超過 2,000,000。
+40. 不得更改任何 register 名稱或型態。
+41. PATTERN 不會測 overflow case，但你仍須考慮符號運算。
+42. branch/jump 位址與 load/store 位址皆須在合法範圍內。
+43. BVALID–BREADY、RREADY–RVALID latency ≤ 300 cycles。
+44. 不得在 design 宣告 DRAM，DRAM 僅由 PATTERN 宣告。
+45. 命名禁止包含 error, latch, congratulation, fail 等字串。
+46. 不得出現中文註解或非英文註解。
+47. 禁止 $display, $print 等非合成語法存在最終提交檔案中。
+48. 僅可使用 //synopsys 指令區塊於 designware IP 使用範圍內。
+49. 若 synthesize/simulation 出現任何錯誤訊息 → fail。
+50. 非 synthesizable 的 debug code 需完全刪除。
+51. 提交前檔案結構需符合：
+   - CPU_iclabXXX.v
+   - clock_cycle_iclabXXX.txt
+   - 04_MEM_iclabXXX/（含 .v / .db）
+   - file_list_iclabXXX.f
+   若缺任一檔案 → fail。
+52. 命名錯誤扣 5 分；無法成功還原（untar 或執行）→ fail。

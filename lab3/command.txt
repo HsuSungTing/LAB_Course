@@ -1,0 +1,67 @@
+SSH: 
+ee30.si2.iee.nycu.edu.tw
+ee29.si2.iee.nycu.edu.tw
+
+password: eason1024
+
+如果要換channel:
+chto ee28
+chto ee27
+
+一定要記得去除中文註解!!
+
+一定會用到的指令:
+cd Lab03
+
+cd 01_RTL
+./01_run_vcs_rtl
+
+cd 02_SYN
+./01_run_dc_shell
+./08_check
+
+cd 03_GATE
+./01_run_vcs_gate
+
+cd 09_SUBMIT
+./00_tar 40.0
+./01_submit 1st_demo/2nd_demo
+./02_check 1st_demo/2nd_demo
+
+
+要每次跑過這些嗎?
+./01_run_vcs_rtl CORRECT
+./01_run_vcs_rtl SPEC_4_1
+./01_run_vcs_rtl SPEC_4_2
+./01_run_vcs_rtl SPEC_4_3
+./01_run_vcs_rtl SPEC_4_4
+./01_run_vcs_rtl SPEC_5_1
+./01_run_vcs_rtl SPEC_5_2
+./01_run_vcs_rtl SPEC_5_3
+./01_run_vcs_rtl SPEC_5_4
+./01_run_vcs_rtl SPEC_5_5 (跑不出來)
+./01_run_vcs_rtl SPEC_6_1 
+./01_run_vcs_rtl SPEC_7_1
+./01_run_vcs_rtl SPEC_8_1
+./01_run_vcs_rtl SPEC_8_2
+./01_run_vcs_rtl SPEC_8_3
+./01_run_vcs_rtl SPEC_8_4
+./01_run_vcs_rtl SPEC_8_5
+./01_run_vcs_rtl SPEC_8_6
+./01_run_vcs_rtl SPEC_8_7
+./01_run_vcs_rtl SPEC_8_8
+./01_run_vcs_rtl SPEC_8_9
+./01_run_vcs_rtl SPEC_8_10 
+./01_run_vcs_rtl SPEC_9_1 
+./01_run_vcs_rtl SPEC_9_2 (跑不出來)
+
+如果有些Fail沒有輸出，要怎麼debug
+一直有無法dump fsdb
+TB這樣改對嗎?
+`include "PATTERN.v"
+`ifdef RTL
+    `include "CONVEX_encrypted.v"
+`endif
+`ifdef GATE
+    `include "CONVEX_SYN.v"
+`endif

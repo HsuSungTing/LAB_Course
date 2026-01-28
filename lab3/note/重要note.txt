@@ -1,0 +1,5 @@
+Fact: 可以的話盡可能在一個cycle內只做一件事，硬體上會好debug非常多，也會好寫非常多，我們的人生也會比較健康
+
+原因:如果有兩個reg array同時被更新，但更新的條件會互相影響(例如hull[]的放置會使hull_len和place_ptr增加，但drop[]的更新會依賴drop_ptr，但drop_ptr的更新條件會被hull_len影響(drop_ptr<=(drop_ptr+1)%hull_len)，萬一hull_len被改變了，drop_ptr就會跳走，這個會很難debug
+
+當一個算法的reg array需求越多，彼此之間儲存或是讀取的ptr或是len的行為在演算法上一定會相互影響(否則就不需要這麼多reg array)，所以在同個時間之內只改變一個ptr或是len或是寫入一個reg array會是最健康的作法

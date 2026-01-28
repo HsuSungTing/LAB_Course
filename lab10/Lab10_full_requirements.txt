@@ -1,0 +1,156 @@
+[Lab10 Coverage & Assertion 完整檢查項目彙整]
+
+以下為依據 PDF（Lab10_Exercise_unlocked.pdf）逐條整理出的：
+助教如何檢查、你自己要如何自我測試、所有必遵守規範、會扣分或直接零分的項目。
+完全無省略，純列點。
+
+=====================================================
+【PATTERN.sv（Pattern 產生器）必須做到的事情】
+=====================================================
+1. 產生所有必要的 pattern 資料並送入 RPG.sv。
+2. 必須讓所有 Coverage Spec 完整達成（每個 bin、cross bin A×B…全部 hit）。
+3. 必須檢查 RPG 的所有 output correctness（七個 FAIL_X 錯誤設計皆要能抓到錯誤）。
+4. 偵測到錯誤的輸出時，PATTERN 必須立即停止程式並印出：
+   → “Wrong Answer”
+5. 所有 input valid 訊號不能重疊（需遵守 Lab09 規範）。
+6. 必須確保 pattern 的輸入合法，包含日期（不能出現 2/29、3/0、4/31、13/1 等非法日期）。
+7. 每次的 input_valid 必須與前一次 input_valid 的 falling edge 間隔 1–4 cycles。
+8. 在最後一筆 pattern 結束後，PATTERN 必須立即停止（不能多跑、不能違規）。
+9. PATTERN.sv 不可用來驗證 assertion specs（10 大 assertion 要交由 CHECKER.sv 完成）。
+
+=====================================================
+【CHECKER.sv（覆蓋率 + Assertions）必須做到的事情】
+=====================================================
+▶ 你必須在 CHECKER.sv 裡面建立：
+
+---------------------------------------------
+(一) Coverage 規範（共 7 大項）
+---------------------------------------------
+1. Training_Type 每一種至少 200 次。
+2. Mode 每一種至少 200 次。
+3. Training_Type × Mode 的 cross bin（4 × 3）每組至少 200 次。
+4. player_no covergroup
+   - coverpoint: inf.D.d_player_no[0]
+   - auto_bin_max = 256
+   - 每個 bin 至少 hit 2 次
+   - posedge clk iff inf.player_no_valid
+5. act transition covergroup
+   - 訊號：inf.D.act[0]
+   - transition: Login → Check_Inactive → Login → Check_Inactive
+   - 每種 transition hit ≥ 200 次
+   - posedge clk iff inf.sel_action_valid
+6. skill 的 MP 消耗 covergroup
+   - auto_bin_max = 32
+   - 每 bin 至少 hit 1 次
+7. inf.Warn_Msg output 訊號
+   - No_Warn, Date_Warn, Exp_Warn, HP_Warn, MP_Warn, Saturation_Warn
+   - 每一種至少 20 次（sample at inf.out_valid high）
+
+---------------------------------------------
+(二) Assertions（共 9 條必遵守）
+---------------------------------------------
+Assertion 1：Reset 後所有輸出訊號都必須為 0。  
+Assertion 2：每個操作的 latency 必須 < 1000 cycles。  
+Assertion 3：當 complete=1 時，Warn_Msg 必須為 No_Warn (3'b0)。  
+Assertion 4：下一次 input valid 必須出現在前一次 input valid fall 之後 1–4 cycles。  
+Assertion 5：所有 input valid 訊號不能互相重疊。  
+Assertion 6：out_valid 只能 high 一個 cycle。  
+Assertion 7：下一次 operation valid 必須出現在 out_valid fall 之後 1–4 cycles。  
+Assertion 8：PATTERN 輸入的日期必須是合法日曆（不能出現非法日期）。  
+Assertion 9：AR_VALID 不可與 AW_VALID 重疊。  
+
+※ 若 assertion 違規，CHECKER 必須立即停止程式並印出：
+   → “Assertion X is violated”
+   （X = assertion 編號，訊息可直接從 00_TESTBED/message.txt 複製）
+
+=====================================================
+【Coverage 自我測試流程（你自己的測試方式）】
+=====================================================
+1. ./00_run_cov  
+   → 使用 TA’s design + 你的 Checker + 你的 Pattern  
+   → 用來檢查 coverage 是否完整  
+2. ./02_cov_detail  
+   → 生成 Coverage_Detail.log  
+3. ./03_cov_summary  
+   → 生成 Coverage_Summary.log  
+   → CoverGroup Average / Covered 必須都是 100%  
+4. imc &  
+   → 開啟 Cadence IMC GUI 分析 coverage
+
+=====================================================
+【Assertion 自我測試流程（你自己的測試方式）】
+=====================================================
+執行：
+   ./01_run  
+→ (TA’s design + 你的 Checker + TA’s Pattern)  
+→ 用來測試你寫的所有 assertion 是否正確發現 TA 的錯誤設計  
+→ SPEC_1_1 ~ SPEC_9_1 都必須正確觸發對應的 Assertion X is violated
+
+=====================================================
+【TA Demo 流程（助教實際 Demo 會怎麼檢查你）】
+=====================================================
+Demo Part 1：
+ (TA’s DESIGN + TA’s CHECKER + Your PATTERN)
+→ 檢查你的 PATTERN 能否：
+   - 正確跑完 TA 正常設計
+   - 抓到 TA 錯誤設計 FAIL_1 ~ FAIL_7（印 Wrong Answer）
+
+Demo Part 2：
+ (TA’s DESIGN + TA’s PATTERN + Your CHECKER)
+→ 檢查你的 CHECKER 能否：
+   - 找到所有 SPEC_1_1 ~ SPEC_9_1 的錯誤  
+   - 每個 SPEC 都要跳 Assertion X is violated
+
+Demo Part 3：
+ (TA’s DESIGN + Your CHECKER + Your PATTERN)  
+→ 檢查 coverage 是否真正達到 100%  
+→ 並測你的 coverage simulation time
+
+=====================================================
+【會被扣分或直接零分的項目（非常重要）】
+=====================================================
+1. Coverage 若未達到 100%，Coverage 有關分數全部為 0。  
+2. Assertions 若無法觸發 SPEC_1_1 ~ SPEC_9_1 對應錯誤 → ASSERTION 全扣。  
+3. 如果 PATTERN 無法抓到 FAIL_1–FAIL_7，將無法得到 Coverage Demo 的 8% 分。  
+4. 若 PATTERN 或 CHECKER 違反 Lab09 input output 規範 → Demo 當場 Fail。  
+5. 若 PATTERN 沒有用 dram.dat → Demo 直接 Fail。  
+6. pattern 未在最後停止 → Fail。  
+7. 任意 wire/reg/submodule/parameter 名稱含有：
+      error / latch / fail  
+   → **直接零分！**  
+   （e.g., error_note, my_fail_reg, latch_x 全部禁止，前後加字也不行）
+
+8. 使用 PATTERN 做 Assertions → 規定禁止。  
+9. pattern input date 若出現非法日期 → Assertion 8 必須跳，不跳 → Demo Fail。  
+10. input_valid 或 AR_VALID/AW_VALID 有重疊 → 規範違反 → Fail。  
+11. out_valid 超過 1 cycle → 規範違反 → Fail。  
+12. Latency 超過 1000 cycles → 規範違反 → Fail。  
+13. 未依照規範印訊息（Congratulations / Wrong Answer / Assertion X is violated）→ 扣分或 Fail。  
+14. 第二次 demo：成績 ×0.7（30% off）。  
+
+=====================================================
+【繳交內容（00_tar 自動打包）】
+=====================================================
+- PATTERN.sv  
+- CHECKER.sv  
+- dram.dat  
+- Usertype.sv  
+→ 要確保 PATTERN 使用 dram.dat（否則 Demo 失敗）  
+
+=====================================================
+【PATTERN 必須自己在 SystemVerilog 內產生】
+=====================================================
+- 不可讀外部輸入檔案產生 pattern  
+- 目的：練習直接在 PATTERN.sv 內用 SV 產生 pattern  
+
+=====================================================
+【總結】
+=====================================================
+本 txt 檔完整列出所有 TA 會檢查的項目與扣分/零分規則，並整理出：
+✔ PATTERN 該做什麼  
+✔ CHECKER 該做什麼  
+✔ 所有 Coverage 細節  
+✔ 所有 Assertions 細節  
+✔ 自我測試方式  
+✔ TA demo 會怎麼檢查  
+✔ 所有會 Fail 或直接零分的規則  

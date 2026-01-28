@@ -1,0 +1,4096 @@
+@1000
+21 60 // I_inst: load 0110000000100001 rs =  0, rt =  1, imm =   1
+@1002
+4D 7E // I_inst: load 0111111001001101 rs = 15, rt =  2, imm =  13
+@1004
+6E 72 // I_inst: load 0111001001101110 rs =  9, rt =  3, imm =  14
+@1006
+8C 70 // I_inst: load 0111000010001100 rs =  8, rt =  4, imm =  12
+@1008
+AC 68 // I_inst: load 0110100010101100 rs =  4, rt =  5, imm =  12
+@100a
+C5 68 // I_inst: load 0110100011000101 rs =  4, rt =  6, imm =   5
+@100c
+E8 6A // I_inst: load 0110101011101000 rs =  5, rt =  7, imm =   8
+@100e
+05 7B // I_inst: load 0111101100000101 rs = 13, rt =  8, imm =   5
+@1010
+3F 63 // I_inst: load 0110001100111111 rs =  1, rt =  9, imm =  -1
+@1012
+4A 73 // I_inst: load 0111001101001010 rs =  9, rt = 10, imm =  10
+@1014
+7B 63 // I_inst: load 0110001101111011 rs =  1, rt = 11, imm =  -5
+@1016
+93 73 // I_inst: load 0111001110010011 rs =  9, rt = 12, imm = -13
+@1018
+AA 71 // I_inst: load 0111000110101010 rs =  8, rt = 13, imm =  10
+@101a
+CE 71 // I_inst: load 0111000111001110 rs =  8, rt = 14, imm =  14
+@101c
+E8 61 // I_inst: load 0110000111101000 rs =  0, rt = 15, imm =   8
+@101e
+44 23 // R_inst: mult 0010001101000100 rs =  1, rt = 10, imm =   4
+@1020
+02 01 // R_inst: sub 0000000100000010 rs =  0, rt =  8, imm =   4
+@1022
+E9 77 // I_inst: load 0111011111101001 rs = 11, rt = 15, imm =   9
+@1024
+8D 4F // I_inst: store 0100111110001101 rs =  7, rt = 12, imm =  13
+@1026
+AB A3 // I_inst: beq 1010001110101011 rs =  1, rt = 13, imm =  11
+@1028
+A0 61 // I_inst: load 0110000110100000 rs =  0, rt = 13, imm =   0
+@102a
+A5 61 // I_inst: load 0110000110100101 rs =  0, rt = 13, imm =   5
+@102c
+25 60 // I_inst: load 0110000000100101 rs =  0, rt =  1, imm =   5
+@102e
+26 90 // J_inst: jump 1001000000100110 address = 01026
+@1030
+DE 27 // R_inst: mult 0010011111011110 rs =  3, rt = 14, imm =  14
+@1032
+F8 10 // R_inst: sub 0001000011111000 rs =  8, rt =  7, imm =   3
+@1034
+39 06 // R_inst: add 0000011000111001 rs =  3, rt =  1, imm =  10
+@1036
+2A 30 // R_inst: mult 0011000000101010 rs =  8, rt =  1, imm =  10
+@1038
+C2 3B // R_inst: mult 0011101111000010 rs = 13, rt = 14, imm =  -5
+@103a
+28 01 // R_inst: sub 0000000100101000 rs =  0, rt =  9, imm =   9
+@103c
+70 24 // R_inst: mult 0010010001110000 rs =  2, rt =  3, imm =  -7
+@103e
+35 18 // R_inst: add 0001100000110101 rs = 12, rt =  1, imm =  12
+@1040
+30 3D // R_inst: mult 0011110100110000 rs = 14, rt =  9, imm = -12
+@1042
+E8 05 // R_inst: sub 0000010111101000 rs =  2, rt = 15, imm =  -9
+@1044
+BA 73 // I_inst: load 0111001110111010 rs =  9, rt = 13, imm =  -6
+@1046
+7A 73 // I_inst: load 0111001101111010 rs =  9, rt = 11, imm =  -6
+@1048
+A7 B7 // I_inst: beq 1011011110100111 rs = 11, rt = 13, imm =   7
+@104a
+7D 07 // R_inst: add 0000011101111101 rs =  3, rt = 11, imm =   7
+@104c
+9E 27 // R_inst: mult 0010011110011110 rs =  3, rt = 12, imm =  14
+@104e
+84 13 // R_inst: sub 0001001110000100 rs =  9, rt = 12, imm =  -4
+@1050
+0D 01 // R_inst: add 0000000100001101 rs =  0, rt =  8, imm =  -3
+@1052
+A9 13 // R_inst: add 0001001110101001 rs =  9, rt = 13, imm =  -6
+@1054
+03 06 // R_inst: add 0000011000000011 rs =  3, rt =  0, imm = -15
+@1056
+8E 0B // R_inst: sub 0000101110001110 rs =  5, rt = 12, imm =  13
+@1058
+05 24 // R_inst: set 0010010000000101 rs =  2, rt =  0, imm =  -7
+@105a
+64 34 // R_inst: mult 0011010001100100 rs = 10, rt =  3, imm =  -5
+@105c
+B4 10 // R_inst: sub 0001000010110100 rs =  8, rt =  5, imm =   9
+@105e
+8C A6 // I_inst: beq 1010011010001100 rs =  3, rt =  4, imm =  12
+@1060
+CF 60 // I_inst: load 0110000011001111 rs =  0, rt =  6, imm =  15
+@1062
+AE 52 // I_inst: store 0101001010101110 rs =  9, rt =  5, imm =  14
+@1064
+CF 6E // I_inst: load 0110111011001111 rs =  7, rt =  6, imm =  15
+@1066
+15 02 // R_inst: add 0000001000010101 rs =  1, rt =  0, imm =   3
+@1068
+8B 62 // I_inst: load 0110001010001011 rs =  1, rt =  4, imm =  11
+@106a
+6B 62 // I_inst: load 0110001001101011 rs =  1, rt =  3, imm =  11
+@106c
+5E 90 // J_inst: jump 1001000001011110 address = 0105e
+@106e
+28 3A // R_inst: mult 0011101000101000 rs = 13, rt =  1, imm =   9
+@1070
+A4 3E // R_inst: mult 0011111010100100 rs = 15, rt =  5, imm =  -4
+@1072
+FE 00 // R_inst: sub 0000000011111110 rs =  0, rt =  7, imm =  -1
+@1074
+58 0C // R_inst: sub 0000110001011000 rs =  6, rt =  2, imm = -12
+@1076
+2C 17 // R_inst: sub 0001011100101100 rs = 11, rt =  9, imm =  -1
+@1078
+86 90 // J_inst: jump 1001000010000110 address = 01086
+@107a
+8C 90 // J_inst: jump 1001000010001100 address = 0108c
+@107c
+9C 34 // R_inst: mult 0011010010011100 rs = 10, rt =  4, imm =   7
+@107e
+FC 1C // R_inst: sub 0001110011111100 rs = 14, rt =  7, imm =  11
+@1080
+53 12 // R_inst: add 0001001001010011 rs =  9, rt =  2, imm =   0
+@1082
+AB 15 // R_inst: add 0001010110101011 rs = 10, rt = 13, imm = -15
+@1084
+A8 1A // R_inst: sub 0001101010101000 rs = 13, rt =  5, imm =   0
+@1086
+C7 6B // I_inst: load 0110101111000111 rs =  5, rt = 14, imm =   7
+@1088
+E7 6B // I_inst: load 0110101111100111 rs =  5, rt = 15, imm =   7
+@108a
+D7 BF // I_inst: beq 1011111111010111 rs = 15, rt = 14, imm =  -9
+@108c
+63 01 // R_inst: add 0000000101100011 rs =  0, rt = 11, imm = -12
+@108e
+6E 6B // I_inst: load 0110101101101110 rs =  5, rt = 11, imm =  14
+@1090
+0F 75 // I_inst: load 0111010100001111 rs = 10, rt =  8, imm =  15
+@1092
+2F 75 // I_inst: load 0111010100101111 rs = 10, rt =  9, imm =  15
+@1094
+01 B3 // I_inst: beq 1011001100000001 rs =  9, rt =  8, imm =   1
+@1096
+66 35 // R_inst: mult 0011010101100110 rs = 10, rt = 11, imm =  -3
+@1098
+D0 1E // R_inst: sub 0001111011010000 rs = 15, rt =  6, imm =   4
+@109a
+A9 60 // I_inst: load 0110000010101001 rs =  0, rt =  5, imm =   9
+@109c
+B1 23 // R_inst: set 0010001110110001 rs =  1, rt = 13, imm =  -2
+@109e
+9E 0D // R_inst: sub 0000110110011110 rs =  6, rt = 12, imm = -11
+@10a0
+AF AE // I_inst: beq 1010111010101111 rs =  7, rt =  5, imm =  15
+@10a2
+4D 3B // R_inst: set 0011101101001101 rs = 13, rt = 10, imm = -13
+@10a4
+76 3E // R_inst: mult 0011111001110110 rs = 15, rt =  3, imm =   0
+@10a6
+6A AF // I_inst: beq 1010111101101010 rs =  7, rt = 11, imm =  10
+@10a8
+6D 2A // R_inst: set 0010101001101101 rs =  5, rt =  3, imm =   7
+@10aa
+B8 3F // R_inst: mult 0011111110111000 rs = 15, rt = 13, imm =  15
+@10ac
+6E 71 // I_inst: load 0111000101101110 rs =  8, rt = 11, imm =  14
+@10ae
+EE 70 // I_inst: load 0111000011101110 rs =  8, rt =  7, imm =  14
+@10b0
+A6 90 // J_inst: jump 1001000010100110 address = 010a6
+@10b2
+ED 06 // R_inst: add 0000011011101101 rs =  3, rt =  7, imm =  13
+@10b4
+6C 34 // R_inst: mult 0011010001101100 rs = 10, rt =  3, imm =   5
+@10b6
+C9 06 // R_inst: add 0000011011001001 rs =  3, rt =  6, imm =  -3
+@10b8
+14 25 // R_inst: mult 0010010100010100 rs =  2, rt =  8, imm = -15
+@10ba
+12 35 // R_inst: mult 0011010100010010 rs = 10, rt =  8, imm =   9
+@10bc
+EF 66 // I_inst: load 0110011011101111 rs =  3, rt =  7, imm =  15
+@10be
+8F 67 // I_inst: load 0110011110001111 rs =  3, rt = 12, imm =  15
+@10c0
+E2 B8 // I_inst: beq 1011100011100010 rs = 12, rt =  7, imm =   2
+@10c2
+14 0F // R_inst: sub 0000111100010100 rs =  7, rt =  8, imm = -13
+@10c4
+FC 1C // R_inst: sub 0001110011111100 rs = 14, rt =  7, imm =  -3
+@10c6
+97 7E // I_inst: load 0111111010010111 rs = 15, rt =  4, imm =  -9
+@10c8
+D3 25 // R_inst: set 0010010111010011 rs =  2, rt = 14, imm =   3
+@10ca
+CD 57 // I_inst: store 0101011111001101 rs = 11, rt = 14, imm =  13
+@10cc
+DE 90 // J_inst: jump 1001000011011110 address = 010de
+@10ce
+E4 90 // J_inst: jump 1001000011100100 address = 010e4
+@10d0
+9A 1D // R_inst: sub 0001110110011010 rs = 14, rt = 12, imm =   9
+@10d2
+3A 0C // R_inst: sub 0000110000111010 rs =  6, rt =  1, imm =  -9
+@10d4
+89 0E // R_inst: add 0000111010001001 rs =  7, rt =  4, imm = -16
+@10d6
+8C 26 // R_inst: mult 0010011010001100 rs =  3, rt =  4, imm =  15
+@10d8
+EC 0E // R_inst: sub 0000111011101100 rs =  7, rt =  7, imm = -12
+@10da
+4C 0D // R_inst: sub 0000110101001100 rs =  6, rt = 10, imm =   3
+@10dc
+8C 39 // R_inst: mult 0011100110001100 rs = 12, rt = 12, imm =   4
+@10de
+80 77 // I_inst: load 0111011110000000 rs = 11, rt = 12, imm =   0
+@10e0
+20 77 // I_inst: load 0111011100100000 rs = 11, rt =  9, imm =   0
+@10e2
+95 B3 // I_inst: beq 1011001110010101 rs =  9, rt = 12, imm = -11
+@10e4
+0A 91 // J_inst: jump 1001000100001010 address = 0110a
+@10e6
+99 07 // R_inst: add 0000011110011001 rs =  3, rt = 12, imm = -12
+@10e8
+B2 2A // R_inst: mult 0010101010110010 rs =  5, rt =  5, imm = -12
+@10ea
+A6 24 // R_inst: mult 0010010010100110 rs =  2, rt =  5, imm =   5
+@10ec
+6E 10 // R_inst: sub 0001000001101110 rs =  8, rt =  3, imm =  -2
+@10ee
+BF 02 // R_inst: add 0000001010111111 rs =  1, rt =  5, imm =   8
+@10f0
+58 0F // R_inst: sub 0000111101011000 rs =  7, rt = 10, imm =   7
+@10f2
+12 0D // R_inst: sub 0000110100010010 rs =  6, rt =  8, imm = -13
+@10f4
+3A 12 // R_inst: sub 0001001000111010 rs =  9, rt =  1, imm =  12
+@10f6
+88 12 // R_inst: sub 0001001010001000 rs =  9, rt =  4, imm =  11
+@10f8
+87 12 // R_inst: add 0001001010000111 rs =  9, rt =  4, imm =  -3
+@10fa
+DA 32 // R_inst: mult 0011001011011010 rs =  9, rt =  6, imm =   3
+@10fc
+69 0A // R_inst: add 0000101001101001 rs =  5, rt =  3, imm =   6
+@10fe
+79 1E // R_inst: add 0001111001111001 rs = 15, rt =  3, imm =  14
+@1100
+7E 39 // R_inst: mult 0011100101111110 rs = 12, rt = 11, imm = -14
+@1102
+72 19 // R_inst: sub 0001100101110010 rs = 12, rt = 11, imm =   0
+@1104
+34 38 // R_inst: mult 0011100000110100 rs = 12, rt =  1, imm = -15
+@1106
+C5 08 // R_inst: add 0000100011000101 rs =  4, rt =  6, imm =   8
+@1108
+3C 2E // R_inst: mult 0010111000111100 rs =  7, rt =  1, imm =   3
+@110a
+BA 3F // R_inst: mult 0011111110111010 rs = 15, rt = 13, imm = -15
+@110c
+93 19 // R_inst: add 0001100110010011 rs = 12, rt = 12, imm =   1
+@110e
+2F 0B // R_inst: add 0000101100101111 rs =  5, rt =  9, imm =  -9
+@1110
+F2 09 // R_inst: sub 0000100111110010 rs =  4, rt = 15, imm = -14
+@1112
+A3 13 // R_inst: add 0001001110100011 rs =  9, rt = 13, imm =   8
+@1114
+E6 BE // I_inst: beq 1011111011100110 rs = 15, rt =  7, imm =   6
+@1116
+25 79 // I_inst: load 0111100100100101 rs = 12, rt =  9, imm =   5
+@1118
+A5 78 // I_inst: load 0111100010100101 rs = 12, rt =  5, imm =   5
+@111a
+2C AB // I_inst: beq 1010101100101100 rs =  5, rt =  9, imm =  12
+@111c
+CC 03 // R_inst: sub 0000001111001100 rs =  1, rt = 14, imm = -16
+@111e
+03 0F // R_inst: add 0000111100000011 rs =  7, rt =  8, imm =   8
+@1120
+4C 12 // R_inst: sub 0001001001001100 rs =  9, rt =  2, imm = -11
+@1122
+5C 12 // R_inst: sub 0001001001011100 rs =  9, rt =  2, imm =  11
+@1124
+FD 1B // R_inst: add 0001101111111101 rs = 13, rt = 15, imm =  12
+@1126
+43 00 // R_inst: add 0000000001000011 rs =  0, rt =  2, imm = -10
+@1128
+24 1B // R_inst: sub 0001101100100100 rs = 13, rt =  9, imm =  12
+@112a
+A7 0F // R_inst: add 0000111110100111 rs =  7, rt = 13, imm =  10
+@112c
+8C 3E // R_inst: mult 0011111010001100 rs = 15, rt =  4, imm =   5
+@112e
+70 14 // R_inst: sub 0001010001110000 rs = 10, rt =  3, imm =   7
+@1130
+EC 29 // R_inst: mult 0010100111101100 rs =  4, rt = 15, imm = -12
+@1132
+EF 04 // R_inst: add 0000010011101111 rs =  2, rt =  7, imm =   6
+@1134
+40 91 // J_inst: jump 1001000101000000 address = 01140
+@1136
+46 91 // J_inst: jump 1001000101000110 address = 01146
+@1138
+EC 23 // R_inst: mult 0010001111101100 rs =  1, rt = 15, imm =  -8
+@113a
+74 1C // R_inst: sub 0001110001110100 rs = 14, rt =  3, imm =   4
+@113c
+70 01 // R_inst: sub 0000000101110000 rs =  0, rt = 11, imm =   2
+@113e
+90 0F // R_inst: sub 0000111110010000 rs =  7, rt = 12, imm =  -8
+@1140
+46 78 // I_inst: load 0111100001000110 rs = 12, rt =  2, imm =   6
+@1142
+66 78 // I_inst: load 0111100001100110 rs = 12, rt =  3, imm =   6
+@1144
+58 A6 // I_inst: beq 1010011001011000 rs =  3, rt =  2, imm =  -8
+@1146
+25 AD // I_inst: beq 1010110100100101 rs =  6, rt =  9, imm =   5
+@1148
+23 61 // I_inst: load 0110000100100011 rs =  0, rt =  9, imm =   3
+@114a
+92 32 // R_inst: mult 0011001010010010 rs =  9, rt =  4, imm = -13
+@114c
+8F AA // I_inst: beq 1010101010001111 rs =  5, rt =  4, imm =  15
+@114e
+D0 35 // R_inst: mult 0011010111010000 rs = 10, rt = 14, imm =  12
+@1150
+9A 3C // R_inst: mult 0011110010011010 rs = 14, rt =  4, imm =   5
+@1152
+C8 41 // I_inst: store 0100000111001000 rs =  0, rt = 14, imm =   8
+@1154
+9B 76 // I_inst: load 0111011010011011 rs = 11, rt =  4, imm =  -5
+@1156
+BB 76 // I_inst: load 0111011010111011 rs = 11, rt =  5, imm =  -5
+@1158
+4C 91 // J_inst: jump 1001000101001100 address = 0114c
+@115a
+75 09 // R_inst: add 0000100101110101 rs =  4, rt = 11, imm =  -6
+@115c
+EE 2D // R_inst: mult 0010110111101110 rs =  6, rt = 15, imm =  12
+@115e
+52 3B // R_inst: mult 0011101101010010 rs = 13, rt = 10, imm =  14
+@1160
+8E 1B // R_inst: sub 0001101110001110 rs = 13, rt = 12, imm =  -7
+@1162
+35 1A // R_inst: add 0001101000110101 rs = 13, rt =  1, imm = -13
+@1164
+E7 0F // R_inst: add 0000111111100111 rs =  7, rt = 15, imm =   8
+@1166
+23 09 // R_inst: add 0000100100100011 rs =  4, rt =  9, imm =   9
+@1168
+3D 04 // R_inst: add 0000010000111101 rs =  2, rt =  1, imm =   9
+@116a
+E6 06 // R_inst: sub 0000011011100110 rs =  3, rt =  7, imm =  -5
+@116c
+2B 54 // I_inst: store 0101010000101011 rs = 10, rt =  1, imm =  11
+@116e
+A2 91 // J_inst: jump 1001000110100010 address = 011a2
+@1170
+84 3E // R_inst: mult 0011111010000100 rs = 15, rt =  4, imm = -15
+@1172
+38 18 // R_inst: sub 0001100000111000 rs = 12, rt =  1, imm =   3
+@1174
+85 14 // R_inst: add 0001010010000101 rs = 10, rt =  4, imm =  -7
+@1176
+88 35 // R_inst: mult 0011010110001000 rs = 10, rt = 12, imm =  15
+@1178
+49 10 // R_inst: add 0001000001001001 rs =  8, rt =  2, imm =  11
+@117a
+AB 08 // R_inst: add 0000100010101011 rs =  4, rt =  5, imm =  -8
+@117c
+EF 02 // R_inst: add 0000001011101111 rs =  1, rt =  7, imm =  12
+@117e
+5C 3F // R_inst: mult 0011111101011100 rs = 15, rt = 10, imm =  14
+@1180
+CA 16 // R_inst: sub 0001011011001010 rs = 11, rt =  6, imm =   7
+@1182
+C9 19 // R_inst: add 0001100111001001 rs = 12, rt = 14, imm =   5
+@1184
+64 01 // R_inst: sub 0000000101100100 rs =  0, rt = 11, imm =  -7
+@1186
+9A 1A // R_inst: sub 0001101010011010 rs = 13, rt =  4, imm =   0
+@1188
+23 14 // R_inst: add 0001010000100011 rs = 10, rt =  1, imm = -11
+@118a
+72 0D // R_inst: sub 0000110101110010 rs =  6, rt = 11, imm =  -3
+@118c
+92 24 // R_inst: mult 0010010010010010 rs =  2, rt =  4, imm = -10
+@118e
+ED 1C // R_inst: add 0001110011101101 rs = 14, rt =  7, imm = -15
+@1190
+0A 06 // R_inst: sub 0000011000001010 rs =  3, rt =  0, imm =  -1
+@1192
+3A 34 // R_inst: mult 0011010000111010 rs = 10, rt =  1, imm = -10
+@1194
+EE 1F // R_inst: sub 0001111111101110 rs = 15, rt = 15, imm =  11
+@1196
+6A 2C // R_inst: mult 0010110001101010 rs =  6, rt =  3, imm = -14
+@1198
+A8 3E // R_inst: mult 0011111010101000 rs = 15, rt =  5, imm =  10
+@119a
+CA 22 // R_inst: mult 0010001011001010 rs =  1, rt =  6, imm =   6
+@119c
+79 18 // R_inst: add 0001100001111001 rs = 12, rt =  3, imm = -10
+@119e
+6C 11 // R_inst: sub 0001000101101100 rs =  8, rt = 11, imm =   7
+@11a0
+26 1F // R_inst: sub 0001111100100110 rs = 15, rt =  9, imm =  -7
+@11a2
+26 AE // I_inst: beq 1010111000100110 rs =  7, rt =  1, imm =   6
+@11a4
+B4 91 // J_inst: jump 1001000110110100 address = 011b4
+@11a6
+BA 91 // J_inst: jump 1001000110111010 address = 011ba
+@11a8
+E3 08 // R_inst: add 0000100011100011 rs =  4, rt =  7, imm =   0
+@11aa
+02 01 // R_inst: sub 0000000100000010 rs =  0, rt =  8, imm =  -5
+@11ac
+FD 16 // R_inst: add 0001011011111101 rs = 11, rt =  7, imm = -12
+@11ae
+42 0D // R_inst: sub 0000110101000010 rs =  6, rt = 10, imm =  12
+@11b0
+24 14 // R_inst: sub 0001010000100100 rs = 10, rt =  1, imm =   1
+@11b2
+3C 01 // R_inst: sub 0000000100111100 rs =  0, rt =  9, imm = -15
+@11b4
+C1 7E // I_inst: load 0111111011000001 rs = 15, rt =  6, imm =   1
+@11b6
+61 7E // I_inst: load 0111111001100001 rs = 15, rt =  3, imm =   1
+@11b8
+D6 A6 // I_inst: beq 1010011011010110 rs =  3, rt =  6, imm = -10
+@11ba
+3E 6C // I_inst: load 0110110000111110 rs =  6, rt =  1, imm =  -2
+@11bc
+AE B2 // I_inst: beq 1011001010101110 rs =  9, rt =  5, imm =  14
+@11be
+78 56 // I_inst: store 0101011001111000 rs = 11, rt =  3, imm =  -8
+@11c0
+AE 29 // R_inst: mult 0010100110101110 rs =  4, rt = 13, imm =   2
+@11c2
+D6 7F // I_inst: load 0111111111010110 rs = 15, rt = 14, imm = -10
+@11c4
+CD 77 // I_inst: load 0111011111001101 rs = 11, rt = 14, imm =  13
+@11c6
+AA 76 // I_inst: load 0111011010101010 rs = 11, rt =  5, imm =  10
+@11c8
+2A 77 // I_inst: load 0111011100101010 rs = 11, rt =  9, imm =  10
+@11ca
+BC 91 // J_inst: jump 1001000110111100 address = 011bc
+@11cc
+9D 08 // R_inst: add 0000100010011101 rs =  4, rt =  4, imm = -15
+@11ce
+6C 00 // R_inst: sub 0000000001101100 rs =  0, rt =  3, imm =   3
+@11d0
+02 12 // R_inst: sub 0001001000000010 rs =  9, rt =  0, imm =   5
+@11d2
+D4 09 // R_inst: sub 0000100111010100 rs =  4, rt = 14, imm = -16
+@11d4
+E2 03 // R_inst: sub 0000001111100010 rs =  1, rt = 15, imm =  14
+@11d6
+3F 14 // R_inst: add 0001010000111111 rs = 10, rt =  1, imm =  -2
+@11d8
+82 2E // R_inst: mult 0010111010000010 rs =  7, rt =  4, imm = -13
+@11da
+E9 BC // I_inst: beq 1011110011101001 rs = 14, rt =  7, imm =   9
+@11dc
+6C 2C // R_inst: mult 0010110001101100 rs =  6, rt =  3, imm = -16
+@11de
+E5 66 // I_inst: load 0110011011100101 rs =  3, rt =  7, imm =   5
+@11e0
+C5 67 // I_inst: load 0110011111000101 rs =  3, rt = 14, imm =   5
+@11e2
+DA 91 // J_inst: jump 1001000111011010 address = 011da
+@11e4
+49 08 // R_inst: add 0000100001001001 rs =  4, rt =  2, imm =  -2
+@11e6
+3F 03 // R_inst: add 0000001100111111 rs =  1, rt =  9, imm =   0
+@11e8
+8C 0F // R_inst: sub 0000111110001100 rs =  7, rt = 12, imm =  -9
+@11ea
+76 36 // R_inst: mult 0011011001110110 rs = 11, rt =  3, imm =   2
+@11ec
+5F 01 // R_inst: add 0000000101011111 rs =  0, rt = 10, imm =   9
+@11ee
+4D 68 // I_inst: load 0110100001001101 rs =  4, rt =  2, imm =  13
+@11f0
+CD 68 // I_inst: load 0110100011001101 rs =  4, rt =  6, imm =  13
+@11f2
+4F AC // I_inst: beq 1010110001001111 rs =  6, rt =  2, imm =  15
+@11f4
+8C 2C // R_inst: mult 0010110010001100 rs =  6, rt =  4, imm =  10
+@11f6
+5A 01 // R_inst: sub 0000000101011010 rs =  0, rt = 10, imm =  -1
+@11f8
+96 3A // R_inst: mult 0011101010010110 rs = 13, rt =  4, imm =  -6
+@11fa
+CA 38 // R_inst: mult 0011100011001010 rs = 12, rt =  6, imm =   4
+@11fc
+85 01 // R_inst: add 0000000110000101 rs =  0, rt = 12, imm =  -4
+@11fe
+98 0A // R_inst: sub 0000101010011000 rs =  5, rt =  4, imm =   4
+@1200
+A4 3B // R_inst: mult 0011101110100100 rs = 13, rt = 13, imm = -10
+@1202
+AE 09 // R_inst: sub 0000100110101110 rs =  4, rt = 13, imm =   6
+@1204
+22 3D // R_inst: mult 0011110100100010 rs = 14, rt =  9, imm = -15
+@1206
+8A 2D // R_inst: mult 0010110110001010 rs =  6, rt = 12, imm =   9
+@1208
+63 04 // R_inst: add 0000010001100011 rs =  2, rt =  3, imm = -15
+@120a
+78 35 // R_inst: mult 0011010101111000 rs = 10, rt = 11, imm = -12
+@120c
+8D 07 // R_inst: add 0000011110001101 rs =  3, rt = 12, imm =  13
+@120e
+D4 02 // R_inst: sub 0000001011010100 rs =  1, rt =  6, imm =  -8
+@1210
+8B 16 // R_inst: add 0001011010001011 rs = 11, rt =  4, imm = -10
+@1212
+91 3E // R_inst: set 0011111010010001 rs = 15, rt =  4, imm =  -7
+@1214
+4B 6A // I_inst: load 0110101001001011 rs =  5, rt =  2, imm =  11
+@1216
+45 B7 // I_inst: beq 1011011101000101 rs = 11, rt = 10, imm =   5
+@1218
+95 01 // R_inst: add 0000000110010101 rs =  0, rt = 12, imm = -14
+@121a
+8C BE // I_inst: beq 1011111010001100 rs = 15, rt =  4, imm =  12
+@121c
+7A 1C // R_inst: sub 0001110001111010 rs = 14, rt =  3, imm =  -5
+@121e
+4F 5C // I_inst: store 0101110001001111 rs = 14, rt =  2, imm =  15
+@1220
+80 60 // I_inst: load 0110000010000000 rs =  0, rt =  4, imm =   0
+@1222
+E0 61 // I_inst: load 0110000111100000 rs =  0, rt = 15, imm =   0
+@1224
+1A 92 // J_inst: jump 1001001000011010 address = 0121a
+@1226
+6C 17 // R_inst: sub 0001011101101100 rs = 11, rt = 11, imm =  12
+@1228
+AC 0B // R_inst: sub 0000101110101100 rs =  5, rt = 13, imm =  -2
+@122a
+32 13 // R_inst: sub 0001001100110010 rs =  9, rt =  9, imm = -12
+@122c
+AC 2B // R_inst: mult 0010101110101100 rs =  5, rt = 13, imm =  -3
+@122e
+77 1E // R_inst: add 0001111001110111 rs = 15, rt =  3, imm =  -9
+@1230
+F0 0C // R_inst: sub 0000110011110000 rs =  6, rt =  7, imm = -11
+@1232
+E4 2B // R_inst: mult 0010101111100100 rs =  5, rt = 15, imm =  -1
+@1234
+B0 0F // R_inst: sub 0000111110110000 rs =  7, rt = 13, imm =   9
+@1236
+3D 34 // R_inst: set 0011010000111101 rs = 10, rt =  1, imm = -14
+@1238
+76 92 // J_inst: jump 1001001001110110 address = 01276
+@123a
+1A 18 // R_inst: sub 0001100000011010 rs = 12, rt =  0, imm =  12
+@123c
+1E 2D // R_inst: mult 0010110100011110 rs =  6, rt =  8, imm =  -4
+@123e
+5C 01 // R_inst: sub 0000000101011100 rs =  0, rt = 10, imm =  -8
+@1240
+BE 0D // R_inst: sub 0000110110111110 rs =  6, rt = 13, imm =   3
+@1242
+26 22 // R_inst: mult 0010001000100110 rs =  1, rt =  1, imm =   6
+@1244
+26 10 // R_inst: sub 0001000000100110 rs =  8, rt =  1, imm = -13
+@1246
+C7 0E // R_inst: add 0000111011000111 rs =  7, rt =  6, imm =  -8
+@1248
+EC 26 // R_inst: mult 0010011011101100 rs =  3, rt =  7, imm = -15
+@124a
+C2 30 // R_inst: mult 0011000011000010 rs =  8, rt =  6, imm =  -7
+@124c
+E9 0A // R_inst: add 0000101011101001 rs =  5, rt =  7, imm =  -2
+@124e
+34 38 // R_inst: mult 0011100000110100 rs = 12, rt =  1, imm =   6
+@1250
+91 19 // R_inst: add 0001100110010001 rs = 12, rt = 12, imm =  12
+@1252
+F6 18 // R_inst: sub 0001100011110110 rs = 12, rt =  7, imm = -12
+@1254
+08 1E // R_inst: sub 0001111000001000 rs = 15, rt =  0, imm = -15
+@1256
+EF 00 // R_inst: add 0000000011101111 rs =  0, rt =  7, imm =   1
+@1258
+C4 34 // R_inst: mult 0011010011000100 rs = 10, rt =  6, imm = -11
+@125a
+5E 1E // R_inst: sub 0001111001011110 rs = 15, rt =  2, imm =  11
+@125c
+48 30 // R_inst: mult 0011000001001000 rs =  8, rt =  2, imm =  -7
+@125e
+8D 13 // R_inst: add 0001001110001101 rs =  9, rt = 12, imm = -16
+@1260
+1C 3B // R_inst: mult 0011101100011100 rs = 13, rt =  8, imm =  13
+@1262
+82 06 // R_inst: sub 0000011010000010 rs =  3, rt =  4, imm =  14
+@1264
+08 33 // R_inst: mult 0011001100001000 rs =  9, rt =  8, imm =   3
+@1266
+50 02 // R_inst: sub 0000001001010000 rs =  1, rt =  2, imm =   2
+@1268
+76 2C // R_inst: mult 0010110001110110 rs =  6, rt =  3, imm =  15
+@126a
+EC 27 // R_inst: mult 0010011111101100 rs =  3, rt = 15, imm =  -9
+@126c
+62 3B // R_inst: mult 0011101101100010 rs = 13, rt = 11, imm =  10
+@126e
+10 10 // R_inst: sub 0001000000010000 rs =  8, rt =  0, imm =  -3
+@1270
+FC 1B // R_inst: sub 0001101111111100 rs = 13, rt = 15, imm = -12
+@1272
+83 12 // R_inst: add 0001001010000011 rs =  9, rt =  4, imm =  15
+@1274
+10 14 // R_inst: sub 0001010000010000 rs = 10, rt =  0, imm =  -4
+@1276
+4F 7C // I_inst: load 0111110001001111 rs = 14, rt =  2, imm =  15
+@1278
+6F 7C // I_inst: load 0111110001101111 rs = 14, rt =  3, imm =  15
+@127a
+46 A6 // I_inst: beq 1010011001000110 rs =  3, rt =  2, imm =   6
+@127c
+B8 24 // R_inst: mult 0010010010111000 rs =  2, rt =  5, imm = -13
+@127e
+0D 1A // R_inst: add 0001101000001101 rs = 13, rt =  0, imm =  11
+@1280
+D2 03 // R_inst: sub 0000001111010010 rs =  1, rt = 14, imm =  -1
+@1282
+3A 35 // R_inst: mult 0011010100111010 rs = 10, rt =  9, imm =   0
+@1284
+7E 3A // R_inst: mult 0011101001111110 rs = 13, rt =  3, imm = -12
+@1286
+86 07 // R_inst: sub 0000011110000110 rs =  3, rt = 12, imm =  15
+@1288
+53 2D // R_inst: set 0010110101010011 rs =  6, rt = 10, imm = -16
+@128a
+1B 30 // R_inst: set 0011000000011011 rs =  8, rt =  0, imm =   1
+@128c
+BA 92 // J_inst: jump 1001001010111010 address = 012ba
+@128e
+78 38 // R_inst: mult 0011100001111000 rs = 12, rt =  3, imm =  -3
+@1290
+D0 3E // R_inst: mult 0011111011010000 rs = 15, rt =  6, imm =  -1
+@1292
+38 02 // R_inst: sub 0000001000111000 rs =  1, rt =  1, imm =  13
+@1294
+32 01 // R_inst: sub 0000000100110010 rs =  0, rt =  9, imm = -11
+@1296
+3E 32 // R_inst: mult 0011001000111110 rs =  9, rt =  1, imm = -11
+@1298
+3B 1B // R_inst: add 0001101100111011 rs = 13, rt =  9, imm =   6
+@129a
+AD 0A // R_inst: add 0000101010101101 rs =  5, rt =  5, imm = -13
+@129c
+05 1F // R_inst: add 0001111100000101 rs = 15, rt =  8, imm = -14
+@129e
+98 0B // R_inst: sub 0000101110011000 rs =  5, rt = 12, imm =   6
+@12a0
+F8 23 // R_inst: mult 0010001111111000 rs =  1, rt = 15, imm =  11
+@12a2
+06 1B // R_inst: sub 0001101100000110 rs = 13, rt =  8, imm =   7
+@12a4
+76 00 // R_inst: sub 0000000001110110 rs =  0, rt =  3, imm = -15
+@12a6
+B0 30 // R_inst: mult 0011000010110000 rs =  8, rt =  5, imm = -14
+@12a8
+58 14 // R_inst: sub 0001010001011000 rs = 10, rt =  2, imm =  -7
+@12aa
+93 11 // R_inst: add 0001000110010011 rs =  8, rt = 12, imm = -14
+@12ac
+0F 1D // R_inst: add 0001110100001111 rs = 14, rt =  8, imm =  -3
+@12ae
+9F 11 // R_inst: add 0001000110011111 rs =  8, rt = 12, imm =  11
+@12b0
+BA 3A // R_inst: mult 0011101010111010 rs = 13, rt =  5, imm =  -5
+@12b2
+FB 15 // R_inst: add 0001010111111011 rs = 10, rt = 15, imm =  -1
+@12b4
+8E 3F // R_inst: mult 0011111110001110 rs = 15, rt = 12, imm =   1
+@12b6
+07 0E // R_inst: add 0000111000000111 rs =  7, rt =  0, imm =  10
+@12b8
+A9 0C // R_inst: add 0000110010101001 rs =  6, rt =  5, imm =  -5
+@12ba
+0E 57 // I_inst: store 0101011100001110 rs = 11, rt =  8, imm =  14
+@12bc
+88 7B // I_inst: load 0111101110001000 rs = 13, rt = 12, imm =   8
+@12be
+08 7B // I_inst: load 0111101100001000 rs = 13, rt =  8, imm =   8
+@12c0
+86 B1 // I_inst: beq 1011000110000110 rs =  8, rt = 12, imm =   6
+@12c2
+05 0D // R_inst: add 0000110100000101 rs =  6, rt =  8, imm = -15
+@12c4
+64 36 // R_inst: mult 0011011001100100 rs = 11, rt =  3, imm =   8
+@12c6
+23 17 // R_inst: add 0001011100100011 rs = 11, rt =  9, imm =  11
+@12c8
+F8 07 // R_inst: sub 0000011111111000 rs =  3, rt = 15, imm =   6
+@12ca
+F2 09 // R_inst: sub 0000100111110010 rs =  4, rt = 15, imm = -13
+@12cc
+C2 33 // R_inst: mult 0011001111000010 rs =  9, rt = 14, imm =  13
+@12ce
+56 31 // R_inst: mult 0011000101010110 rs =  8, rt = 10, imm = -13
+@12d0
+00 93 // J_inst: jump 1001001100000000 address = 01300
+@12d2
+8F 0D // R_inst: add 0000110110001111 rs =  6, rt = 12, imm =  -1
+@12d4
+DC 1B // R_inst: sub 0001101111011100 rs = 13, rt = 14, imm =   5
+@12d6
+54 37 // R_inst: mult 0011011101010100 rs = 11, rt = 10, imm = -16
+@12d8
+83 17 // R_inst: add 0001011110000011 rs = 11, rt = 12, imm =   2
+@12da
+D4 2D // R_inst: mult 0010110111010100 rs =  6, rt = 14, imm = -15
+@12dc
+B6 1A // R_inst: sub 0001101010110110 rs = 13, rt =  5, imm = -13
+@12de
+B8 2E // R_inst: mult 0010111010111000 rs =  7, rt =  5, imm =   1
+@12e0
+C2 11 // R_inst: sub 0001000111000010 rs =  8, rt = 14, imm =   1
+@12e2
+0B 07 // R_inst: add 0000011100001011 rs =  3, rt =  8, imm =  -7
+@12e4
+EE 1B // R_inst: sub 0001101111101110 rs = 13, rt = 15, imm =  -2
+@12e6
+74 2B // R_inst: mult 0010101101110100 rs =  5, rt = 11, imm =  -3
+@12e8
+62 3C // R_inst: mult 0011110001100010 rs = 14, rt =  3, imm =   6
+@12ea
+07 1D // R_inst: add 0001110100000111 rs = 14, rt =  8, imm =   4
+@12ec
+31 05 // R_inst: add 0000010100110001 rs =  2, rt =  9, imm =  -7
+@12ee
+64 01 // R_inst: sub 0000000101100100 rs =  0, rt = 11, imm = -13
+@12f0
+88 11 // R_inst: sub 0001000110001000 rs =  8, rt = 12, imm =   7
+@12f2
+6F 03 // R_inst: add 0000001101101111 rs =  1, rt = 11, imm = -16
+@12f4
+97 0F // R_inst: add 0000111110010111 rs =  7, rt = 12, imm =   1
+@12f6
+F8 04 // R_inst: sub 0000010011111000 rs =  2, rt =  7, imm =   3
+@12f8
+F8 3C // R_inst: mult 0011110011111000 rs = 14, rt =  7, imm =  -5
+@12fa
+03 05 // R_inst: add 0000010100000011 rs =  2, rt =  8, imm =   5
+@12fc
+EF 14 // R_inst: add 0001010011101111 rs = 10, rt =  7, imm = -15
+@12fe
+DC 17 // R_inst: sub 0001011111011100 rs = 11, rt = 14, imm =  -6
+@1300
+25 B3 // I_inst: beq 1011001100100101 rs =  9, rt =  9, imm =   5
+@1302
+5E 1B // R_inst: sub 0001101101011110 rs = 13, rt = 10, imm =   4
+@1304
+64 01 // R_inst: sub 0000000101100100 rs =  0, rt = 11, imm =   8
+@1306
+C9 15 // R_inst: add 0001010111001001 rs = 10, rt = 14, imm = -11
+@1308
+96 32 // R_inst: mult 0011001010010110 rs =  9, rt =  4, imm =   6
+@130a
+F6 0F // R_inst: sub 0000111111110110 rs =  7, rt = 15, imm =   3
+@130c
+8C 52 // I_inst: store 0101001010001100 rs =  9, rt =  4, imm =  12
+@130e
+1A 93 // J_inst: jump 1001001100011010 address = 0131a
+@1310
+20 93 // J_inst: jump 1001001100100000 address = 01320
+@1312
+28 0E // R_inst: sub 0000111000101000 rs =  7, rt =  1, imm =  -1
+@1314
+E8 11 // R_inst: sub 0001000111101000 rs =  8, rt = 15, imm =  10
+@1316
+E8 09 // R_inst: sub 0000100111101000 rs =  4, rt = 15, imm =  -3
+@1318
+09 18 // R_inst: add 0001100000001001 rs = 12, rt =  0, imm =   1
+@131a
+8B 7A // I_inst: load 0111101010001011 rs = 13, rt =  4, imm =  11
+@131c
+8B 7A // I_inst: load 0111101010001011 rs = 13, rt =  4, imm =  11
+@131e
+98 A8 // I_inst: beq 1010100010011000 rs =  4, rt =  4, imm =  -8
+@1320
+38 27 // R_inst: mult 0010011100111000 rs =  3, rt =  9, imm =  -2
+@1322
+32 93 // J_inst: jump 1001001100110010 address = 01332
+@1324
+38 93 // J_inst: jump 1001001100111000 address = 01338
+@1326
+B8 1A // R_inst: sub 0001101010111000 rs = 13, rt =  5, imm =   9
+@1328
+B8 0F // R_inst: sub 0000111110111000 rs =  7, rt = 13, imm =  -7
+@132a
+AE 1B // R_inst: sub 0001101110101110 rs = 13, rt = 13, imm =   2
+@132c
+A7 09 // R_inst: add 0000100110100111 rs =  4, rt = 13, imm =  10
+@132e
+46 01 // R_inst: sub 0000000101000110 rs =  0, rt = 10, imm =  14
+@1330
+10 13 // R_inst: sub 0001001100010000 rs =  9, rt =  8, imm =   5
+@1332
+E0 7B // I_inst: load 0111101111100000 rs = 13, rt = 15, imm =   0
+@1334
+E0 7B // I_inst: load 0111101111100000 rs = 13, rt = 15, imm =   0
+@1336
+F6 BF // I_inst: beq 1011111111110110 rs = 15, rt = 15, imm = -10
+@1338
+2D B0 // I_inst: beq 1011000000101101 rs =  8, rt =  1, imm =  13
+@133a
+98 04 // R_inst: sub 0000010010011000 rs =  2, rt =  4, imm =  -5
+@133c
+FF 72 // I_inst: load 0111001011111111 rs =  9, rt =  7, imm =  -1
+@133e
+C7 02 // R_inst: add 0000001011000111 rs =  1, rt =  6, imm = -14
+@1340
+08 6B // I_inst: load 0110101100001000 rs =  5, rt =  8, imm =   8
+@1342
+2F 60 // I_inst: load 0110000000101111 rs =  0, rt =  1, imm =  15
+@1344
+0F 61 // I_inst: load 0110000100001111 rs =  0, rt =  8, imm =  15
+@1346
+38 93 // J_inst: jump 1001001100111000 address = 01338
+@1348
+25 15 // R_inst: add 0001010100100101 rs = 10, rt =  9, imm =   9
+@134a
+9C 2A // R_inst: mult 0010101010011100 rs =  5, rt =  4, imm =  -6
+@134c
+3F 17 // R_inst: add 0001011100111111 rs = 11, rt =  9, imm =  -2
+@134e
+84 32 // R_inst: mult 0011001010000100 rs =  9, rt =  4, imm =  13
+@1350
+FA 3C // R_inst: mult 0011110011111010 rs = 14, rt =  7, imm =  -4
+@1352
+9A 29 // R_inst: mult 0010100110011010 rs =  4, rt = 12, imm =  11
+@1354
+A1 7C // I_inst: load 0111110010100001 rs = 14, rt =  5, imm =   1
+@1356
+81 7D // I_inst: load 0111110110000001 rs = 14, rt = 12, imm =   1
+@1358
+A1 B8 // I_inst: beq 1011100010100001 rs = 12, rt =  5, imm =   1
+@135a
+9F 07 // R_inst: add 0000011110011111 rs =  3, rt = 12, imm =  15
+@135c
+CE 64 // I_inst: load 0110010011001110 rs =  2, rt =  6, imm =  14
+@135e
+AE 64 // I_inst: load 0110010010101110 rs =  2, rt =  5, imm =  14
+@1360
+CD AA // I_inst: beq 1010101011001101 rs =  5, rt =  6, imm =  13
+@1362
+5E 3C // R_inst: mult 0011110001011110 rs = 14, rt =  2, imm =   8
+@1364
+43 1F // R_inst: add 0001111101000011 rs = 15, rt = 10, imm =   6
+@1366
+DC 1D // R_inst: sub 0001110111011100 rs = 14, rt = 14, imm =   9
+@1368
+62 2B // R_inst: mult 0010101101100010 rs =  5, rt = 11, imm = -16
+@136a
+82 0B // R_inst: sub 0000101110000010 rs =  5, rt = 12, imm =   6
+@136c
+B7 1C // R_inst: add 0001110010110111 rs = 14, rt =  5, imm =   9
+@136e
+1D 1A // R_inst: add 0001101000011101 rs = 13, rt =  0, imm =  13
+@1370
+7F 05 // R_inst: add 0000010101111111 rs =  2, rt = 11, imm = -15
+@1372
+9A 26 // R_inst: mult 0010011010011010 rs =  3, rt =  4, imm =   7
+@1374
+7C 05 // R_inst: sub 0000010101111100 rs =  2, rt = 11, imm =  -4
+@1376
+C9 08 // R_inst: add 0000100011001001 rs =  4, rt =  6, imm = -10
+@1378
+67 12 // R_inst: add 0001001001100111 rs =  9, rt =  3, imm =  -3
+@137a
+28 3E // R_inst: mult 0011111000101000 rs = 15, rt =  1, imm =  12
+@137c
+8B BF // I_inst: beq 1011111110001011 rs = 15, rt = 12, imm =  11
+@137e
+43 24 // R_inst: set 0010010001000011 rs =  2, rt =  2, imm =  11
+@1380
+22 7D // I_inst: load 0111110100100010 rs = 14, rt =  9, imm =   2
+@1382
+92 6B // I_inst: load 0110101110010010 rs =  5, rt = 12, imm = -14
+@1384
+F2 6B // I_inst: load 0110101111110010 rs =  5, rt = 15, imm = -14
+@1386
+7C 93 // J_inst: jump 1001001101111100 address = 0137c
+@1388
+92 13 // R_inst: sub 0001001110010010 rs =  9, rt = 12, imm =   3
+@138a
+CC 37 // R_inst: mult 0011011111001100 rs = 11, rt = 14, imm =  -1
+@138c
+C5 00 // R_inst: add 0000000011000101 rs =  0, rt =  6, imm =  -5
+@138e
+7E 19 // R_inst: sub 0001100101111110 rs = 12, rt = 11, imm =  -4
+@1390
+31 1E // R_inst: add 0001111000110001 rs = 15, rt =  1, imm =  15
+@1392
+68 1C // R_inst: sub 0001110001101000 rs = 14, rt =  3, imm = -12
+@1394
+9E 93 // J_inst: jump 1001001110011110 address = 0139e
+@1396
+72 33 // R_inst: mult 0011001101110010 rs =  9, rt = 11, imm =   6
+@1398
+5B 1B // R_inst: add 0001101101011011 rs = 13, rt = 10, imm =  11
+@139a
+D4 26 // R_inst: mult 0010011011010100 rs =  3, rt =  6, imm =  -7
+@139c
+F7 1F // R_inst: add 0001111111110111 rs = 15, rt = 15, imm =   4
+@139e
+19 07 // R_inst: add 0000011100011001 rs =  3, rt =  8, imm = -11
+@13a0
+6E 34 // R_inst: mult 0011010001101110 rs = 10, rt =  3, imm =  11
+@13a2
+8B A7 // I_inst: beq 1010011110001011 rs =  3, rt = 12, imm =  11
+@13a4
+06 4B // I_inst: store 0100101100000110 rs =  5, rt =  8, imm =   6
+@13a6
+86 7C // I_inst: load 0111110010000110 rs = 14, rt =  4, imm =   6
+@13a8
+88 6B // I_inst: load 0110101110001000 rs =  5, rt = 12, imm =   8
+@13aa
+68 6A // I_inst: load 0110101001101000 rs =  5, rt =  3, imm =   8
+@13ac
+A2 93 // J_inst: jump 1001001110100010 address = 013a2
+@13ae
+42 31 // R_inst: mult 0011000101000010 rs =  8, rt = 10, imm =   2
+@13b0
+04 33 // R_inst: mult 0011001100000100 rs =  9, rt =  8, imm = -11
+@13b2
+A7 15 // R_inst: add 0001010110100111 rs = 10, rt = 13, imm =  12
+@13b4
+F8 34 // R_inst: mult 0011010011111000 rs = 10, rt =  7, imm =   8
+@13b6
+C9 04 // R_inst: add 0000010011001001 rs =  2, rt =  6, imm =  10
+@13b8
+6F 06 // R_inst: add 0000011001101111 rs =  3, rt =  3, imm =  13
+@13ba
+A2 BD // I_inst: beq 1011110110100010 rs = 14, rt = 13, imm =   2
+@13bc
+26 37 // R_inst: mult 0011011100100110 rs = 11, rt =  9, imm = -11
+@13be
+5A 2C // R_inst: mult 0010110001011010 rs =  6, rt =  2, imm = -16
+@13c0
+AB 54 // I_inst: store 0101010010101011 rs = 10, rt =  5, imm =  11
+@13c2
+B1 07 // R_inst: add 0000011110110001 rs =  3, rt = 13, imm = -10
+@13c4
+D2 93 // J_inst: jump 1001001111010010 address = 013d2
+@13c6
+D8 93 // J_inst: jump 1001001111011000 address = 013d8
+@13c8
+7E 3C // R_inst: mult 0011110001111110 rs = 14, rt =  3, imm =   2
+@13ca
+3E 11 // R_inst: sub 0001000100111110 rs =  8, rt =  9, imm =  -6
+@13cc
+3E 39 // R_inst: mult 0011100100111110 rs = 12, rt =  9, imm =  -1
+@13ce
+70 16 // R_inst: sub 0001011001110000 rs = 11, rt =  3, imm =   8
+@13d0
+1A 03 // R_inst: sub 0000001100011010 rs =  1, rt =  8, imm =   4
+@13d2
+02 61 // I_inst: load 0110000100000010 rs =  0, rt =  8, imm =   2
+@13d4
+62 60 // I_inst: load 0110000001100010 rs =  0, rt =  3, imm =   2
+@13d6
+17 A7 // I_inst: beq 1010011100010111 rs =  3, rt =  8, imm =  -9
+@13d8
+00 94 // J_inst: jump 1001010000000000 address = 01400
+@13da
+28 0A // R_inst: sub 0000101000101000 rs =  5, rt =  1, imm =   4
+@13dc
+AA 2D // R_inst: mult 0010110110101010 rs =  6, rt = 13, imm =  -8
+@13de
+DF 02 // R_inst: add 0000001011011111 rs =  1, rt =  6, imm =  -6
+@13e0
+3C 34 // R_inst: mult 0011010000111100 rs = 10, rt =  1, imm =  -1
+@13e2
+8C 0A // R_inst: sub 0000101010001100 rs =  5, rt =  4, imm =  -4
+@13e4
+4A 26 // R_inst: mult 0010011001001010 rs =  3, rt =  2, imm =   0
+@13e6
+CC 16 // R_inst: sub 0001011011001100 rs = 11, rt =  6, imm =  14
+@13e8
+A2 25 // R_inst: mult 0010010110100010 rs =  2, rt = 13, imm =   6
+@13ea
+70 0A // R_inst: sub 0000101001110000 rs =  5, rt =  3, imm =  -7
+@13ec
+1F 0E // R_inst: add 0000111000011111 rs =  7, rt =  0, imm =  13
+@13ee
+73 0E // R_inst: add 0000111001110011 rs =  7, rt =  3, imm =   8
+@13f0
+55 17 // R_inst: add 0001011101010101 rs = 11, rt = 10, imm = -11
+@13f2
+F2 2B // R_inst: mult 0010101111110010 rs =  5, rt = 15, imm = -15
+@13f4
+B3 13 // R_inst: add 0001001110110011 rs =  9, rt = 13, imm = -13
+@13f6
+FE 2E // R_inst: mult 0010111011111110 rs =  7, rt =  7, imm =  -7
+@13f8
+68 36 // R_inst: mult 0011011001101000 rs = 11, rt =  3, imm =  14
+@13fa
+78 3C // R_inst: mult 0011110001111000 rs = 14, rt =  3, imm =  14
+@13fc
+AA 29 // R_inst: mult 0010100110101010 rs =  4, rt = 13, imm =   1
+@13fe
+FD 10 // R_inst: add 0001000011111101 rs =  8, rt =  7, imm =   2
+@1400
+CD 7A // I_inst: load 0111101011001101 rs = 13, rt =  6, imm =  13
+@1402
+ED 7A // I_inst: load 0111101011101101 rs = 13, rt =  7, imm =  13
+@1404
+C3 AE // I_inst: beq 1010111011000011 rs =  7, rt =  6, imm =   3
+@1406
+B8 05 // R_inst: sub 0000010110111000 rs =  2, rt = 13, imm = -12
+@1408
+70 08 // R_inst: sub 0000100001110000 rs =  4, rt =  3, imm = -12
+@140a
+4E 2C // R_inst: mult 0010110001001110 rs =  6, rt =  2, imm =  15
+@140c
+AA 75 // I_inst: load 0111010110101010 rs = 10, rt = 13, imm =  10
+@140e
+0A 75 // I_inst: load 0111010100001010 rs = 10, rt =  8, imm =  10
+@1410
+A4 B1 // I_inst: beq 1011000110100100 rs =  8, rt = 13, imm =   4
+@1412
+68 34 // R_inst: mult 0011010001101000 rs = 10, rt =  3, imm =  -4
+@1414
+7E 12 // R_inst: sub 0001001001111110 rs =  9, rt =  3, imm =  -6
+@1416
+8C 2A // R_inst: mult 0010101010001100 rs =  5, rt =  4, imm =  -3
+@1418
+78 00 // R_inst: sub 0000000001111000 rs =  0, rt =  3, imm =  14
+@141a
+32 94 // J_inst: jump 1001010000110010 address = 01432
+@141c
+E6 1F // R_inst: sub 0001111111100110 rs = 15, rt = 15, imm =  -8
+@141e
+0A 1E // R_inst: sub 0001111000001010 rs = 15, rt =  0, imm =  12
+@1420
+F8 31 // R_inst: mult 0011000111111000 rs =  8, rt = 15, imm =  14
+@1422
+3B 16 // R_inst: add 0001011000111011 rs = 11, rt =  1, imm =  13
+@1424
+02 1A // R_inst: sub 0001101000000010 rs = 13, rt =  0, imm =  -7
+@1426
+77 17 // R_inst: add 0001011101110111 rs = 11, rt = 11, imm =   5
+@1428
+63 10 // R_inst: add 0001000001100011 rs =  8, rt =  3, imm =  14
+@142a
+A4 00 // R_inst: sub 0000000010100100 rs =  0, rt =  5, imm =   2
+@142c
+E6 0E // R_inst: sub 0000111011100110 rs =  7, rt =  7, imm =   5
+@142e
+68 03 // R_inst: sub 0000001101101000 rs =  1, rt = 11, imm = -14
+@1430
+58 0E // R_inst: sub 0000111001011000 rs =  7, rt =  2, imm = -11
+@1432
+CA 2E // R_inst: mult 0010111011001010 rs =  7, rt =  6, imm =   8
+@1434
+3E 94 // J_inst: jump 1001010000111110 address = 0143e
+@1436
+44 94 // J_inst: jump 1001010001000100 address = 01444
+@1438
+FA 3E // R_inst: mult 0011111011111010 rs = 15, rt =  7, imm =   1
+@143a
+D8 06 // R_inst: sub 0000011011011000 rs =  3, rt =  6, imm =   4
+@143c
+0A 2D // R_inst: mult 0010110100001010 rs =  6, rt =  8, imm =   6
+@143e
+E4 7D // I_inst: load 0111110111100100 rs = 14, rt = 15, imm =   4
+@1440
+44 7C // I_inst: load 0111110001000100 rs = 14, rt =  2, imm =   4
+@1442
+F9 A5 // I_inst: beq 1010010111111001 rs =  2, rt = 15, imm =  -7
+@1444
+CB 68 // I_inst: load 0110100011001011 rs =  4, rt =  6, imm =  11
+@1446
+60 94 // J_inst: jump 1001010001100000 address = 01460
+@1448
+8C 2C // R_inst: mult 0010110010001100 rs =  6, rt =  4, imm =  -6
+@144a
+8E 3E // R_inst: mult 0011111010001110 rs = 15, rt =  4, imm = -12
+@144c
+8B 05 // R_inst: add 0000010110001011 rs =  2, rt = 12, imm = -15
+@144e
+AC 1C // R_inst: sub 0001110010101100 rs = 14, rt =  5, imm =   1
+@1450
+74 1D // R_inst: sub 0001110101110100 rs = 14, rt = 11, imm =  11
+@1452
+D6 30 // R_inst: mult 0011000011010110 rs =  8, rt =  6, imm =   5
+@1454
+F6 25 // R_inst: mult 0010010111110110 rs =  2, rt = 15, imm =  -3
+@1456
+5D 14 // R_inst: add 0001010001011101 rs = 10, rt =  2, imm =   5
+@1458
+A4 04 // R_inst: sub 0000010010100100 rs =  2, rt =  5, imm = -16
+@145a
+BE 00 // R_inst: sub 0000000010111110 rs =  0, rt =  5, imm =  -7
+@145c
+76 2F // R_inst: mult 0010111101110110 rs =  7, rt = 11, imm =  -8
+@145e
+F4 0C // R_inst: sub 0000110011110100 rs =  6, rt =  7, imm = -14
+@1460
+01 7D // I_inst: load 0111110100000001 rs = 14, rt =  8, imm =   1
+@1462
+C1 7C // I_inst: load 0111110011000001 rs = 14, rt =  6, imm =   1
+@1464
+0D AD // I_inst: beq 1010110100001101 rs =  6, rt =  8, imm =  13
+@1466
+78 33 // R_inst: mult 0011001101111000 rs =  9, rt = 11, imm =  -7
+@1468
+4A 15 // R_inst: sub 0001010101001010 rs = 10, rt = 10, imm =   7
+@146a
+9A 05 // R_inst: sub 0000010110011010 rs =  2, rt = 12, imm = -14
+@146c
+13 0F // R_inst: add 0000111100010011 rs =  7, rt =  8, imm =   4
+@146e
+B6 26 // R_inst: mult 0010011010110110 rs =  3, rt =  5, imm = -16
+@1470
+62 3C // R_inst: mult 0011110001100010 rs = 14, rt =  3, imm =   7
+@1472
+7F 05 // R_inst: add 0000010101111111 rs =  2, rt = 11, imm =  12
+@1474
+BA 11 // R_inst: sub 0001000110111010 rs =  8, rt = 13, imm =   6
+@1476
+DA 39 // R_inst: mult 0011100111011010 rs = 12, rt = 14, imm = -15
+@1478
+DB 12 // R_inst: add 0001001011011011 rs =  9, rt =  6, imm =  15
+@147a
+23 06 // R_inst: add 0000011000100011 rs =  3, rt =  1, imm = -13
+@147c
+D8 05 // R_inst: sub 0000010111011000 rs =  2, rt = 14, imm =  -4
+@147e
+EE 0B // R_inst: sub 0000101111101110 rs =  5, rt = 15, imm = -16
+@1480
+B6 94 // J_inst: jump 1001010010110110 address = 014b6
+@1482
+48 22 // R_inst: mult 0010001001001000 rs =  1, rt =  2, imm =  -3
+@1484
+58 07 // R_inst: sub 0000011101011000 rs =  3, rt = 10, imm =  -9
+@1486
+8C 03 // R_inst: sub 0000001110001100 rs =  1, rt = 12, imm = -14
+@1488
+D8 32 // R_inst: mult 0011001011011000 rs =  9, rt =  6, imm =  11
+@148a
+44 04 // R_inst: sub 0000010001000100 rs =  2, rt =  2, imm =   6
+@148c
+CD 08 // R_inst: add 0000100011001101 rs =  4, rt =  6, imm =   8
+@148e
+90 25 // R_inst: mult 0010010110010000 rs =  2, rt = 12, imm =  10
+@1490
+EB 05 // R_inst: add 0000010111101011 rs =  2, rt = 15, imm =   6
+@1492
+84 30 // R_inst: mult 0011000010000100 rs =  8, rt =  4, imm =  -3
+@1494
+D4 38 // R_inst: mult 0011100011010100 rs = 12, rt =  6, imm =   7
+@1496
+AA 3A // R_inst: mult 0011101010101010 rs = 13, rt =  5, imm =  10
+@1498
+13 1E // R_inst: add 0001111000010011 rs = 15, rt =  0, imm =  -3
+@149a
+4B 08 // R_inst: add 0000100001001011 rs =  4, rt =  2, imm =  -5
+@149c
+38 3C // R_inst: mult 0011110000111000 rs = 14, rt =  1, imm =  -5
+@149e
+6C 16 // R_inst: sub 0001011001101100 rs = 11, rt =  3, imm =   2
+@14a0
+98 0B // R_inst: sub 0000101110011000 rs =  5, rt = 12, imm =  -4
+@14a2
+C7 1D // R_inst: add 0001110111000111 rs = 14, rt = 14, imm = -11
+@14a4
+7A 15 // R_inst: sub 0001010101111010 rs = 10, rt = 11, imm =   5
+@14a6
+B9 16 // R_inst: add 0001011010111001 rs = 11, rt =  5, imm = -13
+@14a8
+2F 0C // R_inst: add 0000110000101111 rs =  6, rt =  1, imm =  -9
+@14aa
+BA 2D // R_inst: mult 0010110110111010 rs =  6, rt = 13, imm =   8
+@14ac
+E3 00 // R_inst: add 0000000011100011 rs =  0, rt =  7, imm =   3
+@14ae
+C4 2B // R_inst: mult 0010101111000100 rs =  5, rt = 14, imm =   7
+@14b0
+0E 39 // R_inst: mult 0011100100001110 rs = 12, rt =  8, imm =  -4
+@14b2
+7E 32 // R_inst: mult 0011001001111110 rs =  9, rt =  3, imm =   2
+@14b4
+EA 1C // R_inst: sub 0001110011101010 rs = 14, rt =  7, imm =  -5
+@14b6
+50 2F // R_inst: mult 0010111101010000 rs =  7, rt = 10, imm =  15
+@14b8
+6B 2F // R_inst: set 0010111101101011 rs =  7, rt = 11, imm =  -8
+@14ba
+45 21 // R_inst: set 0010000101000101 rs =  0, rt = 10, imm =   2
+@14bc
+59 01 // R_inst: add 0000000101011001 rs =  0, rt = 10, imm = -11
+@14be
+42 63 // I_inst: load 0110001101000010 rs =  1, rt = 10, imm =   2
+@14c0
+22 63 // I_inst: load 0110001100100010 rs =  1, rt =  9, imm =   2
+@14c2
+4A B3 // I_inst: beq 1011001101001010 rs =  9, rt = 10, imm =  10
+@14c4
+D1 03 // R_inst: add 0000001111010001 rs =  1, rt = 14, imm =  -1
+@14c6
+C8 08 // R_inst: sub 0000100011001000 rs =  4, rt =  6, imm = -15
+@14c8
+46 35 // R_inst: mult 0011010101000110 rs = 10, rt = 10, imm =  12
+@14ca
+D2 03 // R_inst: sub 0000001111010010 rs =  1, rt = 14, imm =  -3
+@14cc
+15 18 // R_inst: add 0001100000010101 rs = 12, rt =  0, imm =  13
+@14ce
+3E 1F // R_inst: sub 0001111100111110 rs = 15, rt =  9, imm =   6
+@14d0
+B0 39 // R_inst: mult 0011100110110000 rs = 12, rt = 13, imm =   9
+@14d2
+BA 0F // R_inst: sub 0000111110111010 rs =  7, rt = 13, imm =  10
+@14d4
+AC 0E // R_inst: sub 0000111010101100 rs =  7, rt =  5, imm =  -3
+@14d6
+F8 0C // R_inst: sub 0000110011111000 rs =  6, rt =  7, imm =  -5
+@14d8
+C7 5B // I_inst: store 0101101111000111 rs = 13, rt = 14, imm =   7
+@14da
+ED 68 // I_inst: load 0110100011101101 rs =  4, rt =  7, imm =  13
+@14dc
+AE AD // I_inst: beq 1010110110101110 rs =  6, rt = 13, imm =  14
+@14de
+39 3C // R_inst: set 0011110000111001 rs = 14, rt =  1, imm =  -1
+@14e0
+E3 58 // I_inst: store 0101100011100011 rs = 12, rt =  7, imm =   3
+@14e2
+2F 3E // R_inst: set 0011111000101111 rs = 15, rt =  1, imm =  11
+@14e4
+AE 6E // I_inst: load 0110111010101110 rs =  7, rt =  5, imm =  14
+@14e6
+76 28 // R_inst: mult 0010100001110110 rs =  4, rt =  3, imm =  -8
+@14e8
+18 0D // R_inst: sub 0000110100011000 rs =  6, rt =  8, imm =   0
+@14ea
+AD 6B // I_inst: load 0110101110101101 rs =  5, rt = 13, imm =  13
+@14ec
+CD 6A // I_inst: load 0110101011001101 rs =  5, rt =  6, imm =  13
+@14ee
+DC 94 // J_inst: jump 1001010011011100 address = 014dc
+@14f0
+07 02 // R_inst: add 0000001000000111 rs =  1, rt =  0, imm =  -5
+@14f2
+90 1A // R_inst: sub 0001101010010000 rs = 13, rt =  4, imm =   2
+@14f4
+7D 0A // R_inst: add 0000101001111101 rs =  5, rt =  3, imm =  -1
+@14f6
+76 13 // R_inst: sub 0001001101110110 rs =  9, rt = 11, imm =  -2
+@14f8
+DC 1D // R_inst: sub 0001110111011100 rs = 14, rt = 14, imm =  -9
+@14fa
+EC A6 // I_inst: beq 1010011011101100 rs =  3, rt =  7, imm =  12
+@14fc
+0D 2F // R_inst: set 0010111100001101 rs =  7, rt =  8, imm =  11
+@14fe
+3F 1B // R_inst: add 0001101100111111 rs = 13, rt =  9, imm =   2
+@1500
+8F 49 // I_inst: store 0100100110001111 rs =  4, rt = 12, imm =  15
+@1502
+E6 60 // I_inst: load 0110000011100110 rs =  0, rt =  7, imm =   6
+@1504
+66 60 // I_inst: load 0110000001100110 rs =  0, rt =  3, imm =   6
+@1506
+FA 94 // J_inst: jump 1001010011111010 address = 014fa
+@1508
+5E 10 // R_inst: sub 0001000001011110 rs =  8, rt =  2, imm =  15
+@150a
+73 12 // R_inst: add 0001001001110011 rs =  9, rt =  3, imm = -13
+@150c
+C7 0F // R_inst: add 0000111111000111 rs =  7, rt = 14, imm =   6
+@150e
+4C 33 // R_inst: mult 0011001101001100 rs =  9, rt = 10, imm =   0
+@1510
+3A 05 // R_inst: sub 0000010100111010 rs =  2, rt =  9, imm =  -1
+@1512
+AE 3F // R_inst: mult 0011111110101110 rs = 15, rt = 13, imm =   1
+@1514
+20 95 // J_inst: jump 1001010100100000 address = 01520
+@1516
+26 95 // J_inst: jump 1001010100100110 address = 01526
+@1518
+4C 0D // R_inst: sub 0000110101001100 rs =  6, rt = 10, imm =  -4
+@151a
+8C 12 // R_inst: sub 0001001010001100 rs =  9, rt =  4, imm =  -1
+@151c
+D7 1D // R_inst: add 0001110111010111 rs = 14, rt = 14, imm =   7
+@151e
+ED 08 // R_inst: add 0000100011101101 rs =  4, rt =  7, imm =  -6
+@1520
+62 6C // I_inst: load 0110110001100010 rs =  6, rt =  3, imm =   2
+@1522
+E2 6D // I_inst: load 0110110111100010 rs =  6, rt = 15, imm =   2
+@1524
+78 BE // I_inst: beq 1011111001111000 rs = 15, rt =  3, imm =  -8
+@1526
+7B 27 // R_inst: set 0010011101111011 rs =  3, rt = 11, imm = -14
+@1528
+E7 5B // I_inst: store 0101101111100111 rs = 13, rt = 15, imm =   7
+@152a
+2D BE // I_inst: beq 1011111000101101 rs = 15, rt =  1, imm =  13
+@152c
+56 4E // I_inst: store 0100111001010110 rs =  7, rt =  2, imm = -10
+@152e
+E5 5D // I_inst: store 0101110111100101 rs = 14, rt = 15, imm =   5
+@1530
+20 7C // I_inst: load 0111110000100000 rs = 14, rt =  1, imm =   0
+@1532
+E0 7D // I_inst: load 0111110111100000 rs = 14, rt = 15, imm =   0
+@1534
+2A 95 // J_inst: jump 1001010100101010 address = 0152a
+@1536
+8B 06 // R_inst: add 0000011010001011 rs =  3, rt =  4, imm =   7
+@1538
+C2 10 // R_inst: sub 0001000011000010 rs =  8, rt =  6, imm =  13
+@153a
+93 10 // R_inst: add 0001000010010011 rs =  8, rt =  4, imm =   7
+@153c
+78 2A // R_inst: mult 0010101001111000 rs =  5, rt =  3, imm =   6
+@153e
+A4 1B // R_inst: sub 0001101110100100 rs = 13, rt = 13, imm =  15
+@1540
+6A 2E // R_inst: mult 0010111001101010 rs =  7, rt =  3, imm =  -7
+@1542
+72 29 // R_inst: mult 0010100101110010 rs =  4, rt = 11, imm = -12
+@1544
+18 31 // R_inst: mult 0011000100011000 rs =  8, rt =  8, imm =  13
+@1546
+58 95 // J_inst: jump 1001010101011000 address = 01558
+@1548
+59 04 // R_inst: add 0000010001011001 rs =  2, rt =  2, imm = -11
+@154a
+AC 12 // R_inst: sub 0001001010101100 rs =  9, rt =  5, imm =  15
+@154c
+23 0E // R_inst: add 0000111000100011 rs =  7, rt =  1, imm = -10
+@154e
+9F 0F // R_inst: add 0000111110011111 rs =  7, rt = 12, imm =  -1
+@1550
+9E 2A // R_inst: mult 0010101010011110 rs =  5, rt =  4, imm =  -2
+@1552
+06 29 // R_inst: mult 0010100100000110 rs =  4, rt =  8, imm =   0
+@1554
+0D 11 // R_inst: add 0001000100001101 rs =  8, rt =  8, imm =  -8
+@1556
+02 0B // R_inst: sub 0000101100000010 rs =  5, rt =  8, imm =  13
+@1558
+A1 4F // I_inst: store 0100111110100001 rs =  7, rt = 13, imm =   1
+@155a
+EC 60 // I_inst: load 0110000011101100 rs =  0, rt =  7, imm =  12
+@155c
+52 12 // R_inst: sub 0001001001010010 rs =  9, rt =  2, imm =  -7
+@155e
+6D 48 // I_inst: store 0100100001101101 rs =  4, rt =  3, imm =  13
+@1560
+65 11 // R_inst: add 0001000101100101 rs =  8, rt = 11, imm =  -9
+@1562
+AE 61 // I_inst: load 0110000110101110 rs =  0, rt = 13, imm =  14
+@1564
+89 5E // I_inst: store 0101111010001001 rs = 15, rt =  4, imm =   9
+@1566
+D1 37 // R_inst: set 0011011111010001 rs = 11, rt = 14, imm =  -2
+@1568
+6A 95 // J_inst: jump 1001010101101010 address = 0156a
+@156a
+24 33 // R_inst: mult 0011001100100100 rs =  9, rt =  9, imm =  -2
+@156c
+36 7B // I_inst: load 0111101100110110 rs = 13, rt =  9, imm = -10
+@156e
+CB A7 // I_inst: beq 1010011111001011 rs =  3, rt = 14, imm =  11
+@1570
+8B 50 // I_inst: store 0101000010001011 rs =  8, rt =  4, imm =  11
+@1572
+D9 7B // I_inst: load 0111101111011001 rs = 13, rt = 14, imm =  -7
+@1574
+79 7A // I_inst: load 0111101001111001 rs = 13, rt =  3, imm =  -7
+@1576
+6E 95 // J_inst: jump 1001010101101110 address = 0156e
+@1578
+04 10 // R_inst: sub 0001000000000100 rs =  8, rt =  0, imm =  -6
+@157a
+9E 3C // R_inst: mult 0011110010011110 rs = 14, rt =  4, imm =  14
+@157c
+0D 04 // R_inst: add 0000010000001101 rs =  2, rt =  0, imm =  14
+@157e
+B8 2B // R_inst: mult 0010101110111000 rs =  5, rt = 13, imm = -16
+@1580
+B2 04 // R_inst: sub 0000010010110010 rs =  2, rt =  5, imm =   3
+@1582
+35 1B // R_inst: add 0001101100110101 rs = 13, rt =  9, imm = -13
+@1584
+52 2F // R_inst: mult 0010111101010010 rs =  7, rt = 10, imm = -10
+@1586
+01 6D // I_inst: load 0110110100000001 rs =  6, rt =  8, imm =   1
+@1588
+61 6D // I_inst: load 0110110101100001 rs =  6, rt = 11, imm =   1
+@158a
+01 B7 // I_inst: beq 1011011100000001 rs = 11, rt =  8, imm =   1
+@158c
+AA 01 // R_inst: sub 0000000110101010 rs =  0, rt = 13, imm =  -3
+@158e
+38 72 // I_inst: load 0111001000111000 rs =  9, rt =  1, imm =  -8
+@1590
+78 73 // I_inst: load 0111001101111000 rs =  9, rt = 11, imm =  -8
+@1592
+2D B6 // I_inst: beq 1011011000101101 rs = 11, rt =  1, imm =  13
+@1594
+35 0F // R_inst: add 0000111100110101 rs =  7, rt =  9, imm =  -4
+@1596
+06 12 // R_inst: sub 0001001000000110 rs =  9, rt =  0, imm =  10
+@1598
+E4 22 // R_inst: mult 0010001011100100 rs =  1, rt =  7, imm =   6
+@159a
+6A 0D // R_inst: sub 0000110101101010 rs =  6, rt = 11, imm = -15
+@159c
+D9 0E // R_inst: add 0000111011011001 rs =  7, rt =  6, imm =  -6
+@159e
+87 0F // R_inst: add 0000111110000111 rs =  7, rt = 12, imm =   5
+@15a0
+AE 33 // R_inst: mult 0011001110101110 rs =  9, rt = 13, imm =  -9
+@15a2
+EC 37 // R_inst: mult 0011011111101100 rs = 11, rt = 15, imm =   2
+@15a4
+DA 00 // R_inst: sub 0000000011011010 rs =  0, rt =  6, imm =   4
+@15a6
+DD 02 // R_inst: add 0000001011011101 rs =  1, rt =  6, imm =   9
+@15a8
+BB 09 // R_inst: add 0000100110111011 rs =  4, rt = 13, imm = -11
+@15aa
+48 33 // R_inst: mult 0011001101001000 rs =  9, rt = 10, imm =   6
+@15ac
+44 23 // R_inst: mult 0010001101000100 rs =  1, rt = 10, imm =  10
+@15ae
+6A 0B // R_inst: sub 0000101101101010 rs =  5, rt = 11, imm = -15
+@15b0
+D6 95 // J_inst: jump 1001010111010110 address = 015d6
+@15b2
+5E 0A // R_inst: sub 0000101001011110 rs =  5, rt =  2, imm =  -5
+@15b4
+94 0A // R_inst: sub 0000101010010100 rs =  5, rt =  4, imm = -11
+@15b6
+DE 04 // R_inst: sub 0000010011011110 rs =  2, rt =  6, imm =  -8
+@15b8
+B0 2B // R_inst: mult 0010101110110000 rs =  5, rt = 13, imm = -16
+@15ba
+ED 14 // R_inst: add 0001010011101101 rs = 10, rt =  7, imm =  -8
+@15bc
+C8 05 // R_inst: sub 0000010111001000 rs =  2, rt = 14, imm =   7
+@15be
+30 2B // R_inst: mult 0010101100110000 rs =  5, rt =  9, imm =  11
+@15c0
+BE 19 // R_inst: sub 0001100110111110 rs = 12, rt = 13, imm =  -1
+@15c2
+91 17 // R_inst: add 0001011110010001 rs = 11, rt = 12, imm =   0
+@15c4
+04 2D // R_inst: mult 0010110100000100 rs =  6, rt =  8, imm =   8
+@15c6
+64 00 // R_inst: sub 0000000001100100 rs =  0, rt =  3, imm = -12
+@15c8
+BC 36 // R_inst: mult 0011011010111100 rs = 11, rt =  5, imm = -13
+@15ca
+A7 08 // R_inst: add 0000100010100111 rs =  4, rt =  5, imm =   1
+@15cc
+5C 27 // R_inst: mult 0010011101011100 rs =  3, rt = 10, imm =  13
+@15ce
+EE 39 // R_inst: mult 0011100111101110 rs = 12, rt = 15, imm =   3
+@15d0
+94 2B // R_inst: mult 0010101110010100 rs =  5, rt = 12, imm =   8
+@15d2
+43 1E // R_inst: add 0001111001000011 rs = 15, rt =  2, imm =  -6
+@15d4
+C2 31 // R_inst: mult 0011000111000010 rs =  8, rt = 14, imm =  -2
+@15d6
+A6 63 // I_inst: load 0110001110100110 rs =  1, rt = 13, imm =   6
+@15d8
+10 07 // R_inst: sub 0000011100010000 rs =  3, rt =  8, imm =   8
+@15da
+12 96 // J_inst: jump 1001011000010010 address = 01612
+@15dc
+E4 30 // R_inst: mult 0011000011100100 rs =  8, rt =  7, imm =   2
+@15de
+C8 04 // R_inst: sub 0000010011001000 rs =  2, rt =  6, imm = -13
+@15e0
+7C 15 // R_inst: sub 0001010101111100 rs = 10, rt = 11, imm =  14
+@15e2
+D6 37 // R_inst: mult 0011011111010110 rs = 11, rt = 14, imm =  -5
+@15e4
+7C 0C // R_inst: sub 0000110001111100 rs =  6, rt =  3, imm =   9
+@15e6
+EC 06 // R_inst: sub 0000011011101100 rs =  3, rt =  7, imm = -13
+@15e8
+C9 1D // R_inst: add 0001110111001001 rs = 14, rt = 14, imm = -16
+@15ea
+C7 14 // R_inst: add 0001010011000111 rs = 10, rt =  6, imm = -16
+@15ec
+AE 3E // R_inst: mult 0011111010101110 rs = 15, rt =  5, imm = -13
+@15ee
+9E 3E // R_inst: mult 0011111010011110 rs = 15, rt =  4, imm =  -5
+@15f0
+F2 3C // R_inst: mult 0011110011110010 rs = 14, rt =  7, imm =   4
+@15f2
+06 35 // R_inst: mult 0011010100000110 rs = 10, rt =  8, imm =   6
+@15f4
+B7 1A // R_inst: add 0001101010110111 rs = 13, rt =  5, imm =  -3
+@15f6
+F4 14 // R_inst: sub 0001010011110100 rs = 10, rt =  7, imm =   6
+@15f8
+FE 03 // R_inst: sub 0000001111111110 rs =  1, rt = 15, imm =  -8
+@15fa
+78 3C // R_inst: mult 0011110001111000 rs = 14, rt =  3, imm =  -7
+@15fc
+34 31 // R_inst: mult 0011000100110100 rs =  8, rt =  9, imm =   7
+@15fe
+2F 03 // R_inst: add 0000001100101111 rs =  1, rt =  9, imm =  -8
+@1600
+28 25 // R_inst: mult 0010010100101000 rs =  2, rt =  9, imm =   9
+@1602
+2B 0E // R_inst: add 0000111000101011 rs =  7, rt =  1, imm = -12
+@1604
+E8 32 // R_inst: mult 0011001011101000 rs =  9, rt =  7, imm = -11
+@1606
+DE 23 // R_inst: mult 0010001111011110 rs =  1, rt = 14, imm =  15
+@1608
+A6 0F // R_inst: sub 0000111110100110 rs =  7, rt = 13, imm = -10
+@160a
+09 11 // R_inst: add 0001000100001001 rs =  8, rt =  8, imm =  10
+@160c
+CE 12 // R_inst: sub 0001001011001110 rs =  9, rt =  6, imm =   7
+@160e
+51 1D // R_inst: add 0001110101010001 rs = 14, rt = 10, imm = -12
+@1610
+0E 2B // R_inst: mult 0010101100001110 rs =  5, rt =  8, imm = -12
+@1612
+CE 35 // R_inst: mult 0011010111001110 rs = 10, rt = 14, imm =   4
+@1614
+CD A5 // I_inst: beq 1010010111001101 rs =  2, rt = 14, imm =  13
+@1616
+99 2C // R_inst: set 0010110010011001 rs =  6, rt =  4, imm = -16
+@1618
+44 05 // R_inst: sub 0000010101000100 rs =  2, rt = 10, imm =   0
+@161a
+DA 77 // I_inst: load 0111011111011010 rs = 11, rt = 14, imm =  -6
+@161c
+5A 76 // I_inst: load 0111011001011010 rs = 11, rt =  2, imm =  -6
+@161e
+14 96 // J_inst: jump 1001011000010100 address = 01614
+@1620
+5C 2F // R_inst: mult 0010111101011100 rs =  7, rt = 10, imm =   6
+@1622
+6A 39 // R_inst: mult 0011100101101010 rs = 12, rt = 11, imm =  -6
+@1624
+C2 17 // R_inst: sub 0001011111000010 rs = 11, rt = 14, imm =  -3
+@1626
+08 1F // R_inst: sub 0001111100001000 rs = 15, rt =  8, imm =   6
+@1628
+42 3C // R_inst: mult 0011110001000010 rs = 14, rt =  2, imm =  13
+@162a
+69 18 // R_inst: add 0001100001101001 rs = 12, rt =  3, imm =  10
+@162c
+C3 06 // R_inst: add 0000011011000011 rs =  3, rt =  6, imm =  -9
+@162e
+78 0C // R_inst: sub 0000110001111000 rs =  6, rt =  3, imm =   4
+@1630
+62 96 // J_inst: jump 1001011001100010 address = 01662
+@1632
+15 1A // R_inst: add 0001101000010101 rs = 13, rt =  0, imm =   3
+@1634
+93 11 // R_inst: add 0001000110010011 rs =  8, rt = 12, imm =  -2
+@1636
+EC 22 // R_inst: mult 0010001011101100 rs =  1, rt =  7, imm =  -8
+@1638
+CA 08 // R_inst: sub 0000100011001010 rs =  4, rt =  6, imm =   3
+@163a
+9E 13 // R_inst: sub 0001001110011110 rs =  9, rt = 12, imm =  11
+@163c
+CC 11 // R_inst: sub 0001000111001100 rs =  8, rt = 14, imm =  -7
+@163e
+8E 03 // R_inst: sub 0000001110001110 rs =  1, rt = 12, imm =  10
+@1640
+69 0D // R_inst: add 0000110101101001 rs =  6, rt = 11, imm =  -6
+@1642
+9D 17 // R_inst: add 0001011110011101 rs = 11, rt = 12, imm =   9
+@1644
+1D 0A // R_inst: add 0000101000011101 rs =  5, rt =  0, imm =  -1
+@1646
+B4 32 // R_inst: mult 0011001010110100 rs =  9, rt =  5, imm = -13
+@1648
+48 0D // R_inst: sub 0000110101001000 rs =  6, rt = 10, imm =  -5
+@164a
+9C 27 // R_inst: mult 0010011110011100 rs =  3, rt = 12, imm = -12
+@164c
+18 31 // R_inst: mult 0011000100011000 rs =  8, rt =  8, imm =  14
+@164e
+EB 0D // R_inst: add 0000110111101011 rs =  6, rt = 15, imm =  11
+@1650
+AE 12 // R_inst: sub 0001001010101110 rs =  9, rt =  5, imm =  10
+@1652
+35 18 // R_inst: add 0001100000110101 rs = 12, rt =  1, imm =   6
+@1654
+48 39 // R_inst: mult 0011100101001000 rs = 12, rt = 10, imm =  -6
+@1656
+B9 16 // R_inst: add 0001011010111001 rs = 11, rt =  5, imm = -16
+@1658
+18 16 // R_inst: sub 0001011000011000 rs = 11, rt =  0, imm =  -3
+@165a
+BB 10 // R_inst: add 0001000010111011 rs =  8, rt =  5, imm = -14
+@165c
+88 10 // R_inst: sub 0001000010001000 rs =  8, rt =  4, imm =  -4
+@165e
+73 16 // R_inst: add 0001011001110011 rs = 11, rt =  3, imm =  -7
+@1660
+5A 27 // R_inst: mult 0010011101011010 rs =  3, rt = 10, imm =   5
+@1662
+E3 78 // I_inst: load 0111100011100011 rs = 12, rt =  7, imm =   3
+@1664
+AD AD // I_inst: beq 1010110110101101 rs =  6, rt = 13, imm =  13
+@1666
+8B 2B // R_inst: set 0010101110001011 rs =  5, rt = 12, imm = -16
+@1668
+B0 12 // R_inst: sub 0001001010110000 rs =  9, rt =  5, imm =   1
+@166a
+37 65 // I_inst: load 0110010100110111 rs =  2, rt =  9, imm =  -9
+@166c
+A7 61 // I_inst: load 0110000110100111 rs =  0, rt = 13, imm =   7
+@166e
+C7 60 // I_inst: load 0110000011000111 rs =  0, rt =  6, imm =   7
+@1670
+64 96 // J_inst: jump 1001011001100100 address = 01664
+@1672
+5C 0B // R_inst: sub 0000101101011100 rs =  5, rt = 10, imm =   7
+@1674
+7E 10 // R_inst: sub 0001000001111110 rs =  8, rt =  3, imm =  10
+@1676
+26 25 // R_inst: mult 0010010100100110 rs =  2, rt =  9, imm =  -7
+@1678
+12 3F // R_inst: mult 0011111100010010 rs = 15, rt =  8, imm = -16
+@167a
+77 05 // R_inst: add 0000010101110111 rs =  2, rt = 11, imm =  -8
+@167c
+67 1F // R_inst: add 0001111101100111 rs = 15, rt = 11, imm =  15
+@167e
+AE 17 // R_inst: sub 0001011110101110 rs = 11, rt = 13, imm = -16
+@1680
+37 45 // I_inst: store 0100010100110111 rs =  2, rt =  9, imm =  -9
+@1682
+EC BB // I_inst: beq 1011101111101100 rs = 13, rt = 15, imm =  12
+@1684
+63 34 // R_inst: set 0011010001100011 rs = 10, rt =  3, imm =   3
+@1686
+22 2F // R_inst: mult 0010111100100010 rs =  7, rt =  9, imm =  -1
+@1688
+EE 51 // I_inst: store 0101000111101110 rs =  8, rt = 15, imm =  14
+@168a
+36 2F // R_inst: mult 0010111100110110 rs =  7, rt =  9, imm =  10
+@168c
+F0 7D // I_inst: load 0111110111110000 rs = 14, rt = 15, imm = -16
+@168e
+B0 7D // I_inst: load 0111110110110000 rs = 14, rt = 13, imm = -16
+@1690
+82 96 // J_inst: jump 1001011010000010 address = 01682
+@1692
+CB 04 // R_inst: add 0000010011001011 rs =  2, rt =  6, imm =  -1
+@1694
+E7 00 // R_inst: add 0000000011100111 rs =  0, rt =  7, imm =   0
+@1696
+B6 0E // R_inst: sub 0000111010110110 rs =  7, rt =  5, imm =   9
+@1698
+E3 01 // R_inst: add 0000000111100011 rs =  0, rt = 15, imm = -13
+@169a
+56 25 // R_inst: mult 0010010101010110 rs =  2, rt = 10, imm = -12
+@169c
+4C 29 // R_inst: mult 0010100101001100 rs =  4, rt = 10, imm =  14
+@169e
+85 73 // I_inst: load 0111001110000101 rs =  9, rt = 12, imm =   5
+@16a0
+D8 96 // J_inst: jump 1001011011011000 address = 016d8
+@16a2
+A2 2D // R_inst: mult 0010110110100010 rs =  6, rt = 13, imm =   2
+@16a4
+8A 1B // R_inst: sub 0001101110001010 rs = 13, rt = 12, imm = -16
+@16a6
+69 10 // R_inst: add 0001000001101001 rs =  8, rt =  3, imm =   5
+@16a8
+54 23 // R_inst: mult 0010001101010100 rs =  1, rt = 10, imm =  -7
+@16aa
+74 3D // R_inst: mult 0011110101110100 rs = 14, rt = 11, imm =  -2
+@16ac
+0A 0E // R_inst: sub 0000111000001010 rs =  7, rt =  0, imm =  -2
+@16ae
+63 1C // R_inst: add 0001110001100011 rs = 14, rt =  3, imm =   5
+@16b0
+AD 1B // R_inst: add 0001101110101101 rs = 13, rt = 13, imm = -11
+@16b2
+87 1D // R_inst: add 0001110110000111 rs = 14, rt = 12, imm =  14
+@16b4
+FD 1A // R_inst: add 0001101011111101 rs = 13, rt =  7, imm = -13
+@16b6
+EF 12 // R_inst: add 0001001011101111 rs =  9, rt =  7, imm = -15
+@16b8
+2D 1A // R_inst: add 0001101000101101 rs = 13, rt =  1, imm = -15
+@16ba
+DC 29 // R_inst: mult 0010100111011100 rs =  4, rt = 14, imm =   8
+@16bc
+A5 09 // R_inst: add 0000100110100101 rs =  4, rt = 13, imm = -12
+@16be
+CC 1D // R_inst: sub 0001110111001100 rs = 14, rt = 14, imm =  10
+@16c0
+B5 0B // R_inst: add 0000101110110101 rs =  5, rt = 13, imm =  -2
+@16c2
+D9 1B // R_inst: add 0001101111011001 rs = 13, rt = 14, imm =   9
+@16c4
+C9 14 // R_inst: add 0001010011001001 rs = 10, rt =  6, imm = -12
+@16c6
+48 28 // R_inst: mult 0010100001001000 rs =  4, rt =  2, imm =   8
+@16c8
+0D 16 // R_inst: add 0001011000001101 rs = 11, rt =  0, imm =   3
+@16ca
+DD 02 // R_inst: add 0000001011011101 rs =  1, rt =  6, imm =   2
+@16cc
+B6 31 // R_inst: mult 0011000110110110 rs =  8, rt = 13, imm =   0
+@16ce
+08 12 // R_inst: sub 0001001000001000 rs =  9, rt =  0, imm = -10
+@16d0
+90 06 // R_inst: sub 0000011010010000 rs =  3, rt =  4, imm =  -5
+@16d2
+30 04 // R_inst: sub 0000010000110000 rs =  2, rt =  1, imm =   9
+@16d4
+DE 1D // R_inst: sub 0001110111011110 rs = 14, rt = 14, imm = -14
+@16d6
+B4 0A // R_inst: sub 0000101010110100 rs =  5, rt =  5, imm = -14
+@16d8
+E2 52 // I_inst: store 0101001011100010 rs =  9, rt =  7, imm =   2
+@16da
+FC 96 // J_inst: jump 1001011011111100 address = 016fc
+@16dc
+EE 32 // R_inst: mult 0011001011101110 rs =  9, rt =  7, imm =  11
+@16de
+35 03 // R_inst: add 0000001100110101 rs =  1, rt =  9, imm =  -2
+@16e0
+5C 2A // R_inst: mult 0010101001011100 rs =  5, rt =  2, imm =  -6
+@16e2
+83 15 // R_inst: add 0001010110000011 rs = 10, rt = 12, imm = -13
+@16e4
+AD 1A // R_inst: add 0001101010101101 rs = 13, rt =  5, imm =  10
+@16e6
+9D 00 // R_inst: add 0000000010011101 rs =  0, rt =  4, imm =   0
+@16e8
+BE 18 // R_inst: sub 0001100010111110 rs = 12, rt =  5, imm =   3
+@16ea
+D4 0C // R_inst: sub 0000110011010100 rs =  6, rt =  6, imm =  -7
+@16ec
+5C 3C // R_inst: mult 0011110001011100 rs = 14, rt =  2, imm =  -5
+@16ee
+A7 08 // R_inst: add 0000100010100111 rs =  4, rt =  5, imm =  -7
+@16f0
+A2 1C // R_inst: sub 0001110010100010 rs = 14, rt =  5, imm = -16
+@16f2
+CA 30 // R_inst: mult 0011000011001010 rs =  8, rt =  6, imm =  -3
+@16f4
+2D 09 // R_inst: add 0000100100101101 rs =  4, rt =  9, imm =   1
+@16f6
+F7 06 // R_inst: add 0000011011110111 rs =  3, rt =  7, imm =   6
+@16f8
+C6 1A // R_inst: sub 0001101011000110 rs = 13, rt =  6, imm =   3
+@16fa
+C7 1C // R_inst: add 0001110011000111 rs = 14, rt =  6, imm =  -5
+@16fc
+45 7D // I_inst: load 0111110101000101 rs = 14, rt = 10, imm =   5
+@16fe
+08 97 // J_inst: jump 1001011100001000 address = 01708
+@1700
+0E 97 // J_inst: jump 1001011100001110 address = 0170e
+@1702
+BE 14 // R_inst: sub 0001010010111110 rs = 10, rt =  5, imm = -10
+@1704
+5E 1D // R_inst: sub 0001110101011110 rs = 14, rt = 10, imm =  13
+@1706
+B2 0B // R_inst: sub 0000101110110010 rs =  5, rt = 13, imm =   5
+@1708
+FF 70 // I_inst: load 0111000011111111 rs =  8, rt =  7, imm =  -1
+@170a
+BF 70 // I_inst: load 0111000010111111 rs =  8, rt =  5, imm =  -1
+@170c
+F9 AA // I_inst: beq 1010101011111001 rs =  5, rt =  7, imm =  -7
+@170e
+1E 97 // J_inst: jump 1001011100011110 address = 0171e
+@1710
+24 97 // J_inst: jump 1001011100100100 address = 01724
+@1712
+22 09 // R_inst: sub 0000100100100010 rs =  4, rt =  9, imm =   2
+@1714
+7C 2D // R_inst: mult 0010110101111100 rs =  6, rt = 11, imm = -12
+@1716
+95 1E // R_inst: add 0001111010010101 rs = 15, rt =  4, imm = -14
+@1718
+F4 19 // R_inst: sub 0001100111110100 rs = 12, rt = 15, imm =  -9
+@171a
+3A 1C // R_inst: sub 0001110000111010 rs = 14, rt =  1, imm =   2
+@171c
+D9 12 // R_inst: add 0001001011011001 rs =  9, rt =  6, imm =  -2
+@171e
+FC 7C // I_inst: load 0111110011111100 rs = 14, rt =  7, imm =  -4
+@1720
+7C 7C // I_inst: load 0111110001111100 rs = 14, rt =  3, imm =  -4
+@1722
+F6 A6 // I_inst: beq 1010011011110110 rs =  3, rt =  7, imm = -10
+@1724
+3A 97 // J_inst: jump 1001011100111010 address = 0173a
+@1726
+BE 39 // R_inst: mult 0011100110111110 rs = 12, rt = 13, imm =  -6
+@1728
+A8 1D // R_inst: sub 0001110110101000 rs = 14, rt = 13, imm =   8
+@172a
+3B 0D // R_inst: add 0000110100111011 rs =  6, rt =  9, imm =  14
+@172c
+B4 25 // R_inst: mult 0010010110110100 rs =  2, rt = 13, imm =   4
+@172e
+C3 0B // R_inst: add 0000101111000011 rs =  5, rt = 14, imm = -11
+@1730
+B6 2D // R_inst: mult 0010110110110110 rs =  6, rt = 13, imm = -10
+@1732
+1A 31 // R_inst: mult 0011000100011010 rs =  8, rt =  8, imm = -10
+@1734
+C4 38 // R_inst: mult 0011100011000100 rs = 12, rt =  6, imm =  -6
+@1736
+8C 11 // R_inst: sub 0001000110001100 rs =  8, rt = 12, imm =  12
+@1738
+91 16 // R_inst: add 0001011010010001 rs = 11, rt =  4, imm =  14
+@173a
+46 97 // J_inst: jump 1001011101000110 address = 01746
+@173c
+4C 97 // J_inst: jump 1001011101001100 address = 0174c
+@173e
+EA 1E // R_inst: sub 0001111011101010 rs = 15, rt =  7, imm =  -3
+@1740
+1E 07 // R_inst: sub 0000011100011110 rs =  3, rt =  8, imm =  12
+@1742
+5E 13 // R_inst: sub 0001001101011110 rs =  9, rt = 10, imm =  -6
+@1744
+44 0A // R_inst: sub 0000101001000100 rs =  5, rt =  2, imm = -16
+@1746
+99 70 // I_inst: load 0111000010011001 rs =  8, rt =  4, imm =  -7
+@1748
+39 71 // I_inst: load 0111000100111001 rs =  8, rt =  9, imm =  -7
+@174a
+98 B2 // I_inst: beq 1011001010011000 rs =  9, rt =  4, imm =  -8
+@174c
+75 20 // R_inst: set 0010000001110101 rs =  0, rt =  3, imm = -14
+@174e
+8C 04 // R_inst: sub 0000010010001100 rs =  2, rt =  4, imm = -10
+@1750
+16 01 // R_inst: sub 0000000100010110 rs =  0, rt =  8, imm =   0
+@1752
+CA B6 // I_inst: beq 1011011011001010 rs = 11, rt =  6, imm =  10
+@1754
+1C 08 // R_inst: sub 0000100000011100 rs =  4, rt =  0, imm =  10
+@1756
+88 2A // R_inst: mult 0010101010001000 rs =  5, rt =  4, imm = -13
+@1758
+8D 6C // I_inst: load 0110110010001101 rs =  6, rt =  4, imm =  13
+@175a
+80 97 // J_inst: jump 1001011110000000 address = 01780
+@175c
+76 3B // R_inst: mult 0011101101110110 rs = 13, rt = 11, imm =  13
+@175e
+5B 0A // R_inst: add 0000101001011011 rs =  5, rt =  2, imm = -13
+@1760
+8E 1C // R_inst: sub 0001110010001110 rs = 14, rt =  4, imm =  -9
+@1762
+B2 1E // R_inst: sub 0001111010110010 rs = 15, rt =  5, imm =   7
+@1764
+7A 0A // R_inst: sub 0000101001111010 rs =  5, rt =  3, imm = -10
+@1766
+FD 0C // R_inst: add 0000110011111101 rs =  6, rt =  7, imm =  10
+@1768
+68 07 // R_inst: sub 0000011101101000 rs =  3, rt = 11, imm =  10
+@176a
+52 27 // R_inst: mult 0010011101010010 rs =  3, rt = 10, imm =   7
+@176c
+32 26 // R_inst: mult 0010011000110010 rs =  3, rt =  1, imm =   3
+@176e
+CA 3E // R_inst: mult 0011111011001010 rs = 15, rt =  6, imm =  10
+@1770
+C9 1F // R_inst: add 0001111111001001 rs = 15, rt = 14, imm =   5
+@1772
+AE 27 // R_inst: mult 0010011110101110 rs =  3, rt = 13, imm =  14
+@1774
+54 3F // R_inst: mult 0011111101010100 rs = 15, rt = 10, imm =  -8
+@1776
+18 33 // R_inst: mult 0011001100011000 rs =  9, rt =  8, imm =  -2
+@1778
+D8 32 // R_inst: mult 0011001011011000 rs =  9, rt =  6, imm =   3
+@177a
+E6 00 // R_inst: sub 0000000011100110 rs =  0, rt =  7, imm =   2
+@177c
+C6 39 // R_inst: mult 0011100111000110 rs = 12, rt = 14, imm =   9
+@177e
+E5 0A // R_inst: add 0000101011100101 rs =  5, rt =  7, imm =  12
+@1780
+2E 3D // R_inst: mult 0011110100101110 rs = 14, rt =  9, imm = -16
+@1782
+15 13 // R_inst: add 0001001100010101 rs =  9, rt =  8, imm =  11
+@1784
+AE 55 // I_inst: store 0101010110101110 rs = 10, rt = 13, imm =  14
+@1786
+A4 A5 // I_inst: beq 1010010110100100 rs =  2, rt = 13, imm =   4
+@1788
+E0 6C // I_inst: load 0110110011100000 rs =  6, rt =  7, imm =   0
+@178a
+A6 2E // R_inst: mult 0010111010100110 rs =  7, rt =  5, imm = -15
+@178c
+83 B3 // I_inst: beq 1011001110000011 rs =  9, rt = 12, imm =   3
+@178e
+1A 45 // I_inst: store 0100010100011010 rs =  2, rt =  8, imm =  -6
+@1790
+8E B0 // I_inst: beq 1011000010001110 rs =  8, rt =  4, imm =  14
+@1792
+82 33 // R_inst: mult 0011001110000010 rs =  9, rt = 12, imm =  -7
+@1794
+2C AA // I_inst: beq 1010101000101100 rs =  5, rt =  1, imm =  12
+@1796
+C0 97 // J_inst: jump 1001011111000000 address = 017c0
+@1798
+9A 15 // R_inst: sub 0001010110011010 rs = 10, rt = 12, imm =  -3
+@179a
+4F 0D // R_inst: add 0000110101001111 rs =  6, rt = 10, imm =   5
+@179c
+2C 04 // R_inst: sub 0000010000101100 rs =  2, rt =  1, imm =  10
+@179e
+88 28 // R_inst: mult 0010100010001000 rs =  4, rt =  4, imm =  -9
+@17a0
+B3 0B // R_inst: add 0000101110110011 rs =  5, rt = 13, imm =  15
+@17a2
+67 0E // R_inst: add 0000111001100111 rs =  7, rt =  3, imm =  14
+@17a4
+C2 02 // R_inst: sub 0000001011000010 rs =  1, rt =  6, imm =   6
+@17a6
+3D 11 // R_inst: add 0001000100111101 rs =  8, rt =  9, imm =   5
+@17a8
+97 16 // R_inst: add 0001011010010111 rs = 11, rt =  4, imm =  -2
+@17aa
+F5 0E // R_inst: add 0000111011110101 rs =  7, rt =  7, imm =  -4
+@17ac
+9A 2F // R_inst: mult 0010111110011010 rs =  7, rt = 12, imm = -11
+@17ae
+2C 36 // R_inst: mult 0011011000101100 rs = 11, rt =  1, imm = -10
+@17b0
+4C 2C // R_inst: mult 0010110001001100 rs =  6, rt =  2, imm =  -2
+@17b2
+36 0C // R_inst: sub 0000110000110110 rs =  6, rt =  1, imm = -10
+@17b4
+34 19 // R_inst: sub 0001100100110100 rs = 12, rt =  9, imm =   0
+@17b6
+F0 11 // R_inst: sub 0001000111110000 rs =  8, rt = 15, imm =  -5
+@17b8
+4C 07 // R_inst: sub 0000011101001100 rs =  3, rt = 10, imm =   3
+@17ba
+82 17 // R_inst: sub 0001011110000010 rs = 11, rt = 12, imm = -11
+@17bc
+4D 0A // R_inst: add 0000101001001101 rs =  5, rt =  2, imm =  15
+@17be
+FE 0D // R_inst: sub 0000110111111110 rs =  6, rt = 15, imm =   3
+@17c0
+83 72 // I_inst: load 0111001010000011 rs =  9, rt =  4, imm =   3
+@17c2
+03 73 // I_inst: load 0111001100000011 rs =  9, rt =  8, imm =   3
+@17c4
+8A B0 // I_inst: beq 1011000010001010 rs =  8, rt =  4, imm =  10
+@17c6
+5F 15 // R_inst: add 0001010101011111 rs = 10, rt = 10, imm = -15
+@17c8
+90 27 // R_inst: mult 0010011110010000 rs =  3, rt = 12, imm =   8
+@17ca
+4E 01 // R_inst: sub 0000000101001110 rs =  0, rt = 10, imm =  -2
+@17cc
+F7 0D // R_inst: add 0000110111110111 rs =  6, rt = 15, imm = -12
+@17ce
+DB 1A // R_inst: add 0001101011011011 rs = 13, rt =  6, imm =  15
+@17d0
+E3 0C // R_inst: add 0000110011100011 rs =  6, rt =  7, imm =  10
+@17d2
+9B 12 // R_inst: add 0001001010011011 rs =  9, rt =  4, imm =   1
+@17d4
+50 0C // R_inst: sub 0000110001010000 rs =  6, rt =  2, imm = -15
+@17d6
+F9 1E // R_inst: add 0001111011111001 rs = 15, rt =  7, imm =  13
+@17d8
+3F 19 // R_inst: add 0001100100111111 rs = 12, rt =  9, imm =   8
+@17da
+02 98 // J_inst: jump 1001100000000010 address = 01802
+@17dc
+BB 05 // R_inst: add 0000010110111011 rs =  2, rt = 13, imm =  13
+@17de
+3C 2F // R_inst: mult 0010111100111100 rs =  7, rt =  9, imm =   0
+@17e0
+BC 3D // R_inst: mult 0011110110111100 rs = 14, rt = 13, imm =  -6
+@17e2
+70 1E // R_inst: sub 0001111001110000 rs = 15, rt =  3, imm =  13
+@17e4
+99 1E // R_inst: add 0001111010011001 rs = 15, rt =  4, imm = -11
+@17e6
+82 25 // R_inst: mult 0010010110000010 rs =  2, rt = 12, imm = -13
+@17e8
+B5 0C // R_inst: add 0000110010110101 rs =  6, rt =  5, imm = -10
+@17ea
+FA 3C // R_inst: mult 0011110011111010 rs = 14, rt =  7, imm =  -8
+@17ec
+E7 06 // R_inst: add 0000011011100111 rs =  3, rt =  7, imm =   6
+@17ee
+47 07 // R_inst: add 0000011101000111 rs =  3, rt = 10, imm = -12
+@17f0
+54 3E // R_inst: mult 0011111001010100 rs = 15, rt =  2, imm =  15
+@17f2
+8E 39 // R_inst: mult 0011100110001110 rs = 12, rt = 12, imm =   2
+@17f4
+F4 25 // R_inst: mult 0010010111110100 rs =  2, rt = 15, imm =   6
+@17f6
+7A 06 // R_inst: sub 0000011001111010 rs =  3, rt =  3, imm =   5
+@17f8
+D8 2D // R_inst: mult 0010110111011000 rs =  6, rt = 14, imm = -12
+@17fa
+24 3F // R_inst: mult 0011111100100100 rs = 15, rt =  9, imm = -13
+@17fc
+0A 04 // R_inst: sub 0000010000001010 rs =  2, rt =  0, imm =  -3
+@17fe
+9E 08 // R_inst: sub 0000100010011110 rs =  4, rt =  4, imm =   0
+@1800
+F9 14 // R_inst: add 0001010011111001 rs = 10, rt =  7, imm =   2
+@1802
+AA 16 // R_inst: sub 0001011010101010 rs = 11, rt =  5, imm = -16
+@1804
+4F AE // I_inst: beq 1010111001001111 rs =  7, rt =  2, imm =  15
+@1806
+AB 0B // R_inst: add 0000101110101011 rs =  5, rt = 13, imm =  13
+@1808
+4C 78 // I_inst: load 0111100001001100 rs = 12, rt =  2, imm =  12
+@180a
+EC 78 // I_inst: load 0111100011101100 rs = 12, rt =  7, imm =  12
+@180c
+04 98 // J_inst: jump 1001100000000100 address = 01804
+@180e
+EA 12 // R_inst: sub 0001001011101010 rs =  9, rt =  7, imm = -14
+@1810
+55 0E // R_inst: add 0000111001010101 rs =  7, rt =  2, imm =   3
+@1812
+04 11 // R_inst: sub 0001000100000100 rs =  8, rt =  8, imm = -11
+@1814
+CE 0E // R_inst: sub 0000111011001110 rs =  7, rt =  6, imm =   2
+@1816
+E8 37 // R_inst: mult 0011011111101000 rs = 11, rt = 15, imm =   6
+@1818
+82 11 // R_inst: sub 0001000110000010 rs =  8, rt = 12, imm =  -4
+@181a
+6A 3C // R_inst: mult 0011110001101010 rs = 14, rt =  3, imm =  13
+@181c
+02 1E // R_inst: sub 0001111000000010 rs = 15, rt =  0, imm = -12
+@181e
+B0 06 // R_inst: sub 0000011010110000 rs =  3, rt =  5, imm =   3
+@1820
+F2 0C // R_inst: sub 0000110011110010 rs =  6, rt =  7, imm = -12
+@1822
+E8 1B // R_inst: sub 0001101111101000 rs = 13, rt = 15, imm = -15
+@1824
+22 49 // I_inst: store 0100100100100010 rs =  4, rt =  9, imm =   2
+@1826
+D5 4D // I_inst: store 0100110111010101 rs =  6, rt = 14, imm = -11
+@1828
+6E B7 // I_inst: beq 1011011101101110 rs = 11, rt = 11, imm =  14
+@182a
+3B 18 // R_inst: add 0001100000111011 rs = 12, rt =  1, imm =   5
+@182c
+E2 0B // R_inst: sub 0000101111100010 rs =  5, rt = 15, imm =   7
+@182e
+5D 02 // R_inst: add 0000001001011101 rs =  1, rt =  2, imm =  -4
+@1830
+E3 08 // R_inst: add 0000100011100011 rs =  4, rt =  7, imm =  -5
+@1832
+92 3F // R_inst: mult 0011111110010010 rs = 15, rt = 12, imm = -11
+@1834
+E9 07 // R_inst: add 0000011111101001 rs =  3, rt = 15, imm = -14
+@1836
+AA 0C // R_inst: sub 0000110010101010 rs =  6, rt =  5, imm =  -8
+@1838
+A7 03 // R_inst: add 0000001110100111 rs =  1, rt = 13, imm =   3
+@183a
+04 1E // R_inst: sub 0001111000000100 rs = 15, rt =  0, imm =  12
+@183c
+27 18 // R_inst: add 0001100000100111 rs = 12, rt =  1, imm =  -6
+@183e
+AB 09 // R_inst: add 0000100110101011 rs =  4, rt = 13, imm =  -2
+@1840
+E6 1D // R_inst: sub 0001110111100110 rs = 14, rt = 15, imm = -12
+@1842
+C4 23 // R_inst: mult 0010001111000100 rs =  1, rt = 14, imm =  10
+@1844
+EA 11 // R_inst: sub 0001000111101010 rs =  8, rt = 15, imm = -11
+@1846
+80 55 // I_inst: store 0101010110000000 rs = 10, rt = 12, imm =   0
+@1848
+C2 00 // R_inst: sub 0000000011000010 rs =  0, rt =  6, imm =   6
+@184a
+A6 B6 // I_inst: beq 1011011010100110 rs = 11, rt =  5, imm =   6
+@184c
+DF 10 // R_inst: add 0001000011011111 rs =  8, rt =  6, imm =  -8
+@184e
+68 1B // R_inst: sub 0001101101101000 rs = 13, rt = 11, imm =  -8
+@1850
+D3 0E // R_inst: add 0000111011010011 rs =  7, rt =  6, imm =  -6
+@1852
+F3 0F // R_inst: add 0000111111110011 rs =  7, rt = 15, imm = -12
+@1854
+F6 1B // R_inst: sub 0001101111110110 rs = 13, rt = 15, imm =  -1
+@1856
+E4 1A // R_inst: sub 0001101011100100 rs = 13, rt =  7, imm =   6
+@1858
+60 98 // J_inst: jump 1001100001100000 address = 01860
+@185a
+4C 30 // R_inst: mult 0011000001001100 rs =  8, rt =  2, imm = -11
+@185c
+AA 1C // R_inst: sub 0001110010101010 rs = 14, rt =  5, imm = -14
+@185e
+1C 0A // R_inst: sub 0000101000011100 rs =  5, rt =  0, imm =   5
+@1860
+B0 34 // R_inst: mult 0011010010110000 rs = 10, rt =  5, imm =   9
+@1862
+49 60 // I_inst: load 0110000001001001 rs =  0, rt =  2, imm =   9
+@1864
+C3 AC // I_inst: beq 1010110011000011 rs =  6, rt =  6, imm =   3
+@1866
+3A 0E // R_inst: sub 0000111000111010 rs =  7, rt =  1, imm = -11
+@1868
+46 10 // R_inst: sub 0001000001000110 rs =  8, rt =  2, imm =  -2
+@186a
+4E 15 // R_inst: sub 0001010101001110 rs = 10, rt = 10, imm =   7
+@186c
+7E 98 // J_inst: jump 1001100001111110 address = 0187e
+@186e
+84 98 // J_inst: jump 1001100010000100 address = 01884
+@1870
+3E 05 // R_inst: sub 0000010100111110 rs =  2, rt =  9, imm =  13
+@1872
+AC 30 // R_inst: mult 0011000010101100 rs =  8, rt =  5, imm = -10
+@1874
+AE 3E // R_inst: mult 0011111010101110 rs = 15, rt =  5, imm = -16
+@1876
+BC 0C // R_inst: sub 0000110010111100 rs =  6, rt =  5, imm =  -4
+@1878
+DC 12 // R_inst: sub 0001001011011100 rs =  9, rt =  6, imm = -13
+@187a
+EA 0B // R_inst: sub 0000101111101010 rs =  5, rt = 15, imm =  -9
+@187c
+4A 0B // R_inst: sub 0000101101001010 rs =  5, rt = 10, imm =   6
+@187e
+F2 68 // I_inst: load 0110100011110010 rs =  4, rt =  7, imm = -14
+@1880
+72 69 // I_inst: load 0110100101110010 rs =  4, rt = 11, imm = -14
+@1882
+F5 B6 // I_inst: beq 1011011011110101 rs = 11, rt =  7, imm = -11
+@1884
+C8 41 // I_inst: store 0100000111001000 rs =  0, rt = 14, imm =   8
+@1886
+2C 2F // R_inst: mult 0010111100101100 rs =  7, rt =  9, imm = -11
+@1888
+9E 0F // R_inst: sub 0000111110011110 rs =  7, rt = 12, imm =   3
+@188a
+63 02 // R_inst: add 0000001001100011 rs =  1, rt =  3, imm =   5
+@188c
+45 24 // R_inst: set 0010010001000101 rs =  2, rt =  2, imm = -13
+@188e
+39 03 // R_inst: add 0000001100111001 rs =  1, rt =  9, imm =   5
+@1890
+9A 98 // J_inst: jump 1001100010011010 address = 0189a
+@1892
+A0 98 // J_inst: jump 1001100010100000 address = 018a0
+@1894
+58 33 // R_inst: mult 0011001101011000 rs =  9, rt = 10, imm = -11
+@1896
+38 12 // R_inst: sub 0001001000111000 rs =  9, rt =  1, imm = -15
+@1898
+7C 2F // R_inst: mult 0010111101111100 rs =  7, rt = 11, imm =  -4
+@189a
+85 73 // I_inst: load 0111001110000101 rs =  9, rt = 12, imm =   5
+@189c
+45 73 // I_inst: load 0111001101000101 rs =  9, rt = 10, imm =   5
+@189e
+99 B5 // I_inst: beq 1011010110011001 rs = 10, rt = 12, imm =  -7
+@18a0
+6C BE // I_inst: beq 1011111001101100 rs = 15, rt =  3, imm =  12
+@18a2
+BB 34 // R_inst: set 0011010010111011 rs = 10, rt =  5, imm = -16
+@18a4
+63 74 // I_inst: load 0111010001100011 rs = 10, rt =  3, imm =   3
+@18a6
+E3 75 // I_inst: load 0111010111100011 rs = 10, rt = 15, imm =   3
+@18a8
+A0 98 // J_inst: jump 1001100010100000 address = 018a0
+@18aa
+E6 1A // R_inst: sub 0001101011100110 rs = 13, rt =  7, imm =   5
+@18ac
+58 30 // R_inst: mult 0011000001011000 rs =  8, rt =  2, imm =  12
+@18ae
+D8 32 // R_inst: mult 0011001011011000 rs =  9, rt =  6, imm =  -8
+@18b0
+FC 06 // R_inst: sub 0000011011111100 rs =  3, rt =  7, imm =  -7
+@18b2
+3D 01 // R_inst: add 0000000100111101 rs =  0, rt =  9, imm =   7
+@18b4
+DA 32 // R_inst: mult 0011001011011010 rs =  9, rt =  6, imm =  -3
+@18b6
+BB 1C // R_inst: add 0001110010111011 rs = 14, rt =  5, imm = -12
+@18b8
+98 28 // R_inst: mult 0010100010011000 rs =  4, rt =  4, imm =  -5
+@18ba
+6D 75 // I_inst: load 0111010101101101 rs = 10, rt = 11, imm =  13
+@18bc
+87 60 // I_inst: load 0110000010000111 rs =  0, rt =  4, imm =   7
+@18be
+E8 98 // J_inst: jump 1001100011101000 address = 018e8
+@18c0
+68 2F // R_inst: mult 0010111101101000 rs =  7, rt = 11, imm =  -7
+@18c2
+FF 0D // R_inst: add 0000110111111111 rs =  6, rt = 15, imm =   2
+@18c4
+87 13 // R_inst: add 0001001110000111 rs =  9, rt = 12, imm =  -3
+@18c6
+8C 05 // R_inst: sub 0000010110001100 rs =  2, rt = 12, imm =   8
+@18c8
+A7 0E // R_inst: add 0000111010100111 rs =  7, rt =  5, imm =  -8
+@18ca
+48 18 // R_inst: sub 0001100001001000 rs = 12, rt =  2, imm = -16
+@18cc
+F7 1C // R_inst: add 0001110011110111 rs = 14, rt =  7, imm =  -2
+@18ce
+48 22 // R_inst: mult 0010001001001000 rs =  1, rt =  2, imm = -13
+@18d0
+78 34 // R_inst: mult 0011010001111000 rs = 10, rt =  3, imm =  -9
+@18d2
+AE 28 // R_inst: mult 0010100010101110 rs =  4, rt =  5, imm =  12
+@18d4
+C2 03 // R_inst: sub 0000001111000010 rs =  1, rt = 14, imm =  -9
+@18d6
+16 2F // R_inst: mult 0010111100010110 rs =  7, rt =  8, imm =   6
+@18d8
+3A 3B // R_inst: mult 0011101100111010 rs = 13, rt =  9, imm =   7
+@18da
+BA 30 // R_inst: mult 0011000010111010 rs =  8, rt =  5, imm =   0
+@18dc
+72 2F // R_inst: mult 0010111101110010 rs =  7, rt = 11, imm =  15
+@18de
+52 0F // R_inst: sub 0000111101010010 rs =  7, rt = 10, imm =  13
+@18e0
+38 29 // R_inst: mult 0010100100111000 rs =  4, rt =  9, imm =  -2
+@18e2
+C2 35 // R_inst: mult 0011010111000010 rs = 10, rt = 14, imm =  14
+@18e4
+6B 1B // R_inst: add 0001101101101011 rs = 13, rt = 11, imm =  -5
+@18e6
+58 32 // R_inst: mult 0011001001011000 rs =  9, rt =  2, imm =  10
+@18e8
+98 01 // R_inst: sub 0000000110011000 rs =  0, rt = 12, imm =  -1
+@18ea
+CB 41 // I_inst: store 0100000111001011 rs =  0, rt = 14, imm =  11
+@18ec
+26 74 // I_inst: load 0111010000100110 rs = 10, rt =  1, imm =   6
+@18ee
+27 45 // I_inst: store 0100010100100111 rs =  2, rt =  9, imm =   7
+@18f0
+80 41 // I_inst: store 0100000110000000 rs =  0, rt = 12, imm =   0
+@18f2
+4E AF // I_inst: beq 1010111101001110 rs =  7, rt = 10, imm =  14
+@18f4
+4A 13 // R_inst: sub 0001001101001010 rs =  9, rt = 10, imm =  -3
+@18f6
+42 7D // I_inst: load 0111110101000010 rs = 14, rt = 10, imm =   2
+@18f8
+E2 7C // I_inst: load 0111110011100010 rs = 14, rt =  7, imm =   2
+@18fa
+F2 98 // J_inst: jump 1001100011110010 address = 018f2
+@18fc
+A5 0C // R_inst: add 0000110010100101 rs =  6, rt =  5, imm =   7
+@18fe
+EA 26 // R_inst: mult 0010011011101010 rs =  3, rt =  7, imm =  10
+@1900
+32 03 // R_inst: sub 0000001100110010 rs =  1, rt =  9, imm =  -4
+@1902
+12 35 // R_inst: mult 0011010100010010 rs = 10, rt =  8, imm = -10
+@1904
+1E 14 // R_inst: sub 0001010000011110 rs = 10, rt =  0, imm =  -3
+@1906
+1E 0B // R_inst: sub 0000101100011110 rs =  5, rt =  8, imm =  11
+@1908
+30 0F // R_inst: sub 0000111100110000 rs =  7, rt =  9, imm = -10
+@190a
+2A 01 // R_inst: sub 0000000100101010 rs =  0, rt =  9, imm =   4
+@190c
+1E 17 // R_inst: sub 0001011100011110 rs = 11, rt =  8, imm =  -7
+@190e
+BB 06 // R_inst: add 0000011010111011 rs =  3, rt =  5, imm = -11
+@1910
+ED 44 // I_inst: store 0100010011101101 rs =  2, rt =  7, imm =  13
+@1912
+2A 7A // I_inst: load 0111101000101010 rs = 13, rt =  1, imm =  10
+@1914
+B6 07 // R_inst: sub 0000011110110110 rs =  3, rt = 13, imm =  -5
+@1916
+9D 2A // R_inst: set 0010101010011101 rs =  5, rt =  4, imm =   2
+@1918
+22 A3 // I_inst: beq 1010001100100010 rs =  1, rt =  9, imm =   2
+@191a
+73 28 // R_inst: set 0010100001110011 rs =  4, rt =  3, imm = -14
+@191c
+0D 75 // I_inst: load 0111010100001101 rs = 10, rt =  8, imm =  13
+@191e
+8D 75 // I_inst: load 0111010110001101 rs = 10, rt = 12, imm =  13
+@1920
+05 B9 // I_inst: beq 1011100100000101 rs = 12, rt =  8, imm =   5
+@1922
+F6 27 // R_inst: mult 0010011111110110 rs =  3, rt = 15, imm =  14
+@1924
+F6 35 // R_inst: mult 0011010111110110 rs = 10, rt = 15, imm = -10
+@1926
+3A 33 // R_inst: mult 0011001100111010 rs =  9, rt =  9, imm =  12
+@1928
+A6 1D // R_inst: sub 0001110110100110 rs = 14, rt = 13, imm =  15
+@192a
+C3 09 // R_inst: add 0000100111000011 rs =  4, rt = 14, imm = -11
+@192c
+57 31 // R_inst: set 0011000101010111 rs =  8, rt = 10, imm = -16
+@192e
+3A 99 // J_inst: jump 1001100100111010 address = 0193a
+@1930
+40 99 // J_inst: jump 1001100101000000 address = 01940
+@1932
+7C 05 // R_inst: sub 0000010101111100 rs =  2, rt = 11, imm =  -7
+@1934
+9C 06 // R_inst: sub 0000011010011100 rs =  3, rt =  4, imm =  -5
+@1936
+BC 0D // R_inst: sub 0000110110111100 rs =  6, rt = 13, imm = -13
+@1938
+FC 0C // R_inst: sub 0000110011111100 rs =  6, rt =  7, imm =   6
+@193a
+26 65 // I_inst: load 0110010100100110 rs =  2, rt =  9, imm =   6
+@193c
+C6 64 // I_inst: load 0110010011000110 rs =  2, rt =  6, imm =   6
+@193e
+38 AD // I_inst: beq 1010110100111000 rs =  6, rt =  9, imm =  -8
+@1940
+4A 99 // J_inst: jump 1001100101001010 address = 0194a
+@1942
+C2 16 // R_inst: sub 0001011011000010 rs = 11, rt =  6, imm =  -9
+@1944
+1F 10 // R_inst: add 0001000000011111 rs =  8, rt =  0, imm =  -3
+@1946
+F0 0E // R_inst: sub 0000111011110000 rs =  7, rt =  7, imm = -16
+@1948
+26 01 // R_inst: sub 0000000100100110 rs =  0, rt =  9, imm =   9
+@194a
+2E 60 // I_inst: load 0110000000101110 rs =  0, rt =  1, imm =  14
+@194c
+EE 61 // I_inst: load 0110000111101110 rs =  0, rt = 15, imm =  14
+@194e
+24 BE // I_inst: beq 1011111000100100 rs = 15, rt =  1, imm =   4
+@1950
+AE 30 // R_inst: mult 0011000010101110 rs =  8, rt =  5, imm =  -3
+@1952
+B8 00 // R_inst: sub 0000000010111000 rs =  0, rt =  5, imm = -11
+@1954
+B7 16 // R_inst: add 0001011010110111 rs = 11, rt =  5, imm =  14
+@1956
+A5 1F // R_inst: add 0001111110100101 rs = 15, rt = 13, imm =  -4
+@1958
+6C 99 // J_inst: jump 1001100101101100 address = 0196c
+@195a
+72 99 // J_inst: jump 1001100101110010 address = 01972
+@195c
+BA 39 // R_inst: mult 0011100110111010 rs = 12, rt = 13, imm =  -7
+@195e
+FA 19 // R_inst: sub 0001100111111010 rs = 12, rt = 15, imm =   3
+@1960
+5E 37 // R_inst: mult 0011011101011110 rs = 11, rt = 10, imm = -11
+@1962
+7C 0C // R_inst: sub 0000110001111100 rs =  6, rt =  3, imm = -14
+@1964
+91 0C // R_inst: add 0000110010010001 rs =  6, rt =  4, imm = -14
+@1966
+7E 0A // R_inst: sub 0000101001111110 rs =  5, rt =  3, imm = -12
+@1968
+44 22 // R_inst: mult 0010001001000100 rs =  1, rt =  2, imm =  -2
+@196a
+4E 09 // R_inst: sub 0000100101001110 rs =  4, rt = 10, imm =  13
+@196c
+85 60 // I_inst: load 0110000010000101 rs =  0, rt =  4, imm =   5
+@196e
+E5 61 // I_inst: load 0110000111100101 rs =  0, rt = 15, imm =   5
+@1970
+94 BE // I_inst: beq 1011111010010100 rs = 15, rt =  4, imm = -12
+@1972
+E6 B0 // I_inst: beq 1011000011100110 rs =  8, rt =  7, imm =   6
+@1974
+83 B0 // I_inst: beq 1011000010000011 rs =  8, rt =  4, imm =   3
+@1976
+71 08 // R_inst: add 0000100001110001 rs =  4, rt =  3, imm =  -5
+@1978
+2C 2A // R_inst: mult 0010101000101100 rs =  5, rt =  1, imm =  14
+@197a
+3C 07 // R_inst: sub 0000011100111100 rs =  3, rt =  9, imm = -12
+@197c
+A1 B2 // I_inst: beq 1011001010100001 rs =  9, rt =  5, imm =   1
+@197e
+25 76 // I_inst: load 0111011000100101 rs = 11, rt =  1, imm =   5
+@1980
+0C 2B // R_inst: mult 0010101100001100 rs =  5, rt =  8, imm =  -9
+@1982
+7C 53 // I_inst: store 0101001101111100 rs =  9, rt = 11, imm =  -4
+@1984
+5F 13 // R_inst: add 0001001101011111 rs =  9, rt = 10, imm =   1
+@1986
+75 72 // I_inst: load 0111001001110101 rs =  9, rt =  3, imm = -11
+@1988
+75 72 // I_inst: load 0111001001110101 rs =  9, rt =  3, imm = -11
+@198a
+68 A6 // I_inst: beq 1010011001101000 rs =  3, rt =  3, imm =   8
+@198c
+AB 08 // R_inst: add 0000100010101011 rs =  4, rt =  5, imm =  13
+@198e
+4B 0C // R_inst: add 0000110001001011 rs =  6, rt =  2, imm = -14
+@1990
+F0 3D // R_inst: mult 0011110111110000 rs = 14, rt = 15, imm = -11
+@1992
+7C 3E // R_inst: mult 0011111001111100 rs = 15, rt =  3, imm = -11
+@1994
+C6 37 // R_inst: mult 0011011111000110 rs = 11, rt = 14, imm =   4
+@1996
+2D 1A // R_inst: add 0001101000101101 rs = 13, rt =  1, imm =   5
+@1998
+DC 15 // R_inst: sub 0001010111011100 rs = 10, rt = 14, imm = -12
+@199a
+48 1E // R_inst: sub 0001111001001000 rs = 15, rt =  2, imm =  -8
+@199c
+AA 99 // J_inst: jump 1001100110101010 address = 019aa
+@199e
+B0 99 // J_inst: jump 1001100110110000 address = 019b0
+@19a0
+98 3A // R_inst: mult 0011101010011000 rs = 13, rt =  4, imm =  -2
+@19a2
+9D 02 // R_inst: add 0000001010011101 rs =  1, rt =  4, imm =  -9
+@19a4
+18 15 // R_inst: sub 0001010100011000 rs = 10, rt =  8, imm =  14
+@19a6
+38 1B // R_inst: sub 0001101100111000 rs = 13, rt =  9, imm =  -2
+@19a8
+B8 04 // R_inst: sub 0000010010111000 rs =  2, rt =  5, imm = -11
+@19aa
+94 7F // I_inst: load 0111111110010100 rs = 15, rt = 12, imm = -12
+@19ac
+D4 7F // I_inst: load 0111111111010100 rs = 15, rt = 14, imm = -12
+@19ae
+97 BD // I_inst: beq 1011110110010111 rs = 14, rt = 12, imm =  -9
+@19b0
+88 B1 // I_inst: beq 1011000110001000 rs =  8, rt = 12, imm =   8
+@19b2
+C0 99 // J_inst: jump 1001100111000000 address = 019c0
+@19b4
+C6 99 // J_inst: jump 1001100111000110 address = 019c6
+@19b6
+AA 0E // R_inst: sub 0000111010101010 rs =  7, rt =  5, imm =  -2
+@19b8
+38 02 // R_inst: sub 0000001000111000 rs =  1, rt =  1, imm =  -7
+@19ba
+47 1C // R_inst: add 0001110001000111 rs = 14, rt =  2, imm =  11
+@19bc
+8F 15 // R_inst: add 0001010110001111 rs = 10, rt = 12, imm =  -7
+@19be
+56 07 // R_inst: sub 0000011101010110 rs =  3, rt = 10, imm =   4
+@19c0
+CF 6F // I_inst: load 0110111111001111 rs =  7, rt = 14, imm =  15
+@19c2
+2F 6F // I_inst: load 0110111100101111 rs =  7, rt =  9, imm =  15
+@19c4
+D7 B3 // I_inst: beq 1011001111010111 rs =  9, rt = 14, imm =  -9
+@19c6
+D5 78 // I_inst: load 0111100011010101 rs = 12, rt =  6, imm = -11
+@19c8
+9B 17 // R_inst: add 0001011110011011 rs = 11, rt = 12, imm =  14
+@19ca
+65 BF // I_inst: beq 1011111101100101 rs = 15, rt = 11, imm =   5
+@19cc
+08 9A // J_inst: jump 1001101000001000 address = 01a08
+@19ce
+42 29 // R_inst: mult 0010100101000010 rs =  4, rt = 10, imm =   0
+@19d0
+48 2C // R_inst: mult 0010110001001000 rs =  6, rt =  2, imm =  -8
+@19d2
+FE 0C // R_inst: sub 0000110011111110 rs =  6, rt =  7, imm =   7
+@19d4
+0C 0A // R_inst: sub 0000101000001100 rs =  5, rt =  0, imm =   1
+@19d6
+B3 17 // R_inst: add 0001011110110011 rs = 11, rt = 13, imm =   2
+@19d8
+A9 17 // R_inst: add 0001011110101001 rs = 11, rt = 13, imm =  11
+@19da
+1C 14 // R_inst: sub 0001010000011100 rs = 10, rt =  0, imm = -14
+@19dc
+67 16 // R_inst: add 0001011001100111 rs = 11, rt =  3, imm =  -8
+@19de
+E8 1D // R_inst: sub 0001110111101000 rs = 14, rt = 15, imm =  -2
+@19e0
+D3 15 // R_inst: add 0001010111010011 rs = 10, rt = 14, imm =   1
+@19e2
+DB 16 // R_inst: add 0001011011011011 rs = 11, rt =  6, imm =  -8
+@19e4
+FC 3B // R_inst: mult 0011101111111100 rs = 13, rt = 15, imm =  12
+@19e6
+63 00 // R_inst: add 0000000001100011 rs =  0, rt =  3, imm = -15
+@19e8
+69 19 // R_inst: add 0001100101101001 rs = 12, rt = 11, imm =  -5
+@19ea
+E9 12 // R_inst: add 0001001011101001 rs =  9, rt =  7, imm =  -1
+@19ec
+7C 32 // R_inst: mult 0011001001111100 rs =  9, rt =  3, imm =   3
+@19ee
+6A 29 // R_inst: mult 0010100101101010 rs =  4, rt = 11, imm = -11
+@19f0
+04 1C // R_inst: sub 0001110000000100 rs = 14, rt =  0, imm =   7
+@19f2
+A9 03 // R_inst: add 0000001110101001 rs =  1, rt = 13, imm =  -5
+@19f4
+0C 23 // R_inst: mult 0010001100001100 rs =  1, rt =  8, imm =   7
+@19f6
+82 11 // R_inst: sub 0001000110000010 rs =  8, rt = 12, imm =   6
+@19f8
+F2 22 // R_inst: mult 0010001011110010 rs =  1, rt =  7, imm = -12
+@19fa
+5B 00 // R_inst: add 0000000001011011 rs =  0, rt =  2, imm =  -1
+@19fc
+EA 0A // R_inst: sub 0000101011101010 rs =  5, rt =  7, imm =  11
+@19fe
+94 12 // R_inst: sub 0001001010010100 rs =  9, rt =  4, imm = -12
+@1a00
+9C 2F // R_inst: mult 0010111110011100 rs =  7, rt = 12, imm =   7
+@1a02
+0E 1D // R_inst: sub 0001110100001110 rs = 14, rt =  8, imm =   2
+@1a04
+23 01 // R_inst: add 0000000100100011 rs =  0, rt =  9, imm =  -3
+@1a06
+91 1C // R_inst: add 0001110010010001 rs = 14, rt =  4, imm =   8
+@1a08
+1A 9A // J_inst: jump 1001101000011010 address = 01a1a
+@1a0a
+20 9A // J_inst: jump 1001101000100000 address = 01a20
+@1a0c
+8C 0C // R_inst: sub 0000110010001100 rs =  6, rt =  4, imm =  14
+@1a0e
+4C 19 // R_inst: sub 0001100101001100 rs = 12, rt = 10, imm =   1
+@1a10
+5C 02 // R_inst: sub 0000001001011100 rs =  1, rt =  2, imm = -15
+@1a12
+DC 0B // R_inst: sub 0000101111011100 rs =  5, rt = 14, imm =  -2
+@1a14
+71 17 // R_inst: add 0001011101110001 rs = 11, rt = 11, imm = -11
+@1a16
+73 05 // R_inst: add 0000010101110011 rs =  2, rt = 11, imm =  -8
+@1a18
+F0 2F // R_inst: mult 0010111111110000 rs =  7, rt = 15, imm = -12
+@1a1a
+42 62 // I_inst: load 0110001001000010 rs =  1, rt =  2, imm =   2
+@1a1c
+E2 62 // I_inst: load 0110001011100010 rs =  1, rt =  7, imm =   2
+@1a1e
+55 AE // I_inst: beq 1010111001010101 rs =  7, rt =  2, imm = -11
+@1a20
+BB 26 // R_inst: set 0010011010111011 rs =  3, rt =  5, imm =   0
+@1a22
+47 6D // I_inst: load 0110110101000111 rs =  6, rt = 10, imm =   7
+@1a24
+1C 33 // R_inst: mult 0011001100011100 rs =  9, rt =  8, imm = -12
+@1a26
+78 0B // R_inst: sub 0000101101111000 rs =  5, rt = 11, imm = -10
+@1a28
+CC 65 // I_inst: load 0110010111001100 rs =  2, rt = 14, imm =  12
+@1a2a
+EC 64 // I_inst: load 0110010011101100 rs =  2, rt =  7, imm =  12
+@1a2c
+C1 AF // I_inst: beq 1010111111000001 rs =  7, rt = 14, imm =   1
+@1a2e
+5A 02 // R_inst: sub 0000001001011010 rs =  1, rt =  2, imm =  -7
+@1a30
+EB 61 // I_inst: load 0110000111101011 rs =  0, rt = 15, imm =  11
+@1a32
+75 34 // R_inst: set 0011010001110101 rs = 10, rt =  3, imm =  -9
+@1a34
+6A 9A // J_inst: jump 1001101001101010 address = 01a6a
+@1a36
+33 13 // R_inst: add 0001001100110011 rs =  9, rt =  9, imm =   9
+@1a38
+0A 15 // R_inst: sub 0001010100001010 rs = 10, rt =  8, imm =  -1
+@1a3a
+84 2E // R_inst: mult 0010111010000100 rs =  7, rt =  4, imm =  13
+@1a3c
+32 05 // R_inst: sub 0000010100110010 rs =  2, rt =  9, imm =  -4
+@1a3e
+0B 09 // R_inst: add 0000100100001011 rs =  4, rt =  8, imm = -11
+@1a40
+36 3E // R_inst: mult 0011111000110110 rs = 15, rt =  1, imm =  -7
+@1a42
+FC 18 // R_inst: sub 0001100011111100 rs = 12, rt =  7, imm =  12
+@1a44
+58 2E // R_inst: mult 0010111001011000 rs =  7, rt =  2, imm =  -6
+@1a46
+90 07 // R_inst: sub 0000011110010000 rs =  3, rt = 12, imm =  -6
+@1a48
+9E 3F // R_inst: mult 0011111110011110 rs = 15, rt = 12, imm =  -5
+@1a4a
+12 18 // R_inst: sub 0001100000010010 rs = 12, rt =  0, imm = -16
+@1a4c
+24 04 // R_inst: sub 0000010000100100 rs =  2, rt =  1, imm =  -5
+@1a4e
+DD 15 // R_inst: add 0001010111011101 rs = 10, rt = 14, imm =   6
+@1a50
+7F 04 // R_inst: add 0000010001111111 rs =  2, rt =  3, imm =  -9
+@1a52
+14 2D // R_inst: mult 0010110100010100 rs =  6, rt =  8, imm =   2
+@1a54
+A4 09 // R_inst: sub 0000100110100100 rs =  4, rt = 13, imm =  11
+@1a56
+8D 1A // R_inst: add 0001101010001101 rs = 13, rt =  4, imm =   7
+@1a58
+2A 06 // R_inst: sub 0000011000101010 rs =  3, rt =  1, imm = -11
+@1a5a
+F6 0E // R_inst: sub 0000111011110110 rs =  7, rt =  7, imm =  12
+@1a5c
+38 24 // R_inst: mult 0010010000111000 rs =  2, rt =  1, imm =   0
+@1a5e
+3A 18 // R_inst: sub 0001100000111010 rs = 12, rt =  1, imm =   8
+@1a60
+04 13 // R_inst: sub 0001001100000100 rs =  9, rt =  8, imm =  -3
+@1a62
+8C 1E // R_inst: sub 0001111010001100 rs = 15, rt =  4, imm =   8
+@1a64
+56 0B // R_inst: sub 0000101101010110 rs =  5, rt = 10, imm = -10
+@1a66
+A6 34 // R_inst: mult 0011010010100110 rs = 10, rt =  5, imm =   2
+@1a68
+BD 1D // R_inst: add 0001110110111101 rs = 14, rt = 13, imm =  -7
+@1a6a
+06 7D // I_inst: load 0111110100000110 rs = 14, rt =  8, imm =   6
+@1a6c
+67 1F // R_inst: add 0001111101100111 rs = 15, rt = 11, imm = -12
+@1a6e
+8B 76 // I_inst: load 0111011010001011 rs = 11, rt =  4, imm =  11
+@1a70
+AF BA // I_inst: beq 1011101010101111 rs = 13, rt =  5, imm =  15
+@1a72
+61 7E // I_inst: load 0111111001100001 rs = 15, rt =  3, imm =   1
+@1a74
+7A 2A // R_inst: mult 0010101001111010 rs =  5, rt =  3, imm =  -7
+@1a76
+D7 0F // R_inst: add 0000111111010111 rs =  7, rt = 14, imm =  12
+@1a78
+8E 0A // R_inst: sub 0000101010001110 rs =  5, rt =  4, imm =  11
+@1a7a
+AB 6E // I_inst: load 0110111010101011 rs =  7, rt =  5, imm =  11
+@1a7c
+AB 6F // I_inst: load 0110111110101011 rs =  7, rt = 13, imm =  11
+@1a7e
+70 9A // J_inst: jump 1001101001110000 address = 01a70
+@1a80
+5C 2B // R_inst: mult 0010101101011100 rs =  5, rt = 10, imm =   4
+@1a82
+DE 09 // R_inst: sub 0000100111011110 rs =  4, rt = 14, imm = -13
+@1a84
+C6 07 // R_inst: sub 0000011111000110 rs =  3, rt = 14, imm = -14
+@1a86
+CA 1D // R_inst: sub 0001110111001010 rs = 14, rt = 14, imm =  -7
+@1a88
+B1 1A // R_inst: add 0001101010110001 rs = 13, rt =  5, imm =   3
+@1a8a
+D8 24 // R_inst: mult 0010010011011000 rs =  2, rt =  6, imm =  -1
+@1a8c
+5C 2D // R_inst: mult 0010110101011100 rs =  6, rt = 10, imm =   4
+@1a8e
+3B 05 // R_inst: add 0000010100111011 rs =  2, rt =  9, imm =  -8
+@1a90
+6A BA // I_inst: beq 1011101001101010 rs = 13, rt =  3, imm =  10
+@1a92
+A2 32 // R_inst: mult 0011001010100010 rs =  9, rt =  5, imm = -10
+@1a94
+D8 32 // R_inst: mult 0011001011011000 rs =  9, rt =  6, imm =  13
+@1a96
+7A 7E // I_inst: load 0111111001111010 rs = 15, rt =  3, imm =  -6
+@1a98
+BA 7F // I_inst: load 0111111110111010 rs = 15, rt = 13, imm =  -6
+@1a9a
+90 9A // J_inst: jump 1001101010010000 address = 01a90
+@1a9c
+72 09 // R_inst: sub 0000100101110010 rs =  4, rt = 11, imm =  14
+@1a9e
+1A 17 // R_inst: sub 0001011100011010 rs = 11, rt =  8, imm =  12
+@1aa0
+D2 09 // R_inst: sub 0000100111010010 rs =  4, rt = 14, imm = -13
+@1aa2
+8E 2A // R_inst: mult 0010101010001110 rs =  5, rt =  4, imm = -13
+@1aa4
+E2 07 // R_inst: sub 0000011111100010 rs =  3, rt = 15, imm =   4
+@1aa6
+B0 9A // J_inst: jump 1001101010110000 address = 01ab0
+@1aa8
+B6 9A // J_inst: jump 1001101010110110 address = 01ab6
+@1aaa
+A2 17 // R_inst: sub 0001011110100010 rs = 11, rt = 13, imm =  12
+@1aac
+8B 12 // R_inst: add 0001001010001011 rs =  9, rt =  4, imm =  -2
+@1aae
+38 3D // R_inst: mult 0011110100111000 rs = 14, rt =  9, imm =   7
+@1ab0
+81 7B // I_inst: load 0111101110000001 rs = 13, rt = 12, imm =   1
+@1ab2
+81 7A // I_inst: load 0111101010000001 rs = 13, rt =  4, imm =   1
+@1ab4
+99 A9 // I_inst: beq 1010100110011001 rs =  4, rt = 12, imm =  -7
+@1ab6
+4A 13 // R_inst: sub 0001001101001010 rs =  9, rt = 10, imm =  -8
+@1ab8
+E2 56 // I_inst: store 0101011011100010 rs = 11, rt =  7, imm =   2
+@1aba
+4E BD // I_inst: beq 1011110101001110 rs = 14, rt = 10, imm =  14
+@1abc
+AF 61 // I_inst: load 0110000110101111 rs =  0, rt = 13, imm =  15
+@1abe
+86 69 // I_inst: load 0110100110000110 rs =  4, rt = 12, imm =   6
+@1ac0
+9E 05 // R_inst: sub 0000010110011110 rs =  2, rt = 12, imm =  -9
+@1ac2
+0F 16 // R_inst: add 0001011000001111 rs = 11, rt =  0, imm =  11
+@1ac4
+8A 29 // R_inst: mult 0010100110001010 rs =  4, rt = 12, imm =  -3
+@1ac6
+0D 36 // R_inst: set 0011011000001101 rs = 11, rt =  0, imm = -13
+@1ac8
+58 67 // I_inst: load 0110011101011000 rs =  3, rt = 10, imm =  -8
+@1aca
+D8 67 // I_inst: load 0110011111011000 rs =  3, rt = 14, imm =  -8
+@1acc
+BA 9A // J_inst: jump 1001101010111010 address = 01aba
+@1ace
+0F 11 // R_inst: add 0001000100001111 rs =  8, rt =  8, imm =   7
+@1ad0
+64 31 // R_inst: mult 0011000101100100 rs =  8, rt = 11, imm =  -4
+@1ad2
+5F 1B // R_inst: add 0001101101011111 rs = 13, rt = 10, imm =   7
+@1ad4
+E2 34 // R_inst: mult 0011010011100010 rs = 10, rt =  7, imm = -15
+@1ad6
+F5 1B // R_inst: add 0001101111110101 rs = 13, rt = 15, imm =  10
+@1ad8
+F6 6F // I_inst: load 0110111111110110 rs =  7, rt = 15, imm = -10
+@1ada
+27 4D // I_inst: store 0100110100100111 rs =  6, rt =  9, imm =   7
+@1adc
+A6 7D // I_inst: load 0111110110100110 rs = 14, rt = 13, imm =   6
+@1ade
+26 7D // I_inst: load 0111110100100110 rs = 14, rt =  9, imm =   6
+@1ae0
+A7 B3 // I_inst: beq 1011001110100111 rs =  9, rt = 13, imm =   7
+@1ae2
+BF 18 // R_inst: add 0001100010111111 rs = 12, rt =  5, imm = -13
+@1ae4
+86 3C // R_inst: mult 0011110010000110 rs = 14, rt =  4, imm =  -5
+@1ae6
+D7 08 // R_inst: add 0000100011010111 rs =  4, rt =  6, imm =  13
+@1ae8
+2B 06 // R_inst: add 0000011000101011 rs =  3, rt =  1, imm =  10
+@1aea
+50 3B // R_inst: mult 0011101101010000 rs = 13, rt = 10, imm =  10
+@1aec
+8F 19 // R_inst: add 0001100110001111 rs = 12, rt = 12, imm =  -5
+@1aee
+E2 0F // R_inst: sub 0000111111100010 rs =  7, rt = 15, imm =   8
+@1af0
+95 3B // R_inst: set 0011101110010101 rs = 13, rt = 12, imm =   7
+@1af2
+A6 29 // R_inst: mult 0010100110100110 rs =  4, rt = 13, imm =  12
+@1af4
+44 6A // I_inst: load 0110101001000100 rs =  5, rt =  2, imm =   4
+@1af6
+C4 6B // I_inst: load 0110101111000100 rs =  5, rt = 14, imm =   4
+@1af8
+4F BC // I_inst: beq 1011110001001111 rs = 14, rt =  2, imm =  15
+@1afa
+CD 00 // R_inst: add 0000000011001101 rs =  0, rt =  6, imm =  13
+@1afc
+DB 17 // R_inst: add 0001011111011011 rs = 11, rt = 14, imm =  15
+@1afe
+98 36 // R_inst: mult 0011011010011000 rs = 11, rt =  4, imm = -11
+@1b00
+53 09 // R_inst: add 0000100101010011 rs =  4, rt = 10, imm = -12
+@1b02
+1A 08 // R_inst: sub 0000100000011010 rs =  4, rt =  0, imm =  12
+@1b04
+C2 19 // R_inst: sub 0001100111000010 rs = 12, rt = 14, imm =   8
+@1b06
+05 13 // R_inst: add 0001001100000101 rs =  9, rt =  8, imm =  -7
+@1b08
+D2 2A // R_inst: mult 0010101011010010 rs =  5, rt =  6, imm =  -3
+@1b0a
+52 0E // R_inst: sub 0000111001010010 rs =  7, rt =  2, imm = -11
+@1b0c
+02 18 // R_inst: sub 0001100000000010 rs = 12, rt =  0, imm =  13
+@1b0e
+15 18 // R_inst: add 0001100000010101 rs = 12, rt =  0, imm =  -3
+@1b10
+DE 02 // R_inst: sub 0000001011011110 rs =  1, rt =  6, imm = -16
+@1b12
+F9 1C // R_inst: add 0001110011111001 rs = 14, rt =  7, imm =   4
+@1b14
+FD 0E // R_inst: add 0000111011111101 rs =  7, rt =  7, imm =   2
+@1b16
+8E 33 // R_inst: mult 0011001110001110 rs =  9, rt = 12, imm =  -6
+@1b18
+C9 A6 // I_inst: beq 1010011011001001 rs =  3, rt =  6, imm =   9
+@1b1a
+DE 6E // I_inst: load 0110111011011110 rs =  7, rt =  6, imm =  -2
+@1b1c
+D8 76 // I_inst: load 0111011011011000 rs = 11, rt =  6, imm =  -8
+@1b1e
+78 76 // I_inst: load 0111011001111000 rs = 11, rt =  3, imm =  -8
+@1b20
+18 9B // J_inst: jump 1001101100011000 address = 01b18
+@1b22
+14 35 // R_inst: mult 0011010100010100 rs = 10, rt =  8, imm = -10
+@1b24
+2D 1E // R_inst: add 0001111000101101 rs = 15, rt =  1, imm = -10
+@1b26
+EA 2A // R_inst: mult 0010101011101010 rs =  5, rt =  7, imm =   3
+@1b28
+8B 01 // R_inst: add 0000000110001011 rs =  0, rt = 12, imm =   9
+@1b2a
+4C 19 // R_inst: sub 0001100101001100 rs = 12, rt = 10, imm = -12
+@1b2c
+40 9B // J_inst: jump 1001101101000000 address = 01b40
+@1b2e
+46 9B // J_inst: jump 1001101101000110 address = 01b46
+@1b30
+84 16 // R_inst: sub 0001011010000100 rs = 11, rt =  4, imm =  -1
+@1b32
+24 05 // R_inst: sub 0000010100100100 rs =  2, rt =  9, imm = -16
+@1b34
+9E 09 // R_inst: sub 0000100110011110 rs =  4, rt = 12, imm =   3
+@1b36
+E4 03 // R_inst: sub 0000001111100100 rs =  1, rt = 15, imm =   8
+@1b38
+AE 36 // R_inst: mult 0011011010101110 rs = 11, rt =  5, imm = -14
+@1b3a
+CE 0B // R_inst: sub 0000101111001110 rs =  5, rt = 14, imm =  -2
+@1b3c
+9E 11 // R_inst: sub 0001000110011110 rs =  8, rt = 12, imm = -13
+@1b3e
+DE 10 // R_inst: sub 0001000011011110 rs =  8, rt =  6, imm =  10
+@1b40
+5C 7D // I_inst: load 0111110101011100 rs = 14, rt = 10, imm =  -4
+@1b42
+7C 7D // I_inst: load 0111110101111100 rs = 14, rt = 11, imm =  -4
+@1b44
+54 B7 // I_inst: beq 1011011101010100 rs = 11, rt = 10, imm = -12
+@1b46
+D6 14 // R_inst: sub 0001010011010110 rs = 10, rt =  6, imm =  -9
+@1b48
+38 0D // R_inst: sub 0000110100111000 rs =  6, rt =  9, imm =  10
+@1b4a
+6C 7B // I_inst: load 0111101101101100 rs = 13, rt = 11, imm =  12
+@1b4c
+5D 1D // R_inst: add 0001110101011101 rs = 14, rt = 10, imm = -16
+@1b4e
+51 79 // I_inst: load 0111100101010001 rs = 12, rt = 10, imm = -15
+@1b50
+D1 79 // I_inst: load 0111100111010001 rs = 12, rt = 14, imm = -15
+@1b52
+4A BD // I_inst: beq 1011110101001010 rs = 14, rt = 10, imm =  10
+@1b54
+CC 18 // R_inst: sub 0001100011001100 rs = 12, rt =  6, imm =   9
+@1b56
+8A 34 // R_inst: mult 0011010010001010 rs = 10, rt =  4, imm = -15
+@1b58
+E9 11 // R_inst: add 0001000111101001 rs =  8, rt = 15, imm =  13
+@1b5a
+C4 3F // R_inst: mult 0011111111000100 rs = 15, rt = 14, imm =   1
+@1b5c
+3E 29 // R_inst: mult 0010100100111110 rs =  4, rt =  9, imm = -12
+@1b5e
+10 1D // R_inst: sub 0001110100010000 rs = 14, rt =  8, imm =   5
+@1b60
+2E 08 // R_inst: sub 0000100000101110 rs =  4, rt =  1, imm =   3
+@1b62
+DE 38 // R_inst: mult 0011100011011110 rs = 12, rt =  6, imm = -15
+@1b64
+BB 1E // R_inst: add 0001111010111011 rs = 15, rt =  5, imm =  15
+@1b66
+A8 30 // R_inst: mult 0011000010101000 rs =  8, rt =  5, imm = -10
+@1b68
+CB 77 // I_inst: load 0111011111001011 rs = 11, rt = 14, imm =  11
+@1b6a
+2B 3B // R_inst: set 0011101100101011 rs = 13, rt =  9, imm =  -4
+@1b6c
+EB 4B // I_inst: store 0100101111101011 rs =  5, rt = 15, imm =  11
+@1b6e
+28 46 // I_inst: store 0100011000101000 rs =  3, rt =  1, imm =   8
+@1b70
+DF 19 // R_inst: add 0001100111011111 rs = 12, rt = 14, imm =   4
+@1b72
+2E 01 // R_inst: sub 0000000100101110 rs =  0, rt =  9, imm =  15
+@1b74
+42 6E // I_inst: load 0110111001000010 rs =  7, rt =  2, imm =   2
+@1b76
+C2 6F // I_inst: load 0110111111000010 rs =  7, rt = 14, imm =   2
+@1b78
+43 BC // I_inst: beq 1011110001000011 rs = 14, rt =  2, imm =   3
+@1b7a
+3E 09 // R_inst: sub 0000100100111110 rs =  4, rt =  9, imm =  -1
+@1b7c
+86 18 // R_inst: sub 0001100010000110 rs = 12, rt =  4, imm =   9
+@1b7e
+EA 0F // R_inst: sub 0000111111101010 rs =  7, rt = 15, imm =  -3
+@1b80
+C9 BD // I_inst: beq 1011110111001001 rs = 14, rt = 14, imm =   9
+@1b82
+A4 0D // R_inst: sub 0000110110100100 rs =  6, rt = 13, imm =   0
+@1b84
+AB 0D // R_inst: add 0000110110101011 rs =  6, rt = 13, imm = -12
+@1b86
+9D 0D // R_inst: add 0000110110011101 rs =  6, rt = 12, imm =  12
+@1b88
+53 05 // R_inst: add 0000010101010011 rs =  2, rt = 10, imm =  -6
+@1b8a
+0D 17 // R_inst: add 0001011100001101 rs = 11, rt =  8, imm =  -6
+@1b8c
+62 14 // R_inst: sub 0001010001100010 rs = 10, rt =  3, imm = -16
+@1b8e
+28 15 // R_inst: sub 0001010100101000 rs = 10, rt =  9, imm =   2
+@1b90
+C5 0D // R_inst: add 0000110111000101 rs =  6, rt = 14, imm =  11
+@1b92
+76 24 // R_inst: mult 0010010001110110 rs =  2, rt =  3, imm =  15
+@1b94
+E8 A7 // I_inst: beq 1010011111101000 rs =  3, rt = 15, imm =   8
+@1b96
+AA 9B // J_inst: jump 1001101110101010 address = 01baa
+@1b98
+B0 9B // J_inst: jump 1001101110110000 address = 01bb0
+@1b9a
+18 0D // R_inst: sub 0000110100011000 rs =  6, rt =  8, imm =   4
+@1b9c
+E2 25 // R_inst: mult 0010010111100010 rs =  2, rt = 15, imm =  -5
+@1b9e
+A2 0C // R_inst: sub 0000110010100010 rs =  6, rt =  5, imm = -15
+@1ba0
+02 05 // R_inst: sub 0000010100000010 rs =  2, rt =  8, imm = -14
+@1ba2
+87 1C // R_inst: add 0001110010000111 rs = 14, rt =  4, imm =   7
+@1ba4
+CC 17 // R_inst: sub 0001011111001100 rs = 11, rt = 14, imm =  -7
+@1ba6
+82 0C // R_inst: sub 0000110010000010 rs =  6, rt =  4, imm =   9
+@1ba8
+AA 26 // R_inst: mult 0010011010101010 rs =  3, rt =  5, imm =  14
+@1baa
+8D 6F // I_inst: load 0110111110001101 rs =  7, rt = 12, imm =  13
+@1bac
+AD 6E // I_inst: load 0110111010101101 rs =  7, rt =  5, imm =  13
+@1bae
+94 AB // I_inst: beq 1010101110010100 rs =  5, rt = 12, imm = -12
+@1bb0
+A2 40 // I_inst: store 0100000010100010 rs =  0, rt =  5, imm =   2
+@1bb2
+1B 24 // R_inst: set 0010010000011011 rs =  2, rt =  0, imm =  -2
+@1bb4
+ED 51 // I_inst: store 0101000111101101 rs =  8, rt = 15, imm =  13
+@1bb6
+14 35 // R_inst: mult 0011010100010100 rs = 10, rt =  8, imm =  -1
+@1bb8
+0A 5F // I_inst: store 0101111100001010 rs = 15, rt =  8, imm =  10
+@1bba
+A2 77 // I_inst: load 0111011110100010 rs = 11, rt = 13, imm =   2
+@1bbc
+C2 77 // I_inst: load 0111011111000010 rs = 11, rt = 14, imm =   2
+@1bbe
+A7 BD // I_inst: beq 1011110110100111 rs = 14, rt = 13, imm =   7
+@1bc0
+9A 02 // R_inst: sub 0000001010011010 rs =  1, rt =  4, imm =  13
+@1bc2
+50 0E // R_inst: sub 0000111001010000 rs =  7, rt =  2, imm =  -4
+@1bc4
+DB 09 // R_inst: add 0000100111011011 rs =  4, rt = 14, imm =   4
+@1bc6
+F2 0F // R_inst: sub 0000111111110010 rs =  7, rt = 15, imm = -11
+@1bc8
+83 19 // R_inst: add 0001100110000011 rs = 12, rt = 12, imm =  -9
+@1bca
+E8 1E // R_inst: sub 0001111011101000 rs = 15, rt =  7, imm =   3
+@1bcc
+FC 2C // R_inst: mult 0010110011111100 rs =  6, rt =  7, imm =   1
+@1bce
+E6 AE // I_inst: beq 1010111011100110 rs =  7, rt =  7, imm =   6
+@1bd0
+8C 39 // R_inst: mult 0011100110001100 rs = 12, rt = 12, imm = -10
+@1bd2
+24 1C // R_inst: sub 0001110000100100 rs = 14, rt =  1, imm =  -2
+@1bd4
+48 3D // R_inst: mult 0011110101001000 rs = 14, rt = 10, imm =  -5
+@1bd6
+C2 1D // R_inst: sub 0001110111000010 rs = 14, rt = 14, imm = -11
+@1bd8
+CB 1A // R_inst: add 0001101011001011 rs = 13, rt =  6, imm =   9
+@1bda
+6B 0F // R_inst: add 0000111101101011 rs =  7, rt = 11, imm =  15
+@1bdc
+68 0F // R_inst: sub 0000111101101000 rs =  7, rt = 11, imm = -14
+@1bde
+EE 9B // J_inst: jump 1001101111101110 address = 01bee
+@1be0
+F4 9B // J_inst: jump 1001101111110100 address = 01bf4
+@1be2
+CA 10 // R_inst: sub 0001000011001010 rs =  8, rt =  6, imm = -16
+@1be4
+DC 28 // R_inst: mult 0010100011011100 rs =  4, rt =  6, imm = -15
+@1be6
+5C 1B // R_inst: sub 0001101101011100 rs = 13, rt = 10, imm =  -8
+@1be8
+82 3E // R_inst: mult 0011111010000010 rs = 15, rt =  4, imm =   0
+@1bea
+02 03 // R_inst: sub 0000001100000010 rs =  1, rt =  8, imm =  13
+@1bec
+46 3B // R_inst: mult 0011101101000110 rs = 13, rt = 10, imm =  -8
+@1bee
+40 6E // I_inst: load 0110111001000000 rs =  7, rt =  2, imm =   0
+@1bf0
+A0 6E // I_inst: load 0110111010100000 rs =  7, rt =  5, imm =   0
+@1bf2
+56 AA // I_inst: beq 1010101001010110 rs =  5, rt =  2, imm = -10
+@1bf4
+E7 2D // R_inst: set 0010110111100111 rs =  6, rt = 15, imm = -14
+@1bf6
+06 9C // J_inst: jump 1001110000000110 address = 01c06
+@1bf8
+0C 9C // J_inst: jump 1001110000001100 address = 01c0c
+@1bfa
+E2 1A // R_inst: sub 0001101011100010 rs = 13, rt =  7, imm =  -8
+@1bfc
+E2 12 // R_inst: sub 0001001011100010 rs =  9, rt =  7, imm =  -1
+@1bfe
+10 23 // R_inst: mult 0010001100010000 rs =  1, rt =  8, imm =  12
+@1c00
+C8 3C // R_inst: mult 0011110011001000 rs = 14, rt =  6, imm =   5
+@1c02
+36 17 // R_inst: sub 0001011100110110 rs = 11, rt =  9, imm =  10
+@1c04
+AD 13 // R_inst: add 0001001110101101 rs =  9, rt = 13, imm =   5
+@1c06
+EA 66 // I_inst: load 0110011011101010 rs =  3, rt =  7, imm =  10
+@1c08
+4A 67 // I_inst: load 0110011101001010 rs =  3, rt = 10, imm =  10
+@1c0a
+F6 B4 // I_inst: beq 1011010011110110 rs = 10, rt =  7, imm = -10
+@1c0c
+5E 07 // R_inst: sub 0000011101011110 rs =  3, rt = 10, imm =  10
+@1c0e
+76 0C // R_inst: sub 0000110001110110 rs =  6, rt =  3, imm =  -3
+@1c10
+EB B4 // I_inst: beq 1011010011101011 rs = 10, rt =  7, imm =  11
+@1c12
+8E 0D // R_inst: sub 0000110110001110 rs =  6, rt = 12, imm =   2
+@1c14
+F1 03 // R_inst: add 0000001111110001 rs =  1, rt = 15, imm =  10
+@1c16
+6C 16 // R_inst: sub 0001011001101100 rs = 11, rt =  3, imm =   8
+@1c18
+DE 30 // R_inst: mult 0011000011011110 rs =  8, rt =  6, imm =   6
+@1c1a
+37 14 // R_inst: add 0001010000110111 rs = 10, rt =  1, imm =   8
+@1c1c
+02 0A // R_inst: sub 0000101000000010 rs =  5, rt =  0, imm =   8
+@1c1e
+EC 2F // R_inst: mult 0010111111101100 rs =  7, rt = 15, imm = -12
+@1c20
+6D 08 // R_inst: add 0000100001101101 rs =  4, rt =  3, imm =   0
+@1c22
+AA 2C // R_inst: mult 0010110010101010 rs =  6, rt =  5, imm =  12
+@1c24
+D2 2A // R_inst: mult 0010101011010010 rs =  5, rt =  6, imm = -11
+@1c26
+C4 10 // R_inst: sub 0001000011000100 rs =  8, rt =  6, imm =  -5
+@1c28
+28 1C // R_inst: sub 0001110000101000 rs = 14, rt =  1, imm =   7
+@1c2a
+2C 9C // J_inst: jump 1001110000101100 address = 01c2c
+@1c2c
+8F BF // I_inst: beq 1011111110001111 rs = 15, rt = 12, imm =  15
+@1c2e
+F3 28 // R_inst: set 0010100011110011 rs =  4, rt =  7, imm =   3
+@1c30
+51 2A // R_inst: set 0010101001010001 rs =  5, rt =  2, imm =  -4
+@1c32
+CA 2D // R_inst: mult 0010110111001010 rs =  6, rt = 14, imm =   0
+@1c34
+98 2D // R_inst: mult 0010110110011000 rs =  6, rt = 12, imm =   1
+@1c36
+95 55 // I_inst: store 0101010110010101 rs = 10, rt = 12, imm = -11
+@1c38
+77 3A // R_inst: set 0011101001110111 rs = 13, rt =  3, imm =  14
+@1c3a
+80 67 // I_inst: load 0110011110000000 rs =  3, rt = 12, imm =   0
+@1c3c
+E0 67 // I_inst: load 0110011111100000 rs =  3, rt = 15, imm =   0
+@1c3e
+2C 9C // J_inst: jump 1001110000101100 address = 01c2c
+@1c40
+BC 1D // R_inst: sub 0001110110111100 rs = 14, rt = 13, imm =   1
+@1c42
+B8 0C // R_inst: sub 0000110010111000 rs =  6, rt =  5, imm =  -4
+@1c44
+92 2A // R_inst: mult 0010101010010010 rs =  5, rt =  4, imm =  13
+@1c46
+10 25 // R_inst: mult 0010010100010000 rs =  2, rt =  8, imm =   7
+@1c48
+D0 1C // R_inst: sub 0001110011010000 rs = 14, rt =  6, imm =  -5
+@1c4a
+DA 2B // R_inst: mult 0010101111011010 rs =  5, rt = 14, imm =  -4
+@1c4c
+A9 A4 // I_inst: beq 1010010010101001 rs =  2, rt =  5, imm =   9
+@1c4e
+A4 70 // I_inst: load 0111000010100100 rs =  8, rt =  5, imm =   4
+@1c50
+A0 74 // I_inst: load 0111010010100000 rs = 10, rt =  5, imm =   0
+@1c52
+40 74 // I_inst: load 0111010001000000 rs = 10, rt =  2, imm =   0
+@1c54
+4C 9C // J_inst: jump 1001110001001100 address = 01c4c
+@1c56
+58 3B // R_inst: mult 0011101101011000 rs = 13, rt = 10, imm =   6
+@1c58
+25 0E // R_inst: add 0000111000100101 rs =  7, rt =  1, imm =  -6
+@1c5a
+26 29 // R_inst: mult 0010100100100110 rs =  4, rt =  9, imm =  10
+@1c5c
+E2 0D // R_inst: sub 0000110111100010 rs =  6, rt = 15, imm = -14
+@1c5e
+85 07 // R_inst: add 0000011110000101 rs =  3, rt = 12, imm = -12
+@1c60
+2D 74 // I_inst: load 0111010000101101 rs = 10, rt =  1, imm =  13
+@1c62
+E9 B6 // I_inst: beq 1011011011101001 rs = 11, rt =  7, imm =   9
+@1c64
+52 22 // R_inst: mult 0010001001010010 rs =  1, rt =  2, imm =  14
+@1c66
+CD B0 // I_inst: beq 1011000011001101 rs =  8, rt =  6, imm =  13
+@1c68
+4B 2C // R_inst: set 0010110001001011 rs =  6, rt =  2, imm = -15
+@1c6a
+89 21 // R_inst: set 0010000110001001 rs =  0, rt = 12, imm =   0
+@1c6c
+6E 9C // J_inst: jump 1001110001101110 address = 01c6e
+@1c6e
+EB 21 // R_inst: set 0010000111101011 rs =  0, rt = 15, imm =   6
+@1c70
+80 9C // J_inst: jump 1001110010000000 address = 01c80
+@1c72
+86 9C // J_inst: jump 1001110010000110 address = 01c86
+@1c74
+CF 04 // R_inst: add 0000010011001111 rs =  2, rt =  6, imm =  11
+@1c76
+F0 27 // R_inst: mult 0010011111110000 rs =  3, rt = 15, imm =  -7
+@1c78
+18 1E // R_inst: sub 0001111000011000 rs = 15, rt =  0, imm =   1
+@1c7a
+D8 00 // R_inst: sub 0000000011011000 rs =  0, rt =  6, imm =  13
+@1c7c
+38 1E // R_inst: sub 0001111000111000 rs = 15, rt =  1, imm = -15
+@1c7e
+7E 05 // R_inst: sub 0000010101111110 rs =  2, rt = 11, imm =  10
+@1c80
+C9 77 // I_inst: load 0111011111001001 rs = 11, rt = 14, imm =   9
+@1c82
+C9 77 // I_inst: load 0111011111001001 rs = 11, rt = 14, imm =   9
+@1c84
+D6 BD // I_inst: beq 1011110111010110 rs = 14, rt = 14, imm = -10
+@1c86
+9A 9C // J_inst: jump 1001110010011010 address = 01c9a
+@1c88
+A0 9C // J_inst: jump 1001110010100000 address = 01ca0
+@1c8a
+2E 31 // R_inst: mult 0011000100101110 rs =  8, rt =  9, imm =  -3
+@1c8c
+4E 16 // R_inst: sub 0001011001001110 rs = 11, rt =  2, imm =  14
+@1c8e
+AE 19 // R_inst: sub 0001100110101110 rs = 12, rt = 13, imm = -12
+@1c90
+98 29 // R_inst: mult 0010100110011000 rs =  4, rt = 12, imm = -12
+@1c92
+14 03 // R_inst: sub 0000001100010100 rs =  1, rt =  8, imm =  -6
+@1c94
+0E 19 // R_inst: sub 0001100100001110 rs = 12, rt =  8, imm =  11
+@1c96
+70 00 // R_inst: sub 0000000001110000 rs =  0, rt =  3, imm =  -3
+@1c98
+EA 06 // R_inst: sub 0000011011101010 rs =  3, rt =  7, imm =  -1
+@1c9a
+4F 7C // I_inst: load 0111110001001111 rs = 14, rt =  2, imm =  15
+@1c9c
+EF 7C // I_inst: load 0111110011101111 rs = 14, rt =  7, imm =  15
+@1c9e
+54 AE // I_inst: beq 1010111001010100 rs =  7, rt =  2, imm = -12
+@1ca0
+6B 3B // R_inst: set 0011101101101011 rs = 13, rt = 11, imm =  -7
+@1ca2
+F5 2C // R_inst: set 0010110011110101 rs =  6, rt =  7, imm =  -1
+@1ca4
+AE 9C // J_inst: jump 1001110010101110 address = 01cae
+@1ca6
+03 16 // R_inst: add 0001011000000011 rs = 11, rt =  0, imm =  14
+@1ca8
+E5 1E // R_inst: add 0001111011100101 rs = 15, rt =  7, imm =  -8
+@1caa
+91 16 // R_inst: add 0001011010010001 rs = 11, rt =  4, imm =   0
+@1cac
+0A 10 // R_inst: sub 0001000000001010 rs =  8, rt =  0, imm = -10
+@1cae
+46 03 // R_inst: sub 0000001101000110 rs =  1, rt = 10, imm = -10
+@1cb0
+0C AB // I_inst: beq 1010101100001100 rs =  5, rt =  8, imm =  12
+@1cb2
+1B 0B // R_inst: add 0000101100011011 rs =  5, rt =  8, imm =  -2
+@1cb4
+B3 7D // I_inst: load 0111110110110011 rs = 14, rt = 13, imm = -13
+@1cb6
+6A 78 // I_inst: load 0111100001101010 rs = 12, rt =  3, imm =  10
+@1cb8
+0A 7F // I_inst: load 0111111100001010 rs = 15, rt =  8, imm =  10
+@1cba
+AA 7E // I_inst: load 0111111010101010 rs = 15, rt =  5, imm =  10
+@1cbc
+B0 9C // J_inst: jump 1001110010110000 address = 01cb0
+@1cbe
+DD 1C // R_inst: add 0001110011011101 rs = 14, rt =  6, imm =  -9
+@1cc0
+A3 04 // R_inst: add 0000010010100011 rs =  2, rt =  5, imm =  10
+@1cc2
+A8 25 // R_inst: mult 0010010110101000 rs =  2, rt = 13, imm =  -1
+@1cc4
+2E 18 // R_inst: sub 0001100000101110 rs = 12, rt =  1, imm =   5
+@1cc6
+5A 09 // R_inst: sub 0000100101011010 rs =  4, rt = 10, imm =  -2
+@1cc8
+ED 14 // R_inst: add 0001010011101101 rs = 10, rt =  7, imm =  -1
+@1cca
+48 63 // I_inst: load 0110001101001000 rs =  1, rt = 10, imm =   8
+@1ccc
+CE 59 // I_inst: store 0101100111001110 rs = 12, rt = 14, imm =  14
+@1cce
+F1 34 // R_inst: set 0011010011110001 rs = 10, rt =  7, imm =   4
+@1cd0
+0C 9D // J_inst: jump 1001110100001100 address = 01d0c
+@1cd2
+68 14 // R_inst: sub 0001010001101000 rs = 10, rt =  3, imm =  -5
+@1cd4
+6C 11 // R_inst: sub 0001000101101100 rs =  8, rt = 11, imm =   1
+@1cd6
+70 02 // R_inst: sub 0000001001110000 rs =  1, rt =  3, imm =  -1
+@1cd8
+AE 17 // R_inst: sub 0001011110101110 rs = 11, rt = 13, imm =  13
+@1cda
+33 08 // R_inst: add 0000100000110011 rs =  4, rt =  1, imm =   7
+@1cdc
+8D 12 // R_inst: add 0001001010001101 rs =  9, rt =  4, imm =  -6
+@1cde
+7E 11 // R_inst: sub 0001000101111110 rs =  8, rt = 11, imm =  10
+@1ce0
+A2 25 // R_inst: mult 0010010110100010 rs =  2, rt = 13, imm =  -3
+@1ce2
+9D 13 // R_inst: add 0001001110011101 rs =  9, rt = 12, imm =  15
+@1ce4
+32 25 // R_inst: mult 0010010100110010 rs =  2, rt =  9, imm =   9
+@1ce6
+AE 2C // R_inst: mult 0010110010101110 rs =  6, rt =  5, imm =  14
+@1ce8
+93 05 // R_inst: add 0000010110010011 rs =  2, rt = 12, imm = -16
+@1cea
+B7 1B // R_inst: add 0001101110110111 rs = 13, rt = 13, imm =  -2
+@1cec
+E6 1E // R_inst: sub 0001111011100110 rs = 15, rt =  7, imm =   5
+@1cee
+E3 0C // R_inst: add 0000110011100011 rs =  6, rt =  7, imm = -10
+@1cf0
+71 04 // R_inst: add 0000010001110001 rs =  2, rt =  3, imm =  -2
+@1cf2
+69 1A // R_inst: add 0001101001101001 rs = 13, rt =  3, imm =  13
+@1cf4
+51 01 // R_inst: add 0000000101010001 rs =  0, rt = 10, imm = -11
+@1cf6
+52 3A // R_inst: mult 0011101001010010 rs = 13, rt =  2, imm =   6
+@1cf8
+EC 22 // R_inst: mult 0010001011101100 rs =  1, rt =  7, imm = -10
+@1cfa
+68 18 // R_inst: sub 0001100001101000 rs = 12, rt =  3, imm =  -1
+@1cfc
+BD 13 // R_inst: add 0001001110111101 rs =  9, rt = 13, imm =  -8
+@1cfe
+2D 07 // R_inst: add 0000011100101101 rs =  3, rt =  9, imm =  11
+@1d00
+F2 3F // R_inst: mult 0011111111110010 rs = 15, rt = 15, imm =  -7
+@1d02
+C9 18 // R_inst: add 0001100011001001 rs = 12, rt =  6, imm =  -6
+@1d04
+D2 19 // R_inst: sub 0001100111010010 rs = 12, rt = 14, imm =  15
+@1d06
+CA 3E // R_inst: mult 0011111011001010 rs = 15, rt =  6, imm = -13
+@1d08
+95 00 // R_inst: add 0000000010010101 rs =  0, rt =  4, imm = -15
+@1d0a
+88 01 // R_inst: sub 0000000110001000 rs =  0, rt = 12, imm =  -7
+@1d0c
+CC A4 // I_inst: beq 1010010011001100 rs =  2, rt =  6, imm =  12
+@1d0e
+69 40 // I_inst: store 0100000001101001 rs =  0, rt =  3, imm =   9
+@1d10
+39 20 // R_inst: set 0010000000111001 rs =  0, rt =  1, imm =  14
+@1d12
+CB 68 // I_inst: load 0110100011001011 rs =  4, rt =  6, imm =  11
+@1d14
+4B 68 // I_inst: load 0110100001001011 rs =  4, rt =  2, imm =  11
+@1d16
+0C 9D // J_inst: jump 1001110100001100 address = 01d0c
+@1d18
+FF 12 // R_inst: add 0001001011111111 rs =  9, rt =  7, imm = -13
+@1d1a
+46 12 // R_inst: sub 0001001001000110 rs =  9, rt =  2, imm = -13
+@1d1c
+90 3B // R_inst: mult 0011101110010000 rs = 13, rt = 12, imm =  -8
+@1d1e
+66 26 // R_inst: mult 0010011001100110 rs =  3, rt =  3, imm =  13
+@1d20
+59 01 // R_inst: add 0000000101011001 rs =  0, rt = 10, imm =   0
+@1d22
+47 03 // R_inst: add 0000001101000111 rs =  1, rt = 10, imm = -10
+@1d24
+58 2A // R_inst: mult 0010101001011000 rs =  5, rt =  2, imm =  -4
+@1d26
+0B 15 // R_inst: add 0001010100001011 rs = 10, rt =  8, imm =  -3
+@1d28
+9B 1B // R_inst: add 0001101110011011 rs = 13, rt = 12, imm =   0
+@1d2a
+4D B1 // I_inst: beq 1011000101001101 rs =  8, rt = 10, imm =  13
+@1d2c
+A7 14 // R_inst: add 0001010010100111 rs = 10, rt =  5, imm =  12
+@1d2e
+33 3E // R_inst: set 0011111000110011 rs = 15, rt =  1, imm =  13
+@1d30
+44 77 // I_inst: load 0111011101000100 rs = 11, rt = 10, imm =   4
+@1d32
+04 77 // I_inst: load 0111011100000100 rs = 11, rt =  8, imm =   4
+@1d34
+2A 9D // J_inst: jump 1001110100101010 address = 01d2a
+@1d36
+91 1D // R_inst: add 0001110110010001 rs = 14, rt = 12, imm =   0
+@1d38
+3A 32 // R_inst: mult 0011001000111010 rs =  9, rt =  1, imm = -11
+@1d3a
+82 2B // R_inst: mult 0010101110000010 rs =  5, rt = 12, imm =  11
+@1d3c
+2F 07 // R_inst: add 0000011100101111 rs =  3, rt =  9, imm =  -7
+@1d3e
+64 19 // R_inst: sub 0001100101100100 rs = 12, rt = 11, imm =   7
+@1d40
+04 1C // R_inst: sub 0001110000000100 rs = 14, rt =  0, imm = -13
+@1d42
+71 14 // R_inst: add 0001010001110001 rs = 10, rt =  3, imm =  12
+@1d44
+B8 02 // R_inst: sub 0000001010111000 rs =  1, rt =  5, imm =   6
+@1d46
+4F B0 // I_inst: beq 1011000001001111 rs =  8, rt =  2, imm =  15
+@1d48
+9F 56 // I_inst: store 0101011010011111 rs = 11, rt =  4, imm =  -1
+@1d4a
+95 39 // R_inst: set 0011100110010101 rs = 12, rt = 12, imm = -15
+@1d4c
+2F 6C // I_inst: load 0110110000101111 rs =  6, rt =  1, imm =  15
+@1d4e
+94 1A // R_inst: sub 0001101010010100 rs = 13, rt =  4, imm =  -2
+@1d50
+D2 27 // R_inst: mult 0010011111010010 rs =  3, rt = 14, imm = -14
+@1d52
+17 35 // R_inst: set 0011010100010111 rs = 10, rt =  8, imm =   6
+@1d54
+4B 76 // I_inst: load 0111011001001011 rs = 11, rt =  2, imm =  11
+@1d56
+0B 77 // I_inst: load 0111011100001011 rs = 11, rt =  8, imm =  11
+@1d58
+46 9D // J_inst: jump 1001110101000110 address = 01d46
+@1d5a
+EF 05 // R_inst: add 0000010111101111 rs =  2, rt = 15, imm =  -5
+@1d5c
+68 23 // R_inst: mult 0010001101101000 rs =  1, rt = 11, imm =   8
+@1d5e
+6C 2E // R_inst: mult 0010111001101100 rs =  7, rt =  3, imm =  13
+@1d60
+68 23 // R_inst: mult 0010001101101000 rs =  1, rt = 11, imm =   0
+@1d62
+9C 22 // R_inst: mult 0010001010011100 rs =  1, rt =  4, imm =  -8
+@1d64
+ED 1C // R_inst: add 0001110011101101 rs = 14, rt =  7, imm =  -6
+@1d66
+93 2C // R_inst: set 0010110010010011 rs =  6, rt =  4, imm = -15
+@1d68
+76 9D // J_inst: jump 1001110101110110 address = 01d76
+@1d6a
+7C 9D // J_inst: jump 1001110101111100 address = 01d7c
+@1d6c
+50 0D // R_inst: sub 0000110101010000 rs =  6, rt = 10, imm =   9
+@1d6e
+50 0A // R_inst: sub 0000101001010000 rs =  5, rt =  2, imm =   2
+@1d70
+50 0B // R_inst: sub 0000101101010000 rs =  5, rt = 10, imm =   4
+@1d72
+30 0F // R_inst: sub 0000111100110000 rs =  7, rt =  9, imm =   9
+@1d74
+C8 0B // R_inst: sub 0000101111001000 rs =  5, rt = 14, imm =  12
+@1d76
+EF 61 // I_inst: load 0110000111101111 rs =  0, rt = 15, imm =  15
+@1d78
+6F 61 // I_inst: load 0110000101101111 rs =  0, rt = 11, imm =  15
+@1d7a
+F7 B7 // I_inst: beq 1011011111110111 rs = 11, rt = 15, imm =  -9
+@1d7c
+87 4E // I_inst: store 0100111010000111 rs =  7, rt =  4, imm =   7
+@1d7e
+AE A6 // I_inst: beq 1010011010101110 rs =  3, rt =  5, imm =  14
+@1d80
+8C 78 // I_inst: load 0111100010001100 rs = 12, rt =  4, imm =  12
+@1d82
+0B 29 // R_inst: set 0010100100001011 rs =  4, rt =  8, imm = -13
+@1d84
+62 09 // R_inst: sub 0000100101100010 rs =  4, rt = 11, imm =  -1
+@1d86
+0E 41 // I_inst: store 0100000100001110 rs =  0, rt =  8, imm =  14
+@1d88
+22 41 // I_inst: store 0100000100100010 rs =  0, rt =  9, imm =   2
+@1d8a
+AF 7C // I_inst: load 0111110010101111 rs = 14, rt =  5, imm =  15
+@1d8c
+6F 7C // I_inst: load 0111110001101111 rs = 14, rt =  3, imm =  15
+@1d8e
+7E 9D // J_inst: jump 1001110101111110 address = 01d7e
+@1d90
+38 1D // R_inst: sub 0001110100111000 rs = 14, rt =  9, imm =  -8
+@1d92
+3B 0B // R_inst: add 0000101100111011 rs =  5, rt =  9, imm =  -3
+@1d94
+45 01 // R_inst: add 0000000101000101 rs =  0, rt = 10, imm =   7
+@1d96
+8B 04 // R_inst: add 0000010010001011 rs =  2, rt =  4, imm =  10
+@1d98
+54 08 // R_inst: sub 0000100001010100 rs =  4, rt =  2, imm =  15
+@1d9a
+78 1D // R_inst: sub 0001110101111000 rs = 14, rt = 11, imm =   4
+@1d9c
+46 7C // I_inst: load 0111110001000110 rs = 14, rt =  2, imm =   6
+@1d9e
+D3 05 // R_inst: add 0000010111010011 rs =  2, rt = 14, imm =  10
+@1da0
+25 2D // R_inst: set 0010110100100101 rs =  6, rt =  9, imm =   2
+@1da2
+2F 3D // R_inst: set 0011110100101111 rs = 14, rt =  9, imm =  -3
+@1da4
+F1 15 // R_inst: add 0001010111110001 rs = 10, rt = 15, imm =  10
+@1da6
+08 3F // R_inst: mult 0011111100001000 rs = 15, rt =  8, imm = -16
+@1da8
+8E 04 // R_inst: sub 0000010010001110 rs =  2, rt =  4, imm =   8
+@1daa
+6D AD // I_inst: beq 1010110101101101 rs =  6, rt = 11, imm =  13
+@1dac
+F3 09 // R_inst: add 0000100111110011 rs =  4, rt = 15, imm =  -1
+@1dae
+B7 24 // R_inst: set 0010010010110111 rs =  2, rt =  5, imm =   4
+@1db0
+22 09 // R_inst: sub 0000100100100010 rs =  4, rt =  9, imm =  -9
+@1db2
+9B 23 // R_inst: set 0010001110011011 rs =  1, rt = 12, imm =   2
+@1db4
+64 61 // I_inst: load 0110000101100100 rs =  0, rt = 11, imm =   4
+@1db6
+C4 60 // I_inst: load 0110000011000100 rs =  0, rt =  6, imm =   4
+@1db8
+AA 9D // J_inst: jump 1001110110101010 address = 01daa
+@1dba
+9E 01 // R_inst: sub 0000000110011110 rs =  0, rt = 12, imm =  15
+@1dbc
+68 12 // R_inst: sub 0001001001101000 rs =  9, rt =  3, imm =   3
+@1dbe
+33 1C // R_inst: add 0001110000110011 rs = 14, rt =  1, imm = -15
+@1dc0
+C7 06 // R_inst: add 0000011011000111 rs =  3, rt =  6, imm =   7
+@1dc2
+1E 14 // R_inst: sub 0001010000011110 rs = 10, rt =  0, imm =  -9
+@1dc4
+A7 17 // R_inst: add 0001011110100111 rs = 11, rt = 13, imm =  -6
+@1dc6
+A3 03 // R_inst: add 0000001110100011 rs =  1, rt = 13, imm =  12
+@1dc8
+A7 3C // R_inst: set 0011110010100111 rs = 14, rt =  5, imm =  -1
+@1dca
+A9 31 // R_inst: set 0011000110101001 rs =  8, rt = 13, imm =   6
+@1dcc
+F2 9D // J_inst: jump 1001110111110010 address = 01df2
+@1dce
+29 19 // R_inst: add 0001100100101001 rs = 12, rt =  9, imm =  14
+@1dd0
+58 1E // R_inst: sub 0001111001011000 rs = 15, rt =  2, imm =  -4
+@1dd2
+FD 18 // R_inst: add 0001100011111101 rs = 12, rt =  7, imm =   0
+@1dd4
+62 07 // R_inst: sub 0000011101100010 rs =  3, rt = 11, imm = -11
+@1dd6
+E8 31 // R_inst: mult 0011000111101000 rs =  8, rt = 15, imm =  -5
+@1dd8
+EF 04 // R_inst: add 0000010011101111 rs =  2, rt =  7, imm =   2
+@1dda
+3E 2F // R_inst: mult 0010111100111110 rs =  7, rt =  9, imm = -11
+@1ddc
+F6 3A // R_inst: mult 0011101011110110 rs = 13, rt =  7, imm =   6
+@1dde
+AC 18 // R_inst: sub 0001100010101100 rs = 12, rt =  5, imm =  10
+@1de0
+DE 39 // R_inst: mult 0011100111011110 rs = 12, rt = 14, imm =   7
+@1de2
+AE 06 // R_inst: sub 0000011010101110 rs =  3, rt =  5, imm =  -2
+@1de4
+2A 1F // R_inst: sub 0001111100101010 rs = 15, rt =  9, imm =  -1
+@1de6
+42 33 // R_inst: mult 0011001101000010 rs =  9, rt = 10, imm =   0
+@1de8
+F8 29 // R_inst: mult 0010100111111000 rs =  4, rt = 15, imm =   2
+@1dea
+E4 0C // R_inst: sub 0000110011100100 rs =  6, rt =  7, imm =   2
+@1dec
+6F 04 // R_inst: add 0000010001101111 rs =  2, rt =  3, imm =  12
+@1dee
+7D 1F // R_inst: add 0001111101111101 rs = 15, rt = 11, imm =  14
+@1df0
+83 15 // R_inst: add 0001010110000011 rs = 10, rt = 12, imm = -15
+@1df2
+FE 9D // J_inst: jump 1001110111111110 address = 01dfe
+@1df4
+04 9E // J_inst: jump 1001111000000100 address = 01e04
+@1df6
+32 12 // R_inst: sub 0001001000110010 rs =  9, rt =  1, imm = -10
+@1df8
+52 08 // R_inst: sub 0000100001010010 rs =  4, rt =  2, imm =  -6
+@1dfa
+32 1A // R_inst: sub 0001101000110010 rs = 13, rt =  1, imm =   1
+@1dfc
+52 0E // R_inst: sub 0000111001010010 rs =  7, rt =  2, imm =  -1
+@1dfe
+EB 6B // I_inst: load 0110101111101011 rs =  5, rt = 15, imm =  11
+@1e00
+6B 6A // I_inst: load 0110101001101011 rs =  5, rt =  3, imm =  11
+@1e02
+F8 A7 // I_inst: beq 1010011111111000 rs =  3, rt = 15, imm =  -8
+@1e04
+87 7E // I_inst: load 0111111010000111 rs = 15, rt =  4, imm =   7
+@1e06
+D4 09 // R_inst: sub 0000100111010100 rs =  4, rt = 14, imm = -10
+@1e08
+6F 60 // I_inst: load 0110000001101111 rs =  0, rt =  3, imm =  15
+@1e0a
+F8 2B // R_inst: mult 0010101111111000 rs =  5, rt = 15, imm =  -2
+@1e0c
+14 9E // J_inst: jump 1001111000010100 address = 01e14
+@1e0e
+56 12 // R_inst: sub 0001001001010110 rs =  9, rt =  2, imm =  -4
+@1e10
+8E 28 // R_inst: mult 0010100010001110 rs =  4, rt =  4, imm = -13
+@1e12
+57 12 // R_inst: add 0001001001010111 rs =  9, rt =  2, imm =   6
+@1e14
+20 9E // J_inst: jump 1001111000100000 address = 01e20
+@1e16
+26 9E // J_inst: jump 1001111000100110 address = 01e26
+@1e18
+C2 1B // R_inst: sub 0001101111000010 rs = 13, rt = 14, imm =   8
+@1e1a
+BC 11 // R_inst: sub 0001000110111100 rs =  8, rt = 13, imm =   5
+@1e1c
+DC 1F // R_inst: sub 0001111111011100 rs = 15, rt = 14, imm =  -7
+@1e1e
+5C 12 // R_inst: sub 0001001001011100 rs =  9, rt =  2, imm = -14
+@1e20
+A2 64 // I_inst: load 0110010010100010 rs =  2, rt =  5, imm =   2
+@1e22
+C2 64 // I_inst: load 0110010011000010 rs =  2, rt =  6, imm =   2
+@1e24
+B8 AC // I_inst: beq 1010110010111000 rs =  6, rt =  5, imm =  -8
+@1e26
+3A 9E // J_inst: jump 1001111000111010 address = 01e3a
+@1e28
+40 9E // J_inst: jump 1001111001000000 address = 01e40
+@1e2a
+06 02 // R_inst: sub 0000001000000110 rs =  1, rt =  0, imm =   7
+@1e2c
+AD 08 // R_inst: add 0000100010101101 rs =  4, rt =  5, imm =  -2
+@1e2e
+6C 11 // R_inst: sub 0001000101101100 rs =  8, rt = 11, imm =  -7
+@1e30
+12 1B // R_inst: sub 0001101100010010 rs = 13, rt =  8, imm =  -8
+@1e32
+86 2C // R_inst: mult 0010110010000110 rs =  6, rt =  4, imm = -14
+@1e34
+55 1E // R_inst: add 0001111001010101 rs = 15, rt =  2, imm =  13
+@1e36
+74 1C // R_inst: sub 0001110001110100 rs = 14, rt =  3, imm =   7
+@1e38
+14 05 // R_inst: sub 0000010100010100 rs =  2, rt =  8, imm =   7
+@1e3a
+A3 7C // I_inst: load 0111110010100011 rs = 14, rt =  5, imm =   3
+@1e3c
+83 7C // I_inst: load 0111110010000011 rs = 14, rt =  4, imm =   3
+@1e3e
+B4 A8 // I_inst: beq 1010100010110100 rs =  4, rt =  5, imm = -12
+@1e40
+6A 1B // R_inst: sub 0001101101101010 rs = 13, rt = 11, imm =  15
+@1e42
+EE B0 // I_inst: beq 1011000011101110 rs =  8, rt =  7, imm =  14
+@1e44
+30 66 // I_inst: load 0110011000110000 rs =  3, rt =  1, imm = -16
+@1e46
+E7 66 // I_inst: load 0110011011100111 rs =  3, rt =  7, imm =   7
+@1e48
+07 67 // I_inst: load 0110011100000111 rs =  3, rt =  8, imm =   7
+@1e4a
+42 9E // J_inst: jump 1001111001000010 address = 01e42
+@1e4c
+F8 22 // R_inst: mult 0010001011111000 rs =  1, rt =  7, imm = -14
+@1e4e
+5D 0A // R_inst: add 0000101001011101 rs =  5, rt =  2, imm =  15
+@1e50
+8B 1F // R_inst: add 0001111110001011 rs = 15, rt = 12, imm = -11
+@1e52
+92 06 // R_inst: sub 0000011010010010 rs =  3, rt =  4, imm =  15
+@1e54
+9B 1F // R_inst: add 0001111110011011 rs = 15, rt = 12, imm =  -3
+@1e56
+A2 0F // R_inst: sub 0000111110100010 rs =  7, rt = 13, imm = -10
+@1e58
+8C 12 // R_inst: sub 0001001010001100 rs =  9, rt =  4, imm =   8
+@1e5a
+7E 1A // R_inst: sub 0001101001111110 rs = 13, rt =  3, imm = -10
+@1e5c
+10 2B // R_inst: mult 0010101100010000 rs =  5, rt =  8, imm = -12
+@1e5e
+3F 1C // R_inst: add 0001110000111111 rs = 14, rt =  1, imm =  -9
+@1e60
+23 3D // R_inst: set 0011110100100011 rs = 14, rt =  9, imm =  14
+@1e62
+8E B3 // I_inst: beq 1011001110001110 rs =  9, rt = 12, imm =  14
+@1e64
+39 31 // R_inst: set 0011000100111001 rs =  8, rt =  9, imm =  -9
+@1e66
+EC 0B // R_inst: sub 0000101111101100 rs =  5, rt = 15, imm =  -4
+@1e68
+24 19 // R_inst: sub 0001100100100100 rs = 12, rt =  9, imm =  -7
+@1e6a
+8F 71 // I_inst: load 0111000110001111 rs =  8, rt = 12, imm =  15
+@1e6c
+2F 71 // I_inst: load 0111000100101111 rs =  8, rt =  9, imm =  15
+@1e6e
+62 9E // J_inst: jump 1001111001100010 address = 01e62
+@1e70
+BF 1D // R_inst: add 0001110110111111 rs = 14, rt = 13, imm =  13
+@1e72
+37 19 // R_inst: add 0001100100110111 rs = 12, rt =  9, imm =  12
+@1e74
+B6 0E // R_inst: sub 0000111010110110 rs =  7, rt =  5, imm =   3
+@1e76
+74 3D // R_inst: mult 0011110101110100 rs = 14, rt = 11, imm =  14
+@1e78
+AB 04 // R_inst: add 0000010010101011 rs =  2, rt =  5, imm = -15
+@1e7a
+6A 12 // R_inst: sub 0001001001101010 rs =  9, rt =  3, imm =  -1
+@1e7c
+DD 12 // R_inst: add 0001001011011101 rs =  9, rt =  6, imm =   1
+@1e7e
+86 07 // R_inst: sub 0000011110000110 rs =  3, rt = 12, imm =  -9
+@1e80
+57 08 // R_inst: add 0000100001010111 rs =  4, rt =  2, imm =  14
+@1e82
+46 05 // R_inst: sub 0000010101000110 rs =  2, rt = 10, imm =  -2
+@1e84
+C2 9E // J_inst: jump 1001111011000010 address = 01ec2
+@1e86
+6B 1A // R_inst: add 0001101001101011 rs = 13, rt =  3, imm =  -4
+@1e88
+7C 29 // R_inst: mult 0010100101111100 rs =  4, rt = 11, imm = -16
+@1e8a
+42 37 // R_inst: mult 0011011101000010 rs = 11, rt = 10, imm =  -2
+@1e8c
+F4 11 // R_inst: sub 0001000111110100 rs =  8, rt = 15, imm =   1
+@1e8e
+03 1B // R_inst: add 0001101100000011 rs = 13, rt =  8, imm = -11
+@1e90
+A8 2A // R_inst: mult 0010101010101000 rs =  5, rt =  5, imm =   8
+@1e92
+19 06 // R_inst: add 0000011000011001 rs =  3, rt =  0, imm =  14
+@1e94
+D2 36 // R_inst: mult 0011011011010010 rs = 11, rt =  6, imm = -13
+@1e96
+A5 0F // R_inst: add 0000111110100101 rs =  7, rt = 13, imm =  12
+@1e98
+AF 0F // R_inst: add 0000111110101111 rs =  7, rt = 13, imm =  11
+@1e9a
+56 22 // R_inst: mult 0010001001010110 rs =  1, rt =  2, imm =  11
+@1e9c
+F4 37 // R_inst: mult 0011011111110100 rs = 11, rt = 15, imm =  13
+@1e9e
+F8 11 // R_inst: sub 0001000111111000 rs =  8, rt = 15, imm =  14
+@1ea0
+95 0C // R_inst: add 0000110010010101 rs =  6, rt =  4, imm =  15
+@1ea2
+82 39 // R_inst: mult 0011100110000010 rs = 12, rt = 12, imm = -15
+@1ea4
+7A 26 // R_inst: mult 0010011001111010 rs =  3, rt =  3, imm =  10
+@1ea6
+68 2D // R_inst: mult 0010110101101000 rs =  6, rt = 11, imm = -16
+@1ea8
+BA 23 // R_inst: mult 0010001110111010 rs =  1, rt = 13, imm =  -4
+@1eaa
+5C 0C // R_inst: sub 0000110001011100 rs =  6, rt =  2, imm =  15
+@1eac
+C5 05 // R_inst: add 0000010111000101 rs =  2, rt = 14, imm =   7
+@1eae
+46 33 // R_inst: mult 0011001101000110 rs =  9, rt = 10, imm =   4
+@1eb0
+9B 1C // R_inst: add 0001110010011011 rs = 14, rt =  4, imm =  -6
+@1eb2
+9A 15 // R_inst: sub 0001010110011010 rs = 10, rt = 12, imm =  -7
+@1eb4
+6F 09 // R_inst: add 0000100101101111 rs =  4, rt = 11, imm =  -1
+@1eb6
+54 29 // R_inst: mult 0010100101010100 rs =  4, rt = 10, imm =   5
+@1eb8
+A9 18 // R_inst: add 0001100010101001 rs = 12, rt =  5, imm =   9
+@1eba
+48 2C // R_inst: mult 0010110001001000 rs =  6, rt =  2, imm =  -6
+@1ebc
+4C 1B // R_inst: sub 0001101101001100 rs = 13, rt = 10, imm =   7
+@1ebe
+3A 0B // R_inst: sub 0000101100111010 rs =  5, rt =  9, imm =  -4
+@1ec0
+C8 3D // R_inst: mult 0011110111001000 rs = 14, rt = 14, imm =  15
+@1ec2
+4E AB // I_inst: beq 1010101101001110 rs =  5, rt = 10, imm =  14
+@1ec4
+2F 06 // R_inst: add 0000011000101111 rs =  3, rt =  1, imm =   5
+@1ec6
+02 16 // R_inst: sub 0001011000000010 rs = 11, rt =  0, imm =   5
+@1ec8
+1C 23 // R_inst: mult 0010001100011100 rs =  1, rt =  8, imm =  -5
+@1eca
+CF 03 // R_inst: add 0000001111001111 rs =  1, rt = 14, imm =  13
+@1ecc
+1B 29 // R_inst: set 0010100100011011 rs =  4, rt =  8, imm =  -1
+@1ece
+5B 71 // I_inst: load 0111000101011011 rs =  8, rt = 10, imm =  -5
+@1ed0
+BB 70 // I_inst: load 0111000010111011 rs =  8, rt =  5, imm =  -5
+@1ed2
+C2 9E // J_inst: jump 1001111011000010 address = 01ec2
+@1ed4
+F5 0E // R_inst: add 0000111011110101 rs =  7, rt =  7, imm =  12
+@1ed6
+A2 37 // R_inst: mult 0011011110100010 rs = 11, rt = 13, imm =   9
+@1ed8
+98 27 // R_inst: mult 0010011110011000 rs =  3, rt = 12, imm =  13
+@1eda
+89 0D // R_inst: add 0000110110001001 rs =  6, rt = 12, imm =  -7
+@1edc
+8B 0F // R_inst: add 0000111110001011 rs =  7, rt = 12, imm =   7
+@1ede
+D8 3B // R_inst: mult 0011101111011000 rs = 13, rt = 14, imm =   8
+@1ee0
+3C 33 // R_inst: mult 0011001100111100 rs =  9, rt =  9, imm =  -5
+@1ee2
+49 3D // R_inst: set 0011110101001001 rs = 14, rt = 10, imm =  -3
+@1ee4
+16 9F // J_inst: jump 1001111100010110 address = 01f16
+@1ee6
+42 13 // R_inst: sub 0001001101000010 rs =  9, rt = 10, imm =   3
+@1ee8
+9E 3A // R_inst: mult 0011101010011110 rs = 13, rt =  4, imm =  -8
+@1eea
+C2 12 // R_inst: sub 0001001011000010 rs =  9, rt =  6, imm =   7
+@1eec
+DE 2D // R_inst: mult 0010110111011110 rs =  6, rt = 14, imm = -16
+@1eee
+D5 06 // R_inst: add 0000011011010101 rs =  3, rt =  6, imm =  -2
+@1ef0
+4C 04 // R_inst: sub 0000010001001100 rs =  2, rt =  2, imm =  12
+@1ef2
+25 03 // R_inst: add 0000001100100101 rs =  1, rt =  9, imm = -14
+@1ef4
+65 16 // R_inst: add 0001011001100101 rs = 11, rt =  3, imm =   0
+@1ef6
+32 19 // R_inst: sub 0001100100110010 rs = 12, rt =  9, imm =   5
+@1ef8
+2F 0B // R_inst: add 0000101100101111 rs =  5, rt =  9, imm = -13
+@1efa
+7A 1D // R_inst: sub 0001110101111010 rs = 14, rt = 11, imm =  13
+@1efc
+28 23 // R_inst: mult 0010001100101000 rs =  1, rt =  9, imm =  14
+@1efe
+BA 2F // R_inst: mult 0010111110111010 rs =  7, rt = 13, imm =   7
+@1f00
+39 0A // R_inst: add 0000101000111001 rs =  5, rt =  1, imm =   4
+@1f02
+8A 16 // R_inst: sub 0001011010001010 rs = 11, rt =  4, imm = -12
+@1f04
+4E 08 // R_inst: sub 0000100001001110 rs =  4, rt =  2, imm =  11
+@1f06
+EA 18 // R_inst: sub 0001100011101010 rs = 12, rt =  7, imm =  -5
+@1f08
+7B 11 // R_inst: add 0001000101111011 rs =  8, rt = 11, imm =   8
+@1f0a
+55 1B // R_inst: add 0001101101010101 rs = 13, rt = 10, imm =   6
+@1f0c
+8E 25 // R_inst: mult 0010010110001110 rs =  2, rt = 12, imm =  -1
+@1f0e
+19 13 // R_inst: add 0001001100011001 rs =  9, rt =  8, imm =  -1
+@1f10
+67 1D // R_inst: add 0001110101100111 rs = 14, rt = 11, imm =  -6
+@1f12
+28 22 // R_inst: mult 0010001000101000 rs =  1, rt =  1, imm =  -2
+@1f14
+D4 0E // R_inst: sub 0000111011010100 rs =  7, rt =  6, imm = -11
+@1f16
+74 7E // I_inst: load 0111111001110100 rs = 15, rt =  3, imm = -12
+@1f18
+F4 7E // I_inst: load 0111111011110100 rs = 15, rt =  7, imm = -12
+@1f1a
+61 AE // I_inst: beq 1010111001100001 rs =  7, rt =  3, imm =   1
+@1f1c
+B6 0D // R_inst: sub 0000110110110110 rs =  6, rt = 13, imm =  15
+@1f1e
+6B 60 // I_inst: load 0110000001101011 rs =  0, rt =  3, imm =  11
+@1f20
+81 70 // I_inst: load 0111000010000001 rs =  8, rt =  4, imm =   1
+@1f22
+B9 72 // I_inst: load 0111001010111001 rs =  9, rt =  5, imm =  -7
+@1f24
+99 72 // I_inst: load 0111001010011001 rs =  9, rt =  4, imm =  -7
+@1f26
+A1 A8 // I_inst: beq 1010100010100001 rs =  4, rt =  5, imm =   1
+@1f28
+8A 33 // R_inst: mult 0011001110001010 rs =  9, rt = 12, imm =  11
+@1f2a
+5A 9F // J_inst: jump 1001111101011010 address = 01f5a
+@1f2c
+46 0D // R_inst: sub 0000110101000110 rs =  6, rt = 10, imm = -10
+@1f2e
+AA 1B // R_inst: sub 0001101110101010 rs = 13, rt = 13, imm =  -3
+@1f30
+8B 14 // R_inst: add 0001010010001011 rs = 10, rt =  4, imm = -11
+@1f32
+0F 1A // R_inst: add 0001101000001111 rs = 13, rt =  0, imm = -10
+@1f34
+F4 28 // R_inst: mult 0010100011110100 rs =  4, rt =  7, imm =   3
+@1f36
+5C 25 // R_inst: mult 0010010101011100 rs =  2, rt = 10, imm =   4
+@1f38
+3E 1B // R_inst: sub 0001101100111110 rs = 13, rt =  9, imm =  12
+@1f3a
+C4 01 // R_inst: sub 0000000111000100 rs =  0, rt = 14, imm =   9
+@1f3c
+64 3D // R_inst: mult 0011110101100100 rs = 14, rt = 11, imm =   9
+@1f3e
+7A 2A // R_inst: mult 0010101001111010 rs =  5, rt =  3, imm =  -6
+@1f40
+A8 2B // R_inst: mult 0010101110101000 rs =  5, rt = 13, imm =   7
+@1f42
+E2 38 // R_inst: mult 0011100011100010 rs = 12, rt =  7, imm =   4
+@1f44
+69 1F // R_inst: add 0001111101101001 rs = 15, rt = 11, imm =   0
+@1f46
+69 0C // R_inst: add 0000110001101001 rs =  6, rt =  3, imm = -10
+@1f48
+AF 13 // R_inst: add 0001001110101111 rs =  9, rt = 13, imm =  -3
+@1f4a
+1E 1D // R_inst: sub 0001110100011110 rs = 14, rt =  8, imm =  -5
+@1f4c
+EB 1D // R_inst: add 0001110111101011 rs = 14, rt = 15, imm = -10
+@1f4e
+EF 06 // R_inst: add 0000011011101111 rs =  3, rt =  7, imm =  -1
+@1f50
+3E 22 // R_inst: mult 0010001000111110 rs =  1, rt =  1, imm =  12
+@1f52
+D0 1C // R_inst: sub 0001110011010000 rs = 14, rt =  6, imm =   5
+@1f54
+86 1C // R_inst: sub 0001110010000110 rs = 14, rt =  4, imm = -15
+@1f56
+0C 0E // R_inst: sub 0000111000001100 rs =  7, rt =  0, imm =   3
+@1f58
+EB 1E // R_inst: add 0001111011101011 rs = 15, rt =  7, imm =   2
+@1f5a
+68 9F // J_inst: jump 1001111101101000 address = 01f68
+@1f5c
+B0 2E // R_inst: mult 0010111010110000 rs =  7, rt =  5, imm =  -2
+@1f5e
+0F 14 // R_inst: add 0001010000001111 rs = 10, rt =  0, imm =   1
+@1f60
+79 0B // R_inst: add 0000101101111001 rs =  5, rt = 11, imm =  14
+@1f62
+84 32 // R_inst: mult 0011001010000100 rs =  9, rt =  4, imm =  -1
+@1f64
+2A 28 // R_inst: mult 0010100000101010 rs =  4, rt =  1, imm =  13
+@1f66
+78 24 // R_inst: mult 0010010001111000 rs =  2, rt =  3, imm =  15
+@1f68
+7F 7F // I_inst: load 0111111101111111 rs = 15, rt = 11, imm =  -1
+@1f6a
+2E AD // I_inst: beq 1010110100101110 rs =  6, rt =  9, imm =  14
+@1f6c
+8B 39 // R_inst: set 0011100110001011 rs = 12, rt = 12, imm = -10
+@1f6e
+B3 0F // R_inst: add 0000111110110011 rs =  7, rt = 13, imm =   6
+@1f70
+71 20 // R_inst: set 0010000001110001 rs =  0, rt =  3, imm = -16
+@1f72
+42 1D // R_inst: sub 0001110101000010 rs = 14, rt = 10, imm =   3
+@1f74
+54 23 // R_inst: mult 0010001101010100 rs =  1, rt = 10, imm = -12
+@1f76
+D6 06 // R_inst: sub 0000011011010110 rs =  3, rt =  6, imm =  11
+@1f78
+25 63 // I_inst: load 0110001100100101 rs =  1, rt =  9, imm =   5
+@1f7a
+C5 62 // I_inst: load 0110001011000101 rs =  1, rt =  6, imm =   5
+@1f7c
+6A 9F // J_inst: jump 1001111101101010 address = 01f6a
+@1f7e
+D4 10 // R_inst: sub 0001000011010100 rs =  8, rt =  6, imm =  -7
+@1f80
+29 08 // R_inst: add 0000100000101001 rs =  4, rt =  1, imm = -11
+@1f82
+71 17 // R_inst: add 0001011101110001 rs = 11, rt = 11, imm =  14
+@1f84
+73 11 // R_inst: add 0001000101110011 rs =  8, rt = 11, imm =   6
+@1f86
+B6 15 // R_inst: sub 0001010110110110 rs = 10, rt = 13, imm = -15
+@1f88
+EB 6A // I_inst: load 0110101011101011 rs =  5, rt =  7, imm =  11
+@1f8a
+9A 9F // J_inst: jump 1001111110011010 address = 01f9a
+@1f8c
+A0 9F // J_inst: jump 1001111110100000 address = 01fa0
+@1f8e
+82 35 // R_inst: mult 0011010110000010 rs = 10, rt = 12, imm = -15
+@1f90
+E2 0A // R_inst: sub 0000101011100010 rs =  5, rt =  7, imm =  14
+@1f92
+83 0D // R_inst: add 0000110110000011 rs =  6, rt = 12, imm =   5
+@1f94
+2C 09 // R_inst: sub 0000100100101100 rs =  4, rt =  9, imm =  -4
+@1f96
+D5 0E // R_inst: add 0000111011010101 rs =  7, rt =  6, imm =  -1
+@1f98
+74 0C // R_inst: sub 0000110001110100 rs =  6, rt =  3, imm =  -7
+@1f9a
+5F 78 // I_inst: load 0111100001011111 rs = 12, rt =  2, imm =  -1
+@1f9c
+9F 78 // I_inst: load 0111100010011111 rs = 12, rt =  4, imm =  -1
+@1f9e
+56 A8 // I_inst: beq 1010100001010110 rs =  4, rt =  2, imm = -10
+@1fa0
+D0 7F // I_inst: load 0111111111010000 rs = 15, rt = 14, imm = -16
+@1fa2
+F0 7E // I_inst: load 0111111011110000 rs = 15, rt =  7, imm = -16
+@1fa4
+CE AF // I_inst: beq 1010111111001110 rs =  7, rt = 14, imm =  14
+@1fa6
+4E 2E // R_inst: mult 0010111001001110 rs =  7, rt =  2, imm = -16
+@1fa8
+62 31 // R_inst: mult 0011000101100010 rs =  8, rt = 11, imm =  -3
+@1faa
+6E 37 // R_inst: mult 0011011101101110 rs = 11, rt = 11, imm =   4
+@1fac
+56 23 // R_inst: mult 0010001101010110 rs =  1, rt = 10, imm =   6
+@1fae
+46 2E // R_inst: mult 0010111001000110 rs =  7, rt =  2, imm =   6
+@1fb0
+F3 1E // R_inst: add 0001111011110011 rs = 15, rt =  7, imm = -16
+@1fb2
+3B 1F // R_inst: add 0001111100111011 rs = 15, rt =  9, imm =   2
+@1fb4
+B3 06 // R_inst: add 0000011010110011 rs =  3, rt =  5, imm =   8
+@1fb6
+88 3F // R_inst: mult 0011111110001000 rs = 15, rt = 12, imm =  -3
+@1fb8
+23 15 // R_inst: add 0001010100100011 rs = 10, rt =  9, imm =  12
+@1fba
+11 0E // R_inst: add 0000111000010001 rs =  7, rt =  0, imm =  15
+@1fbc
+F2 07 // R_inst: sub 0000011111110010 rs =  3, rt = 15, imm =  12
+@1fbe
+B8 28 // R_inst: mult 0010100010111000 rs =  4, rt =  5, imm =  -2
+@1fc0
+30 1E // R_inst: sub 0001111000110000 rs = 15, rt =  1, imm =  -8
+@1fc2
+D6 0B // R_inst: sub 0000101111010110 rs =  5, rt = 14, imm =  -1
+@1fc4
+E8 24 // R_inst: mult 0010010011101000 rs =  2, rt =  7, imm = -10
+@1fc6
+5B 0B // R_inst: add 0000101101011011 rs =  5, rt = 10, imm =  -2
+@1fc8
+66 18 // R_inst: sub 0001100001100110 rs = 12, rt =  3, imm =  15
+@1fca
+6C 09 // R_inst: sub 0000100101101100 rs =  4, rt = 11, imm =   2
+@1fcc
+64 0F // R_inst: sub 0000111101100100 rs =  7, rt = 11, imm =  -3
+@1fce
+9A 37 // R_inst: mult 0011011110011010 rs = 11, rt = 12, imm = -16
+@1fd0
+A4 1F // R_inst: sub 0001111110100100 rs = 15, rt = 13, imm =  -4
+@1fd2
+23 00 // R_inst: add 0000000000100011 rs =  0, rt =  1, imm =  -1
+@1fd4
+DB 0F // R_inst: add 0000111111011011 rs =  7, rt = 14, imm = -16
+@1fd6
+72 1E // R_inst: sub 0001111001110010 rs = 15, rt =  3, imm =   1
+@1fd8
+56 14 // R_inst: sub 0001010001010110 rs = 10, rt =  2, imm = -10
+@1fda
+47 17 // R_inst: add 0001011101000111 rs = 11, rt = 10, imm =  14
+@1fdc
+E3 00 // R_inst: add 0000000011100011 rs =  0, rt =  7, imm =  12
+@1fde
+AF 1E // R_inst: add 0001111010101111 rs = 15, rt =  5, imm =  13
+@1fe0
+AF 0F // R_inst: add 0000111110101111 rs =  7, rt = 13, imm = -16
+@1fe2
+69 07 // R_inst: add 0000011101101001 rs =  3, rt = 11, imm =  14
+@1fe4
+49 06 // R_inst: add 0000011001001001 rs =  3, rt =  2, imm =   0
+@1fe6
+B9 0E // R_inst: add 0000111010111001 rs =  7, rt =  5, imm =  -7
+@1fe8
+8C 3C // R_inst: mult 0011110010001100 rs = 14, rt =  4, imm =  12
+@1fea
+53 03 // R_inst: add 0000001101010011 rs =  1, rt = 10, imm = -10
+@1fec
+49 1E // R_inst: add 0001111001001001 rs = 15, rt =  2, imm = -13
+@1fee
+F7 15 // R_inst: add 0001010111110111 rs = 10, rt = 15, imm =  -6
+@1ff0
+82 38 // R_inst: mult 0011100010000010 rs = 12, rt =  4, imm =  -8
+@1ff2
+25 03 // R_inst: add 0000001100100101 rs =  1, rt =  9, imm =   3
+@1ff4
+24 0E // R_inst: sub 0000111000100100 rs =  7, rt =  1, imm =   4
+@1ff6
+94 3D // R_inst: mult 0011110110010100 rs = 14, rt = 12, imm =  13
+@1ff8
+43 1B // R_inst: add 0001101101000011 rs = 13, rt = 10, imm =   1
+@1ffa
+26 06 // R_inst: sub 0000011000100110 rs =  3, rt =  1, imm =   2
+@1ffc
+12 15 // R_inst: sub 0001010100010010 rs = 10, rt =  8, imm =   9
+@1ffe
+70 3D // R_inst: mult 0011110101110000 rs = 14, rt = 11, imm = -15

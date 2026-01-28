@@ -1,0 +1,37 @@
+目前整體的邏輯其實與當時 Lab5 的設計完全一致，都是從 SRAM 有規律地讀出資料、進行計算、最後再寫回 SRAM。因此當時在 Lab5 整合出的八個「SRAM 使用注意事項」在這次的作業裡也全部用上，且沒有任何新的觀念。
+
+1. 首先是 data in 的問題，SRAM 的 data in 不能直接接 combinational 電路，而必須是 sequential 訊號，因為若直接把組合邏輯輸出的訊號送進 SRAM，combinational的delay會直接讓sram有timing violation，一定會
+
+
+2. 第二個則是 data out 同樣不能直接使用，因為 SRAM 輸入端是 latch 或 register，但輸出端卻是一段 combinational path，這意味著實際的 delay 不可控，combinational的delay會直接讓sram有timing violation，一定會造成 setup violation，因此必須先將 data out 接到reg_arr[][]或是img_reg[][]，再從暫存器使用穩定後的資料。
+
+我們現在也承受著巨大的壓力，真正重要的始終只有愛與健康，能離壓力多遠就多遠
+
+3. 第三個要點是 address 的存取方式。Lab5 裡就能明顯觀察到：一旦 address 必須跳著讀寫，邏輯會變得極度麻煩。目前我們的 Lab11 和 Lab5 的邏輯幾乎一模一樣，因此也盡量避免這類跳動的 address。但若真的需要處理不連續的 address（例如 x、x+3、x+5 的跳讀），當時的整理做法是：先花幾個 cycle 把所有需要的 address 依序寫進一個 register array，再用 counter 按順序取出，這樣邏輯就會乾淨許多，也比較不會出錯。因此目前的寫法，大多是讓 sequential 的 address 訊號承接 index、row、column，組成十幾 bit 的位址，這樣模式一致、容易掌握，也能在需要時切換成來自 register array 的不連續 address，彈性很高。
+
+4. 第4個要點：SRAM 的寫入其實相對簡單。若有 n 筆資料需要寫，只要在第 0 到第 n−1 個 cycle 期間，連續給定 write enable、address、data in，SRAM 會在第 1 到第 n 個 cycle 實際完成寫入。所以寫的部分只要控制好連續、穩定、sequential，就能順利完成。
+
+5. 但是讀的部分就麻煩得多，可以把它理解成「需要 2 到 3 拍」。在第 0 到第 n−1 個 cycle，我們先準備好 address（包括 row、column、index 或是不連續 address 的來源），write enable 維持在 read 模式。等到第 2 到第 n+1 個 cycle，SRAM 才會真正輸出穩定的資料，因為它永遠是使用前一拍已穩定的 address 去讀資料。這些在第 2 到第 n+1 個 cycle 產生的 data out，我們再接進 register array，下一拍就能使用正確的結果。這整個流程與 Lab5 完全一致，本質上沒有任何改變。
+
+SRAM 的讀寫時序、address 的安排方式、data in/out 的使用模式，其實全都和先前的 Lab 完全相同。不管是跳著存、連續存、或任何特別的讀寫方式，沒有別的寫法。
+
+//====
+
+在 Lab 5 和 Lab 11 本質上完全相同，不論電路多複雜，它最終都只由三個部分組成：Finite State Machine、Combinational Logic，以及 Sequential Logic。FSM 決定整個流程的階段與控制方向；Combinational Logic 負責比對訊號、確認可行的選項、判斷方向是否符合 Direction Pointer、檢查是否重疊或是否仍有合法解；Sequential Logic 則掌握計算步驟的推進，負責讓系統在每一次 clock edge 中前進到下一個狀態，更新 row、column，並決定下一步要往哪裡走。
+
+在 Combinational Logic 裡，所有判斷都是依靠 register array 中已儲存的資料來比對，包括是否仍然有合法解、哪些路徑滿足條件、哪些方向可行、是否需要切換方向或更換策略。這裡做的事情純粹是「比較」、「選擇」與「形成可行的選項集合」。Sequential Logic 則負責真正推進狀態，例如決定下一步是往右、往下、還是直走，或是在 backtracking 時往後退並清空對應的 Direction Pointer。因為一旦往後，代表先前的選擇已經失效，因此屬於那條分支後續的所有方向資訊都必須歸零，相當於把那段路徹底撤銷。這些都是 Sequential Logic 的工作：更新、記錄、前進、後退、清空、重新選擇。
+
+同樣的架構也存在於 Huffman Coding 這類演算法中。每一步都是先用 Combinational Logic 找出目前最合適的兩個節點，再由 Sequential Logic 負責把它們合併、更新結構，並寫回對應的位置。所有的 DNA 運作邏輯也是同一套模式，從頭到尾沒有改變。
+
+//====
+
+在 Lab 5 裡整理出的八個重點，到 Lab 11，都非常重要而且沒有別的重點。
+7. 其中後面提到的第七點或第八點，就是關於 Row Index 和 Column Index 的設計方式。Row 當作小 counter，而 Column 或 Index 作為較大的 counter，當小 counter 累積滿了就把大 counter+1，如此便能把 SRAM 的位址用一種規律、乾淨又容易控制的方式拼接起來。這樣的邏輯在 Level 11 仍然完全適用，未來只要遇到需要以像素、圖像或任何二維資料存取的 SRAM，我們都能用相同的方法處理，而且在影像、矩陣、座標相關的電路裡，這種模式會一再出現，只有這個方法
+
+8. 第七與第八點其實也呼應了先前整理的第3點——只要 Address 不連續，就用一個 register array 先把不連續的位址都準備好，再用 counter 依序送進去；另一種就是 Row、Column、Index 以 counter 串接形成規律位址。事實上，送 SRAM address 永遠只有這兩種方式，不會更複雜，也不會出現第三種方法。
+
+再回到最重要的第五點與第六點，這兩點可說是整份筆記的核心。寫入時，第 0 到第 N−1 個 cycle 會同步送入 WriteEnable、DataIn 和 Address，SRAM 真正接收到並完成寫入的時間落在第 1 到第 N 個 cycle。這三個訊號永遠同步，沒有任何例外。讀取則需要更久，Lab 5 的筆記當時也標註得相當清楚。Address 在第 0 到第 N−1 個 cycle 送進去，SRAM 會在下一個 cycle 才真正看到穩定的 address 與 WriteEnable=1（也就是讀取模式）。因此真正開始讀並得到穩定 DataOut 的時間點，是從第 2 個 cycle 到第 N+1 個 cycle。在這段期間，register array 才能接住正確的資料，而且接到的位置必須對應到「兩拍以前」的 row、column 或 index，所以才需要 row_q、col_q、row_qq、col_qq 去承接先前的值，確保資料能存回正確的位置。若資料結構不是整齊的 row-column 矩陣也沒有關係，只要與前面相同的邏輯——在兩拍之前記下 index，並在兩拍後放入正確位置即可，所有情況都是同一種模式。
+
+綜觀所有讀寫邏輯，其實都只有這種寫法，沒有其他寫法。
+
+補充:寫進 SRAM 的訊號必須 reset，這可能在 Lab 5  的整理中沒有強調，但一定要記得：Address、WriteEnable 和與它們相關的所有控制訊號都必須是 sequential 的。這不只是因為第五點、第六點的控制本身都建立在 sequential 上，更是因為只有 sequential 訊號才能穩定、可控，避免 address 因不穩定的組合邏輯而寫入 unknown。最後再加上一個「第八點半」的小提醒：只要不是進行寫入，WriteEnable 就必須保持在讀取模式，但這只是細節，不是重點。真正的重點始終是前面所整理的幾個原則，而這些原則從 Lab 5  到 Lab 11 完全一致，未來所有設計也仍然會依循同樣的邏輯。

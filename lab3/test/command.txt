@@ -1,0 +1,11 @@
+gcc test2.c -o test2.exe
+./test2
+
+gcc test3.c -o test3.exe
+./test3
+
+gcc test4.c -o test4.exe
+./test4
+
+gcc test5.c -o test5.exe
+./test5

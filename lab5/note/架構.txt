@@ -1,0 +1,7 @@
+剛剛與大神討論後，確認整體架構的初步認證沒有問題。整個 finite state machine 的流程如下：一開始為 idle，接著進入 input1 階段，這時系統會接收 16 張 32×32 的影像，並以與 MMT 相同的方式將資料存入 X-ray。完成後進入 wait 狀態，等待 input2。input2 階段會接收 set 的 index 與 MOD bit，當這些資訊到位後就可以開始進行計算。
+
+在計算階段，一張影像會被切成四大塊，對應四個 MOD bit。若目前為 16×16 的模式，系統會先執行 intra prediction，針對整個 16×16 區塊做 DC 模式的計算，此時最多需要將 32 個 element 相加，每次加四個，由 MOD 控制選擇。接著執行 SAD 計算，無論是 4×4 或 16×16 模式，流程皆相同：從 register array 取出 input，與 P 相減後取絕對值，再進行累加。我們會進行三輪運算，分別暫存三個 value，用以判定當前 16×16 的 prediction 模式是 DC、H 或 V。
+
+當 16×16 的 intra prediction 完成後，就確定該區塊的預測填充值。接著進入 4×4 區塊的處理階段，在一個 16×16 區塊內需重複 16 次 4×4 的計算，每完成一次 4×4 的矩陣乘法便輸出並檢查是否已處理完所有子區塊。若全數完成，則回到下一個 intra prediction。若模式設定為 4×4 則直接先進行 4×4 的 intra prediction，這時最多僅需加 8 個 element，計算較簡單。流程一樣會進行三輪 SAD 計算，分別對 DC、H、V 模式求和並比較，選出最適的 prediction，然後輸出結果並根據 block 的 row 與 column 更新位置。
+
+目前做法:

@@ -1,0 +1,29 @@
+抱歉再次打擾助教了，目前我依照 PDF 講義上的流程，把 step 3 裡面所有 import design 的步驟都做完，Innovus 內也有顯示設計已經成功儲存，重新load .globals的檔案也都是可以的，但目前畫面並沒有像講義的圖片那樣顯示出各個 pad 的位置。
+
+目前按下OK後，terminal有顯示Begin Load MMMC data，且目前我看我的CHIP_SYN.v也不是空的(有結合 netlist和 .IO)
+
+想請問助教，這種情況會不會是因為我在撰寫.IO檔時有哪裡寫錯？或是可能還有其他原因會造成這樣的情況？目前 step 3 的流程我是都有照著執行並儲存。
+非常感謝助教
+
+////./00_combine	//不能再做!!!，除非02重跑
+
+////cp ../02_SYN/Netlist/MVDM_SYN.sdc CHIP.sdc //不能再做!!!，除非02重跑
+
+setenv OA_HOME /RAID2/cad/cadence/INNOVUS/INNOVUS_20.15.000/share/oa 
+
+innovus
+
+set init_design_uniquify 1
+
+setDesignMode -process 180
+
+suppressMessage TECHLIB 1318
+
+suppressMessage ENCEXT-2799
+
+
+
+.sdc要註解!!!
+
+fsa0m_a_generic_core_ff1p98vm40c
+fsa0m_a_generic_core_ff1p98vm40c.lib

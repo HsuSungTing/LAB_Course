@@ -1,0 +1,53 @@
+SSH: 
+ee30.si2.iee.nycu.edu.tw
+ee29.si2.iee.nycu.edu.tw
+
+password: eason1024
+
+如果要換channel:
+chto ee28
+chto ee27
+
+ evince /usr/cad/synopsys/synthesis/cur/dw/doc/manuals/dwbb_userguide.pdf &
+
+一定要記得去除中文註解!!
+
+一定會用到的指令:
+cd Lab04
+cd Exercise
+
+cd 01_RTL
+./01_run_vcs_rtl
+pkill verdi
+pkill simv
+pkill dve
+pkill vcs
+make clean
+
+cd 02_SYN
+./01_run_dc_shell
+
+
+cd 03_GATE
+./01_run_vcs_gate
+pkill verdi
+pkill simv
+pkill dve
+pkill vcs
+make clean
+
+PTN 1 葦天神
+PTN 2 陳天神
+PTN 3 管神
+
+cd 09_SUBMIT
+./00_tar 45.0
+./01_submit 1st_demo/2nd_demo
+./02_check 1st_demo/2nd_demo
+
+tar xvf ~iclabTA01/Lab04_F2025.tar
+
+
+檢查目前容量
+ln -s ../00_TESTBED/PATTERN.vp
+

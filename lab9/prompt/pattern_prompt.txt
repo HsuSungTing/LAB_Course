@@ -1,0 +1,177 @@
+今天我希望利用 SystemVerilog 的 random 來對我的電路進行輸入測試。每次輸入都會等到對應的 output value 拉高後，才會進行下一筆輸入。為此，我設計了一個專門的 input task，它負責產生測試輸入並將其餵給電路。這個 task 會利用 System Value Log 的語法生成隨機測試，每次隨機決定一個行為，從五種可能的行為中選擇：Logging、Level Up、Battle、Skill、Inactive。
+
+對於每個行為，輸入的方式都稍有不同，且所有訊號都是透過 interface 傳入電路。以 Logging 為例，task 會先將 action_valid 拉高一個時脈週期，將 action 送入 D，接著再拉高 date_valid 將日期送入 D，最後將 player_no_valid 拉高並送入玩家編號。整個過程每個訊號都依序拉高一個週期後拉低，以確保 DUT 可以正確讀取。
+
+如果隨機選到的行為是 Level Up，則輸入流程如下：先將 action_valid 拉高一個週期，將 Action 設為 1 送入 D，接著拉高 type_valid 將 Training Type（0 到 3 的值）送入 D，再拉高 mode_valid 將 Mode（0 到 2 的值）送入 D，最後將 player_no_valid 拉高並送入玩家編號。
+
+如果選到 Battle，流程則為：先將 sel_action_valid 拉高一個週期，將 Action 設為 2 送入 D，再拉高 player_no_valid 送入玩家編號，接著將 monster_valid 拉高三個週期，依序輸入三個 16-bit 的數字。
+
+若選到 Use Skill，流程為：將 sel_action_valid 拉高一個週期，將 Action 設為 3 送入 D，接著在下一個週期拉高 player_no_valid 送入玩家編號，再拉高 mp_valid 並連續四個週期將四個數值輸入 D。
+
+最後，如果行為是 Inactive，流程為：先將 sel_action_valid 拉高一個週期，將 Action 設為 4 送入 D，再拉高 date_valid 將日期送入 D，最後將 player_no_valid 拉高並送入玩家編號
+
+我的Interface定義如下:
+interface INF();
+    import  usertype::*;
+
+    logic rst_n;
+    logic sel_action_valid;
+    logic type_valid;
+    logic mode_valid;
+    logic date_valid;
+    logic player_no_valid;
+    logic monster_valid;
+    logic MP_valid;
+    Data D;
+
+    logic out_valid;
+    Warn_Msg warn_msg;
+    logic complete;
+
+    logic AR_VALID, R_READY, AW_VALID, W_VALID, B_READY;
+    logic [16:0] AR_ADDR, AW_ADDR;
+    logic [95:0] W_DATA;
+
+    logic AR_READY, R_VALID, AW_READY, W_READY, B_VALID;
+    logic [1:0] R_RESP, B_RESP;
+    logic [95:0] R_DATA;
+
+    modport PATTERN(
+        input out_valid, warn_msg, complete,
+        AR_VALID, AR_ADDR, R_READY, AW_VALID, AW_ADDR, W_VALID, W_DATA, B_READY,
+        output rst_n, sel_action_valid, type_valid, mode_valid, date_valid, player_no_valid, monster_valid, MP_valid, D,
+        AR_READY, R_VALID, R_RESP, R_DATA, AW_READY, W_READY, B_VALID, B_RESP
+    );
+
+    modport DRAM(
+	    input  AR_VALID, AR_ADDR, R_READY, AW_VALID, AW_ADDR, W_VALID, W_DATA, B_READY,
+	    output AR_READY, R_VALID, R_RESP, R_DATA, AW_READY, W_READY, B_VALID, B_RESP
+    );
+
+    modport RPG_inf(
+        input rst_n, sel_action_valid, type_valid, mode_valid, date_valid, player_no_valid, monster_valid, MP_valid, D,
+            AR_READY, R_VALID, R_RESP, R_DATA, AW_READY, W_READY, B_VALID, B_RESP,
+        output out_valid, warn_msg, complete,
+            AR_VALID, AR_ADDR, R_READY, AW_VALID, AW_ADDR, W_VALID, W_DATA, B_READY
+    );
+    
+endinterface
+
+我的pattern如下，幫我完成input_task讓RPG可以正確吃到pattern產生的測資就好，其他不要改變:
+// `include "../00_TESTBED/pseudo_DRAM.sv"
+`include "Usertype.sv"
+
+program automatic PATTERN(input clk, INF.PATTERN inf);
+import usertype::*;
+//================================================================
+// parameters & integer
+//================================================================
+parameter DRAM_p_r = "../00_TESTBED/DRAM/dram.dat";
+
+//================================================================
+// wire & registers 
+//================================================================
+logic [7:0] golden_DRAM [((65536+12*256)-1):(65536+0)];  
+
+
+//================================================================
+// class random
+//================================================================
+
+/**
+ * Class representing a random action.
+ */
+class random_act;
+    randc Action act_id;
+    constraint range{
+        act_id inside{Login, Level_Up, Battle, Use_Skill, Check_Inactive};
+    }
+    function void set_seed(int seed);
+        
+        this.srandom(seed);
+    endfunction
+endclass
+
+//================================================================
+// initial
+//================================================================
+integer exe_lat,i_pat;
+integer global_count;
+
+initial begin 
+	$readmemh (DRAM_p_r, golden_DRAM) ;
+	reset_task ;
+	global_count = 0 ;
+    exe_lat=0 ;
+	for (i_pat = 0 ; i_pat < PAT_NUM ; i_pat = i_pat + 1) begin 
+		input_task ;
+		wait_task ;
+		// $display ("pass No.%d pattern", i_pat) ;
+		global_count = global_count + 1 ;
+	end
+	$finish ;
+end
+
+// input Box No.
+class random_box ;
+	randc Barrel_No box_id ;
+	function new (int seed) ;
+		this.srandom(seed) ;
+	endfunction
+	constraint range {
+		box_id inside {[0:255]} ;
+	}
+endclass
+
+Barrel_No input_box ;
+random_box box_rand = new(BOXID_SEED) ;
+
+// input Ing
+class random_ing_front ;
+	randc bit [4:0] ingredient_front ;
+	function new (int seed) ;
+		this.srandom(seed) ;
+	endfunction
+endclass
+
+class random_ing_rare ;
+	randc bit [6:0] ingredient_rare ;
+	function new (int seed) ;
+		this.srandom(seed) ;
+	endfunction
+endclass
+
+ING input_bt, input_gt, input_m, input_p ;
+bit [4:0] ing_front ;
+bit [6:0] ing_rare  ;
+random_ing_front ing_front_rand = new(INGFR_SEED) ;
+random_ing_rare  ing_rare_rand  = new(INGRA_SEED) ;
+
+task input_task ; begin 
+	@(negedge clk) ;
+	// to be done
+end endtask 
+
+task wait_task ; begin 
+	exe_lat = -1 ;
+	while (inf.out_valid !== 1) begin 
+        exe_lat = exe_lat + 1;
+        @(negedge clk);
+	end
+end endtask 
+
+task reset_task ; begin 
+	inf.rst_n            = 1;
+    inf.sel_action_valid = 0;
+    inf.type_valid       = 0;
+    inf.mode_valid       = 0;
+    inf.date_valid       = 0;
+    inf.player_no_valid  = 0;
+    inf.monster_valid    = 0;
+    inf.MP_valid         = 0;
+    inf.D                = 'dx;
+
+    #(10) inf.rst_n = 0;
+    #(10) inf.rst_n = 1;
+end endtask
+endprogram

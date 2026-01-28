@@ -1,0 +1,29 @@
+大佬晚安，目前我是這樣，
+step 1 intra predict
+
+reg [14:0] DC_predict;                  //算出DC的predict讓SAD使用，最多32*255，開15 bit夠
+我是開15個bit去累加DC的predict(對於16X16來說最多32個elment要累加，32*256)，但最後會被平均掉(變回0-255)，但我還是開15 bit暫存，怕累加的時候爆掉
+
+累加SAD的部分，最多會用到2^16，所以我保險起見開18 bit
+reg [17:0] SAD_DC, SAD_H, SAD_V;        //最多255*255，SAD只會用來比大小
+
+然後就會決定好目前4X4或是16X16的predict是DC或是H或是V，並且暫存DC數值，H和V用comb搭配目前的index用圖反推。
+
+step 2 residual:這部分是I(8 bit)-predict(8 bit)，然後開始會有signed了!!! (數值界在+255到-255)
+我這邊是直接暫存到reg signed [31:0] cur_4X4 [0:3][0:3];，直到完成reconstruct
+
+step 3 int transform:做兩次矩陣乘法(或是對每個element做兩次的，每次三個加減法)
+我這邊是直接暫存到reg signed [31:0] cur_4X4 [0:3][0:3];，直到完成reconstruct，中間的加法器和減法器也都是用signed的 (數值界在+255*4到-255*4)
+
+
+step 4 Quantization: 這邊我會先記錄signed bit(我直接用大於小於0判斷)，轉成正數後再做elementwise的乘法和加法(abc的最大值是13000，W矩陣的最大值是1024，f的最大值是18萬左右，13000*1024+180000約為13492000)
+signed 32 bit可以表示的範圍是−2,147,483,648 到 +2,147,483,647，所以可以
+而且Quantization還會shift q bit(q最小為15最大為19)，13492000/2^15=411，signed 32 bit可以表示
+
+step 5 dequantize
+此時Z最大值為411，拿10000去算的話，V最大值是a的30，再乘上2^floor(QP/6)
+10000*30*16也可以穩定被signed 32 bit表示
+
+step 6 inverse int transform
+用最差的情況第一次矩陣乘法被放大四倍，下次又被放大四倍10000*30*16*4*4，也可以穩定被signed 32 bit表示
+

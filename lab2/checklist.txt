@@ -1,0 +1,23 @@
+這次我的理解是這樣
+1. RTL Code 檢查:從提交的壓縮檔中解壓出的 RTL code 不得包含:error、congratulation、latch、fail，且不得包含中文註解。 ->OK by gpt
+2.  Cycle Time 檢查:壓縮檔中的 cycle time必須是電路實際可合成出來的真實cycle time，助教會拿這個cycle time跑02_SYN和03_GATE (syn.tcl OK、TB OK)
+3. 使用壓縮檔中的 RTL code 重新執行一次 02_synthesis：必須能成功合成，不得失敗。合成完成後需執行 08_check，必須通過檢查。 OK
+4. 合成後的結果要能順利通過 03_get 的所有 simulation，所有測試盡可能跑過
+5. Latency ≤ 1000 cycles (定義：in_valid 上升緣 → out_valid 上升緣之間的 clock 數) -> 由pattern判斷   OK
+6. 最大 clock period = 10 ns (可自行決定，但需 ≤10 ns) -> 由./08_check判斷 OK by gpt
+7. 03不可以有warning of time violation、01 02 03不可以有error(sim.log和vcs.log)  OK
+8. 有clk的always block要有if !reset    -> OK(由vivado)
+9. Area 120w內、Cycle 1000內（單筆）、Cycle time 10ns內（0.1一單位） OK by gpt
+syn.log不能有latch、elapsed time 10分鐘內、不可有特定字 OK
+
+============================
+--> V Latch Checked!
+--> V Width Mismatch Checked!
+--> V No Error in syn.log!
+--> V Timing (MET) Checked!
+============================
+--> V 02_SYN Success !!
+============================
+Cycle: 5.00
+Area: 434012.048871
+Gate count: 43492

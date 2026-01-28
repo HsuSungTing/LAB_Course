@@ -1,0 +1,801 @@
+After point 1 (345,666): drop_num=0
+After point 2 (283,764): drop_num=0
+After point 3 (298,521): drop_num=0
+After point 4 (283,764): drop_num=1
+  drop (283,764)
+After point 5 (298,521): drop_num=1
+  drop (298,521)
+After point 6 (345,666): drop_num=1
+  drop (345,666)
+After point 7 (373,639): drop_num=0
+After point 8 (345,666): drop_num=3
+  drop (345,666)
+  drop (283,764)
+  drop (373,639)
+After point 9 (283,764): drop_num=0
+After point 10 (298,521): drop_num=1
+  drop (298,521)
+After point 11 (373,639): drop_num=0
+After point 12 (312,544): drop_num=0
+After point 13 (312,544): drop_num=4
+  drop (373,639)
+  drop (298,521)
+  drop (345,666)
+  drop (312,544)
+After point 14 (283,764): drop_num=0
+After point 15 (298,521): drop_num=1
+  drop (283,764)
+After point 16 (373,639): drop_num=1
+  drop (312,544)
+After point 17 (487,372): drop_num=0
+After point 18 (283,764): drop_num=3
+  drop (283,764)
+  drop (373,639)
+  drop (487,372)
+After point 19 (298,521): drop_num=0
+After point 20 (487,372): drop_num=1
+  drop (298,521)
+After point 21 (373,639): drop_num=0
+After point 22 (359,612): drop_num=3
+  drop (298,521)
+  drop (283,764)
+  drop (373,639)
+After point 23 (359,612): drop_num=0
+After point 24 (283,764): drop_num=2
+  drop (359,612)
+  drop (359,612)
+After point 25 (298,521): drop_num=0
+After point 26 (487,372): drop_num=1
+  drop (487,372)
+After point 27 (373,639): drop_num=1
+  drop (298,521)
+After point 28 (288,542): drop_num=0
+After point 29 (283,764): drop_num=3
+  drop (373,639)
+  drop (487,372)
+  drop (288,542)
+After point 30 (288,542): drop_num=0
+After point 31 (298,521): drop_num=1
+  drop (283,764)
+After point 32 (487,372): drop_num=0
+After point 33 (373,639): drop_num=0
+After point 34 (332,819): drop_num=1
+  drop (373,639)
+After point 35 (373,639): drop_num=4
+  drop (298,521)
+  drop (288,542)
+  drop (283,764)
+  drop (332,819)
+After point 36 (283,764): drop_num=0
+After point 37 (288,542): drop_num=1
+  drop (373,639)
+After point 38 (298,521): drop_num=0
+After point 39 (487,372): drop_num=3
+  drop (283,764)
+  drop (487,372)
+  drop (298,521)
+After point 40 (332,819): drop_num=0
+After point 41 (347,789): drop_num=1
+  drop (288,542)
+After point 42 (283,764): drop_num=0
+After point 43 (288,542): drop_num=0
+After point 44 (298,521): drop_num=0
+After point 45 (487,372): drop_num=5
+  drop (283,764)
+  drop (332,819)
+  drop (347,789)
+  drop (487,372)
+  drop (298,521)
+After point 46 (347,789): drop_num=0
+After point 47 (332,819): drop_num=1
+  drop (487,372)
+After point 48 (388,839): drop_num=1
+  drop (347,789)
+After point 49 (347,789): drop_num=2
+  drop (332,819)
+  drop (388,839)
+After point 50 (283,764): drop_num=0
+After point 51 (288,542): drop_num=1
+  drop (288,542)
+After point 52 (298,521): drop_num=1
+  drop (283,764)
+After point 53 (487,372): drop_num=0
+After point 54 (388,839): drop_num=0
+After point 55 (332,819): drop_num=1
+  drop (347,789)
+After point 56 (487,852): drop_num=0
+After point 57 (283,764): drop_num=0
+After point 58 (288,542): drop_num=6
+  drop (388,839)
+  drop (487,852)
+  drop (487,372)
+  drop (298,521)
+  drop (288,542)
+  drop (283,764)
+After point 59 (298,521): drop_num=0
+After point 60 (487,372): drop_num=1
+  drop (288,542)
+After point 61 (487,852): drop_num=0
+After point 62 (388,839): drop_num=0
+After point 63 (332,819): drop_num=4
+  drop (487,372)
+  drop (298,521)
+  drop (332,819)
+  drop (388,839)
+After point 64 (512,852): drop_num=0
+After point 65 (283,764): drop_num=1
+  drop (487,852)
+After point 66 (288,542): drop_num=0
+After point 67 (298,521): drop_num=0
+After point 68 (487,372): drop_num=0
+After point 69 (512,852): drop_num=5
+  drop (288,542)
+  drop (283,764)
+  drop (332,819)
+  drop (512,852)
+  drop (487,372)
+After point 70 (487,852): drop_num=0
+After point 71 (388,839): drop_num=1
+  drop (512,852)
+After point 72 (332,819): drop_num=0
+After point 73 (283,764): drop_num=0
+After point 74 (283,764): drop_num=4
+  drop (388,839)
+  drop (487,852)
+  drop (298,521)
+  drop (283,764)
+After point 75 (283,764): drop_num=0
+After point 76 (288,542): drop_num=2
+  drop (283,764)
+  drop (283,764)
+After point 77 (298,521): drop_num=0
+After point 78 (487,372): drop_num=1
+  drop (288,542)
+After point 79 (512,852): drop_num=0
+After point 80 (487,852): drop_num=0
+After point 81 (388,839): drop_num=0
+After point 82 (332,819): drop_num=5
+  drop (512,852)
+  drop (487,372)
+  drop (298,521)
+  drop (332,819)
+  drop (388,839)
+After point 83 (411,711): drop_num=0
+After point 84 (411,711): drop_num=1
+  drop (411,711)
+After point 85 (283,764): drop_num=1
+  drop (487,852)
+After point 86 (288,542): drop_num=0
+After point 87 (298,521): drop_num=0
+After point 88 (487,372): drop_num=0
+After point 89 (512,852): drop_num=1
+  drop (411,711)
+After point 90 (487,852): drop_num=0
+After point 91 (388,839): drop_num=0
+After point 92 (332,819): drop_num=7
+  drop (512,852)
+  drop (487,372)
+  drop (298,521)
+  drop (288,542)
+  drop (283,764)
+  drop (332,819)
+  drop (388,839)
+After point 93 (272,582): drop_num=0
+After point 94 (272,582): drop_num=1
+  drop (272,582)
+After point 95 (288,542): drop_num=1
+  drop (332,819)
+After point 96 (298,521): drop_num=0
+After point 97 (487,372): drop_num=0
+After point 98 (512,852): drop_num=0
+After point 99 (487,852): drop_num=5
+  drop (298,521)
+  drop (288,542)
+  drop (272,582)
+  drop (487,852)
+  drop (512,852)
+After point 100 (388,839): drop_num=0
+After point 101 (332,819): drop_num=1
+  drop (487,852)
+After point 102 (283,764): drop_num=0
+After point 103 (507,758): drop_num=0
+After point 104 (507,758): drop_num=4
+  drop (283,764)
+  drop (332,819)
+  drop (388,839)
+  drop (507,758)
+After point 105 (272,582): drop_num=0
+After point 106 (288,542): drop_num=1
+  drop (507,758)
+After point 107 (298,521): drop_num=0
+After point 108 (487,372): drop_num=3
+  drop (272,582)
+  drop (487,372)
+  drop (298,521)
+After point 109 (512,852): drop_num=0
+After point 110 (487,852): drop_num=1
+  drop (487,372)
+After point 111 (388,839): drop_num=0
+After point 112 (332,819): drop_num=0
+After point 113 (283,764): drop_num=0
+After point 114 (521,788): drop_num=0
+After point 115 (272,582): drop_num=0
+After point 116 (288,542): drop_num=7
+  drop (332,819)
+  drop (388,839)
+  drop (487,852)
+  drop (512,852)
+  drop (521,788)
+  drop (288,542)
+  drop (272,582)
+After point 117 (298,521): drop_num=0
+After point 118 (487,372): drop_num=1
+  drop (288,542)
+After point 119 (521,788): drop_num=0
+After point 120 (512,852): drop_num=0
+After point 121 (487,852): drop_num=0
+After point 122 (388,839): drop_num=0
+After point 123 (332,819): drop_num=0
+After point 124 (283,764): drop_num=7
+  drop (487,852)
+  drop (512,852)
+  drop (521,788)
+  drop (487,372)
+  drop (298,521)
+  drop (283,764)
+  drop (332,819)
+After point 125 (512,688): drop_num=0
+After point 126 (512,688): drop_num=1
+  drop (512,688)
+After point 127 (272,582): drop_num=1
+  drop (388,839)
+After point 128 (288,542): drop_num=0
+After point 129 (298,521): drop_num=0
+After point 130 (487,372): drop_num=0
+After point 131 (521,788): drop_num=1
+  drop (512,688)
+After point 132 (512,852): drop_num=0
+After point 133 (487,852): drop_num=0
+After point 134 (388,839): drop_num=0
+After point 135 (332,819): drop_num=0
+After point 136 (283,764): drop_num=9
+  drop (487,852)
+  drop (512,852)
+  drop (521,788)
+  drop (487,372)
+  drop (298,521)
+  drop (288,542)
+  drop (272,582)
+  drop (283,764)
+  drop (332,819)
+After point 137 (512,632): drop_num=0
+After point 138 (272,582): drop_num=1
+  drop (388,839)
+After point 139 (288,542): drop_num=0
+After point 140 (298,521): drop_num=0
+After point 141 (487,372): drop_num=0
+After point 142 (512,632): drop_num=5
+  drop (288,542)
+  drop (272,582)
+  drop (283,764)
+  drop (512,632)
+  drop (487,372)
+After point 143 (521,788): drop_num=0
+After point 144 (512,852): drop_num=1
+  drop (512,632)
+After point 145 (487,852): drop_num=0
+After point 146 (388,839): drop_num=0
+After point 147 (332,819): drop_num=0
+After point 148 (283,764): drop_num=0
+After point 149 (522,658): drop_num=0
+After point 150 (512,632): drop_num=0
+After point 151 (272,582): drop_num=0
+After point 152 (288,542): drop_num=0
+After point 153 (298,521): drop_num=10
+  drop (283,764)
+  drop (332,819)
+  drop (388,839)
+  drop (487,852)
+  drop (512,852)
+  drop (521,788)
+  drop (522,658)
+  drop (512,632)
+  drop (298,521)
+  drop (288,542)
+After point 154 (487,372): drop_num=0
+After point 155 (522,658): drop_num=1
+  drop (298,521)
+After point 156 (521,788): drop_num=0
+After point 157 (512,852): drop_num=0
+After point 158 (487,852): drop_num=0
+After point 159 (388,839): drop_num=0
+After point 160 (332,819): drop_num=0
+After point 161 (283,764): drop_num=0
+After point 162 (522,558): drop_num=0
+After point 163 (272,582): drop_num=9
+  drop (272,582)
+  drop (283,764)
+  drop (332,819)
+  drop (388,839)
+  drop (487,852)
+  drop (512,852)
+  drop (521,788)
+  drop (522,658)
+  drop (522,558)
+After point 164 (288,542): drop_num=0
+After point 165 (298,521): drop_num=1
+  drop (272,582)
+After point 166 (487,372): drop_num=2
+  drop (487,372)
+  drop (298,521)
+After point 167 (522,558): drop_num=0
+After point 168 (522,658): drop_num=1
+  drop (487,372)
+After point 169 (521,788): drop_num=0
+After point 170 (512,852): drop_num=0
+After point 171 (487,852): drop_num=0
+After point 172 (388,839): drop_num=0
+After point 173 (332,819): drop_num=0
+After point 174 (283,764): drop_num=0
+After point 175 (557,727): drop_num=2
+  drop (521,788)
+  drop (522,658)
+After point 176 (521,788): drop_num=7
+  drop (288,542)
+  drop (283,764)
+  drop (332,819)
+  drop (388,839)
+  drop (487,852)
+  drop (512,852)
+  drop (557,727)
+After point 177 (522,558): drop_num=0
+After point 178 (522,658): drop_num=1
+  drop (522,558)
+After point 179 (272,582): drop_num=0
+After point 180 (288,542): drop_num=0
+After point 181 (298,521): drop_num=0
+After point 182 (487,372): drop_num=0
+After point 183 (557,727): drop_num=2
+  drop (522,658)
+  drop (522,558)
+After point 184 (512,852): drop_num=1
+  drop (521,788)
+After point 185 (487,852): drop_num=0
+After point 186 (388,839): drop_num=0
+After point 187 (332,819): drop_num=0
+After point 188 (283,764): drop_num=0
+After point 189 (398,435): drop_num=0
+After point 190 (272,582): drop_num=10
+  drop (288,542)
+  drop (272,582)
+  drop (283,764)
+  drop (332,819)
+  drop (388,839)
+  drop (487,852)
+  drop (512,852)
+  drop (557,727)
+  drop (487,372)
+  drop (398,435)
+After point 191 (288,542): drop_num=0
+After point 192 (298,521): drop_num=1
+  drop (298,521)
+After point 193 (398,435): drop_num=1
+  drop (288,542)
+After point 194 (487,372): drop_num=0
+After point 195 (557,727): drop_num=0
+After point 196 (512,852): drop_num=0
+After point 197 (487,852): drop_num=0
+After point 198 (388,839): drop_num=0
+After point 199 (332,819): drop_num=0
+After point 200 (283,764): drop_num=0
+After point 201 (599,940): drop_num=9
+  drop (388,839)
+  drop (487,852)
+  drop (512,852)
+  drop (557,727)
+  drop (487,372)
+  drop (398,435)
+  drop (298,521)
+  drop (272,582)
+  drop (283,764)
+After point 202 (388,839): drop_num=0
+After point 203 (487,852): drop_num=1
+  drop (388,839)
+After point 204 (512,852): drop_num=1
+  drop (487,852)
+After point 205 (557,727): drop_num=1
+  drop (512,852)
+After point 206 (272,582): drop_num=0
+After point 207 (288,542): drop_num=0
+After point 208 (298,521): drop_num=0
+After point 209 (398,435): drop_num=0
+After point 210 (487,372): drop_num=5
+  drop (288,542)
+  drop (272,582)
+  drop (332,819)
+  drop (599,940)
+  drop (557,727)
+After point 211 (599,940): drop_num=0
+After point 212 (332,819): drop_num=0
+After point 213 (283,764): drop_num=0
+After point 214 (42,687): drop_num=5
+  drop (599,940)
+  drop (487,372)
+  drop (398,435)
+  drop (298,521)
+  drop (283,764)
+After point 215 (272,582): drop_num=0
+After point 216 (283,764): drop_num=1
+  drop (283,764)
+After point 217 (288,542): drop_num=0
+After point 218 (298,521): drop_num=1
+  drop (288,542)
+After point 219 (398,435): drop_num=1
+  drop (298,521)
+After point 220 (42,687): drop_num=1
+  drop (272,582)
+After point 221 (487,372): drop_num=3
+  drop (398,435)
+  drop (42,687)
+  drop (42,687)
+After point 222 (599,940): drop_num=0
+After point 223 (332,819): drop_num=1
+  drop (332,819)
+After point 224 (599,1023): drop_num=1
+  drop (487,372)
+After point 225 (332,819): drop_num=2
+  drop (332,819)
+  drop (599,1023)
+After point 226 (42,687): drop_num=0
+After point 227 (487,372): drop_num=1
+  drop (332,819)
+After point 228 (599,940): drop_num=2
+  drop (599,940)
+  drop (487,372)
+After point 229 (599,1023): drop_num=0
+After point 230 (631,902): drop_num=0
+After point 231 (599,940): drop_num=3
+  drop (599,940)
+  drop (599,1023)
+  drop (631,902)
+After point 232 (42,687): drop_num=0
+After point 233 (487,372): drop_num=1
+  drop (42,687)
+After point 234 (631,902): drop_num=0
+After point 235 (599,1023): drop_num=1
+  drop (599,940)
+After point 236 (200,655): drop_num=3
+  drop (487,372)
+  drop (42,687)
+  drop (599,1023)
+After point 237 (200,655): drop_num=0
+After point 238 (42,687): drop_num=2
+  drop (200,655)
+  drop (200,655)
+After point 239 (487,372): drop_num=0
+After point 240 (631,902): drop_num=1
+  drop (631,902)
+After point 241 (599,1023): drop_num=1
+  drop (487,372)
+After point 242 (612,589): drop_num=0
+After point 243 (42,687): drop_num=3
+  drop (599,1023)
+  drop (631,902)
+  drop (612,589)
+After point 244 (487,372): drop_num=0
+After point 245 (612,589): drop_num=1
+  drop (42,687)
+After point 246 (631,902): drop_num=0
+After point 247 (599,1023): drop_num=0
+After point 248 (638,832): drop_num=0
+After point 249 (42,687): drop_num=5
+  drop (487,372)
+  drop (42,687)
+  drop (599,1023)
+  drop (631,902)
+  drop (638,832)
+After point 250 (487,372): drop_num=0
+After point 251 (612,589): drop_num=1
+  drop (612,589)
+After point 252 (638,832): drop_num=1
+  drop (487,372)
+After point 253 (631,902): drop_num=0
+After point 254 (599,1023): drop_num=0
+After point 255 (588,522): drop_num=0
+After point 256 (42,687): drop_num=5
+  drop (599,1023)
+  drop (631,902)
+  drop (638,832)
+  drop (612,589)
+  drop (588,522)
+After point 257 (487,372): drop_num=0
+After point 258 (588,522): drop_num=1
+  drop (42,687)
+After point 259 (612,589): drop_num=0
+After point 260 (638,832): drop_num=0
+After point 261 (631,902): drop_num=0
+After point 262 (599,1023): drop_num=0
+After point 263 (645,754): drop_num=0
+After point 264 (42,687): drop_num=7
+  drop (588,522)
+  drop (487,372)
+  drop (42,687)
+  drop (599,1023)
+  drop (631,902)
+  drop (638,832)
+  drop (645,754)
+After point 265 (487,372): drop_num=0
+After point 266 (588,522): drop_num=1
+  drop (42,687)
+After point 267 (612,589): drop_num=2
+  drop (612,589)
+  drop (588,522)
+After point 268 (645,754): drop_num=0
+After point 269 (638,832): drop_num=1
+  drop (612,589)
+After point 270 (631,902): drop_num=0
+After point 271 (599,1023): drop_num=0
+After point 272 (499,499): drop_num=0
+After point 273 (499,499): drop_num=5
+  drop (631,902)
+  drop (638,832)
+  drop (645,754)
+  drop (487,372)
+  drop (499,499)
+After point 274 (42,687): drop_num=0
+After point 275 (487,372): drop_num=1
+  drop (499,499)
+After point 276 (588,522): drop_num=0
+After point 277 (612,589): drop_num=0
+After point 278 (645,754): drop_num=0
+After point 279 (638,832): drop_num=0
+After point 280 (631,902): drop_num=0
+After point 281 (599,1023): drop_num=7
+  drop (645,754)
+  drop (612,589)
+  drop (588,522)
+  drop (487,372)
+  drop (42,687)
+  drop (599,1023)
+  drop (631,902)
+After point 282 (550,420): drop_num=0
+After point 283 (42,687): drop_num=1
+  drop (638,832)
+After point 284 (487,372): drop_num=0
+After point 285 (550,420): drop_num=3
+  drop (599,1023)
+  drop (550,420)
+  drop (487,372)
+After point 286 (588,522): drop_num=0
+After point 287 (612,589): drop_num=1
+  drop (550,420)
+After point 288 (645,754): drop_num=0
+After point 289 (638,832): drop_num=0
+After point 290 (631,902): drop_num=0
+After point 291 (599,1023): drop_num=0
+After point 292 (721,723): drop_num=4
+  drop (631,902)
+  drop (638,832)
+  drop (645,754)
+  drop (612,589)
+After point 293 (588,522): drop_num=3
+  drop (42,687)
+  drop (599,1023)
+  drop (721,723)
+After point 294 (612,589): drop_num=0
+After point 295 (631,902): drop_num=1
+  drop (588,522)
+After point 296 (638,832): drop_num=0
+After point 297 (645,754): drop_num=0
+After point 298 (42,687): drop_num=0
+After point 299 (487,372): drop_num=0
+After point 300 (550,420): drop_num=0
+After point 301 (721,723): drop_num=4
+  drop (638,832)
+  drop (645,754)
+  drop (612,589)
+  drop (588,522)
+After point 302 (599,1023): drop_num=1
+  drop (631,902)
+After point 303 (677,653): drop_num=4
+  drop (550,420)
+  drop (487,372)
+  drop (42,687)
+  drop (599,1023)
+After point 304 (677,653): drop_num=0
+After point 305 (42,687): drop_num=2
+  drop (677,653)
+  drop (677,653)
+After point 306 (487,372): drop_num=0
+After point 307 (550,420): drop_num=1
+  drop (42,687)
+After point 308 (721,723): drop_num=2
+  drop (721,723)
+  drop (550,420)
+After point 309 (599,1023): drop_num=0
+After point 310 (677,620): drop_num=1
+  drop (599,1023)
+After point 311 (42,687): drop_num=0
+After point 312 (487,372): drop_num=3
+  drop (677,620)
+  drop (487,372)
+  drop (42,687)
+After point 313 (550,420): drop_num=0
+After point 314 (677,620): drop_num=1
+  drop (487,372)
+After point 315 (721,723): drop_num=2
+  drop (721,723)
+  drop (677,620)
+After point 316 (599,1023): drop_num=0
+After point 317 (657,445): drop_num=1
+  drop (599,1023)
+After point 318 (550,420): drop_num=2
+  drop (721,723)
+  drop (657,445)
+After point 319 (677,620): drop_num=0
+After point 320 (42,687): drop_num=1
+  drop (550,420)
+After point 321 (487,372): drop_num=0
+After point 322 (657,445): drop_num=1
+  drop (550,420)
+After point 323 (721,723): drop_num=1
+  drop (677,620)
+After point 324 (599,1023): drop_num=0
+After point 325 (782,573): drop_num=0
+After point 326 (721,723): drop_num=5
+  drop (487,372)
+  drop (42,687)
+  drop (599,1023)
+  drop (721,723)
+  drop (782,573)
+After point 327 (42,687): drop_num=0
+After point 328 (487,372): drop_num=1
+  drop (721,723)
+After point 329 (657,445): drop_num=2
+  drop (657,445)
+  drop (487,372)
+After point 330 (782,573): drop_num=0
+After point 331 (599,1023): drop_num=1
+  drop (657,445)
+After point 332 (532,317): drop_num=0
+After point 333 (487,372): drop_num=3
+  drop (599,1023)
+  drop (782,573)
+  drop (532,317)
+After point 334 (657,445): drop_num=0
+After point 335 (42,687): drop_num=1
+  drop (42,687)
+After point 336 (532,317): drop_num=0
+After point 337 (782,573): drop_num=3
+  drop (487,372)
+  drop (657,445)
+  drop (532,317)
+After point 338 (599,1023): drop_num=0
+After point 339 (791,387): drop_num=1
+  drop (599,1023)
+After point 340 (42,687): drop_num=2
+  drop (782,573)
+  drop (791,387)
+After point 341 (532,317): drop_num=0
+After point 342 (791,387): drop_num=1
+  drop (42,687)
+After point 343 (782,573): drop_num=0
+After point 344 (599,1023): drop_num=0
+After point 345 (723,479): drop_num=4
+  drop (791,387)
+  drop (532,317)
+  drop (42,687)
+  drop (599,1023)
+After point 346 (723,479): drop_num=0
+After point 347 (42,687): drop_num=2
+  drop (723,479)
+  drop (723,479)
+After point 348 (532,317): drop_num=0
+After point 349 (791,387): drop_num=1
+  drop (42,687)
+After point 350 (782,573): drop_num=2
+  drop (782,573)
+  drop (791,387)
+After point 351 (599,1023): drop_num=0
+After point 352 (700,301): drop_num=1
+  drop (599,1023)
+After point 353 (42,687): drop_num=0
+After point 354 (532,317): drop_num=3
+  drop (700,301)
+  drop (532,317)
+  drop (42,687)
+After point 355 (700,301): drop_num=0
+After point 356 (791,387): drop_num=1
+  drop (532,317)
+After point 357 (782,573): drop_num=2
+  drop (782,573)
+  drop (791,387)
+After point 358 (599,1023): drop_num=0
+After point 359 (599,288): drop_num=1
+  drop (782,573)
+After point 360 (42,687): drop_num=0
+After point 361 (532,317): drop_num=0
+After point 362 (599,288): drop_num=4
+  drop (599,1023)
+  drop (700,301)
+  drop (599,288)
+  drop (532,317)
+After point 363 (700,301): drop_num=0
+After point 364 (791,387): drop_num=1
+  drop (599,288)
+After point 365 (782,573): drop_num=0
+After point 366 (599,1023): drop_num=0
+After point 367 (800,201): drop_num=2
+  drop (791,387)
+  drop (700,301)
+After point 368 (599,288): drop_num=0
+After point 369 (700,301): drop_num=4
+  drop (599,1023)
+  drop (782,573)
+  drop (800,201)
+  drop (599,288)
+After point 370 (791,387): drop_num=0
+After point 371 (42,687): drop_num=1
+  drop (42,687)
+After point 372 (532,317): drop_num=1
+  drop (791,387)
+After point 373 (800,201): drop_num=0
+After point 374 (782,573): drop_num=1
+  drop (700,301)
+After point 375 (599,1023): drop_num=0
+After point 376 (477,287): drop_num=1
+  drop (532,317)
+After point 377 (532,317): drop_num=4
+  drop (599,1023)
+  drop (782,573)
+  drop (800,201)
+  drop (477,287)
+After point 378 (42,687): drop_num=0
+After point 379 (477,287): drop_num=1
+  drop (42,687)
+After point 380 (800,201): drop_num=1
+  drop (532,317)
+After point 381 (782,573): drop_num=0
+After point 382 (599,1023): drop_num=0
+After point 383 (477,255): drop_num=1
+  drop (477,287)
+After point 384 (477,287): drop_num=4
+  drop (599,1023)
+  drop (782,573)
+  drop (800,201)
+  drop (477,255)
+After point 385 (42,687): drop_num=0
+After point 386 (477,255): drop_num=1
+  drop (42,687)
+After point 387 (800,201): drop_num=1
+  drop (477,287)
+After point 388 (782,573): drop_num=0
+After point 389 (599,1023): drop_num=0
+After point 390 (477,225): drop_num=1
+  drop (477,255)
+After point 391 (477,255): drop_num=4
+  drop (599,1023)
+  drop (782,573)
+  drop (800,201)
+  drop (477,225)
+After point 392 (42,687): drop_num=0
+After point 393 (477,225): drop_num=1
+  drop (42,687)
+After point 394 (800,201): drop_num=1
+  drop (477,255)
+After point 395 (782,573): drop_num=0
+After point 396 (599,1023): drop_num=0
+After point 397 (477,201): drop_num=1
+  drop (477,225)
+After point 398 (477,225): drop_num=4
+  drop (599,1023)
+  drop (782,573)
+  drop (800,201)
+  drop (477,201)
+After point 399 (42,687): drop_num=0
+After point 400 (477,201): drop_num=1
+  drop (42,687)
+After point 401 (800,201): drop_num=1
+  drop (477,225)
+After point 402 (782,573): drop_num=0
+After point 403 (599,1023): drop_num=0
