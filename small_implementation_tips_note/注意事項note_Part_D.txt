@@ -12,7 +12,7 @@ e. RegisteredArray 的 Mux 部分：對 Default 的有條件程式 (if-else bloc
 
 f. 減少不必要使用 RegisteredArray 的次數，也可以減少 Mux 的數量。像 clear 的動作雖然邏輯健康，但對 RegisteredArray 會增加面積。
 
-g. 實務經驗：只要 RegisteredArray 大於 8x8，使用推的方式面積會比直接用 Counter 選取小很多。在 Online Test 中，4x4 和 8x8 的差異不大，但在 Final Project 的 Level 4、Level 5 中，如果 RegisteredArray 達到 16x16、32x32 或 10x10、15x15，超過 8 之後差異就非常明顯。
+g. 實務經驗：只要 RegisteredArray 大於 8x8，使用推的方式面積會比直接用 Counter 選取小很多。在 Online Test 中，4x4 和 8x8 的差異不大，但在 Final Project 和 Lab 4、Lab 5 中，如果 RegisteredArray 達到 16x16、32x32 或 10x10、15x15，超過 8 之後差異就非常明顯。
 
 h. 使用推的方式效果最好，但要以健康方式使用，不需強迫，保持易維護和熟悉的寫法。對於有順序存取的 RegisteredArray，基本上都可以使用推的方式。
 
