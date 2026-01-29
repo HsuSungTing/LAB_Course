@@ -1,6 +1,6 @@
 5. Latency 部分，主要是在 Online Test 和 Final Project 中反复去搶 Latency 或做一些並行運算。我們使用 GlobalCounter 來控制，當 GlobalCounter 數到某個值時，就執行對應運作，並透過波形觀察範圍，再把邏輯寫出來。這部分控制本來就很難，所以拿到的分數其實已經非常高且正常。
 
-a. Input 和 Output 若能稍微搶一下 Latency，效果會更好，但這部分是我們不擅長的不強求。
+a. Input 和 Output 若能稍微搶一下 Latency，效果會更好，但這部分是我們不擅長的不強求(用global_cnt去數，當Input給到一定數量後就開始算)
 
 b. 推 (Push) 的部分非常重要，我們在實作中已經寫成完整筆記。推的重點是在 減少 RegisteredArray 的 ColumnDecoder 與 RowDecoder。這是因為對越大的 RegisteredArray，這兩個 decoder 的核越大，Mux 層數也越多，面積不會只有隨著bit數線性增長。
 
